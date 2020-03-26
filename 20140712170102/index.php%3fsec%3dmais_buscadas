@@ -1,0 +1,397 @@
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <meta name="title" content="SIPP - Sociedade Internacional de Psicólogos e Pastores" />
+        <meta name="Keywords" content="Psicologo, Pastor, cursos, online, distância, fé, Assembléia, Deus, Gideões, Missões, pecado, história, pregação, arrebatamento, virtual, teologia, igreja, ministério, pregações, gospel, evangélicos, seminário, , CPAD" />
+        <meta name="Description" content="Psicologo Pastor história pregação arrebatamento virtual teologia igreja ministériocursos online distância Assembleia Deus Gideões Missões pecado " />
+        <meta name="distribution" content="Global" />
+        <meta http-equiv="Content-language" content="pt-br, pt" />
+        <meta name="REVISIT-AFTER" content="3 DAYS" />
+                <title>SIPP - Sociedade Internacional de Psicólogos e Pastores</title>
+
+        <link href="/stylesCNP/conselhonacionaldepastor.css" rel="stylesheet" media="screen" type="text/css" />
+                        <link href="http://www.buscapaz.com/abraloe/styles/skel.css" rel="stylesheet" media="screen" type="text/css" />
+                        <style type="text/css">
+                            <!--
+                                body {margin: 0px;background-color: #FFFFFF;background-image: url(http://www.buscapaz.com/gform/upload/topos/psicologopastor.jpg);background-position: top center;background-repeat:repeat-x;}
+                            -->
+                        </style>
+                            <link href="/estilos.css" rel="stylesheet" media="screen" type="text/css" />
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_js/scripts.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.form.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.corner.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.dimensions.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.lightbox-0.5.min.js"></script>
+
+        <script type="text/javascript" src="http://www.buscapaz.com/api/_js/cadFormNewsletter.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+
+            function limpa_topo(campo) {
+                var f = document.getElementById(campo);
+
+                switch (campo) {
+                    case 'busca_top_field' :
+                        if (f.value.toUpperCase() == "BUSCAR NO SITE") {
+                            f.value = "";
+                        }
+                        break;
+                    case 'formNewsEmailTopo' :
+                        if (f.value.toUpperCase() == "E-MAIL") {
+                            f.value = "";
+                        }
+                        break;
+                }
+            }
+
+            function retVal_topo(campo) {
+                var f = document.getElementById(campo);
+                if ((f.value == "")) {
+                    if (campo == 'busca_top_field') {
+                        f.value = "BUSCAR NO SITE";
+                    } else {
+                        f.value = "E-MAIL";
+                    }
+                }
+            }
+
+            function CapEnterBusca(event) {
+                if (event.keyCode == 13) {
+                    valida_busca();
+                }
+            }
+            function valida_busca() {
+                f = document.getElementById('busca_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'BUSCAR NO SITE')) {
+                    alert('Informe o que voce deseja buscar no site!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=busca&q=' + f.value;
+                    return true;
+                }
+            }
+
+            function valida_email() {
+                f = document.getElementById('newsletter_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'E-MAIL')) {
+                    alert('Informe seu e-mail!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=grava_email&email=' + f.value;
+                    return true;
+                }
+            }
+        </script>
+        <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42983353-45', 'psicologopastor.com.br');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body style="font-size: 12px; font-family: Verdana, Arial, sans-serif;">
+        <div id="area_site">
+            
+                        <div id="top">
+                            <a href="/?sec=home" class="PHome f_left"></a>
+                            <a href="/?sec=noticias_visual" class="PNoticias f_left"></a>
+                            <a href="/?sec=cursos" class="PCursos f_left"></a>
+                            <a href="/?sec=cadastro_pastor" class="PCadPastores f_left"></a>
+                            <a href="http://www.faculdadegospel.com.br" target="_blank" class="PFaculdade f_left"></a>
+                            <a href="/?sec=faleconosco" class="PContato f_left"></a>
+                        </div>
+                        <div id="subtopo">
+                            <div id="busca_top" class="f_left"><input id="busca_top_field" name="busca_top_field" value="BUSCAR NO SITE" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterBusca(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top_conselhonacionaldepastor.jpg" border="0" onclick="valida_busca()" /></a></div>
+                            <div id="atendimento_top" class="f_left">
+                                <div id="atendimento_online" style="width: 151px; height: 37px;">
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/support_status.php?COMPANY_ID=11479&SITE_ID=13464&ssl=1"></script>
+                                    <!--INCIO RASTREADOR - TRACK -->	
+                                    <script language="JavaScript" >
+                                        var _webtrack_domain = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_company_id = 11479;
+                                        var _webtrack_site_id = 13452;
+                                        var _webtrack_domain_chatwindow = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_variables = new Array();
+                                        var _webtrack_ssl = 1;
+                                    </script>
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/webtrack.js"></script>
+                                </div>			
+                            </div>
+                            <div id="newsletter_top" class="f_left"><input id="newsletter_top_field" name="newsletter_top_field" value="CADASTRE SEU E-MAIL" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterEmail(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top2_conselhonacionaldepastor.jpg" border="0" onclick="valida_email()" /></a></div>
+                            <div class="limpa"></div>
+                        </div>
+                                
+            <div class="limpa"></div>
+            <div id="areaMenu" style="padding-top:5px;">
+                <a href="/index.php?sec=matriculas"><img src="http://www.buscapaz.com/newgospel/images/bann_congresso.jpg" width="153" height="197" border="0" /></a>
+                <div id="linksMenu">
+                    <div class="titSec" style="color:#1d682b">\Destaque</div>
+                    <a href="/index.php?sec=historia">Hist&oacute;ria</a> <a href="/index.php?sec=compromisso">Compromisso</a>
+                    <a href="/index.php?sec=ingressar">Ingressar</a>
+                    <a href="/index.php?sec=filiese">Filie-se</a>
+                    <a href="/index.php?sec=galeria">Lista de Pastores </a>
+                    <a href="/index.php?sec=galeria_fotos">Galeria de Fotos </a>
+                    <a href="/autores">Autores</a>
+                    <div class="titSec" style="color:#0e1f5e">\Principal</div>
+                    <a href="/index.php?sec=noticias_visual">Not&iacute;cias</a>
+                    <a href="/index.php?sec=atendimento_online">Atendimento</a>
+                    <a href="/index.php?sec=pagamento">Pagamentos</a>
+                    <a href="/index.php?sec=vantagens">Vantagens</a>
+                    <a href="/index.php?sec=promocao">Promo&ccedil;&otilde;es</a>
+                    <a href="/index.php?sec=doacao">Doa&ccedil;&otilde;es</a>
+                    <div class="titSec" style="color:#817d06">\Produtos</div>
+                    <a href="/index.php?sec=prod">Pre&ccedil;o Pedido</a>
+                    <a href="/index.php?sec=cursos">Curso Reconhecido</a>
+                    <a href="/index.php?sec=titulos&tipo=h">T&iacute;tulo Honor&iacute;fico</a>
+                    <a href="/index.php?sec=titulos">T&iacute;tulo Internacional</a>
+                    <a href="/index.php?sec=titulos&tipo=e">T&iacute;tulo Em&eacute;rito</a>
+                    <a href="/produtos" target="_blank">Loja Virtual</a>
+                    <a href="/produtos/pastor-dvd">Dvd's</a>
+                    <a href="/produtos/livro">Livraria</a>
+                    <div class="titSec" style="color:#e32e10">\Faculdade Gospel</div>
+                    <a href="/index.php?sec=quem_somos">Quem Somos</a>
+                    <a href="/index.php?sec=missao">Nossa Miss&atilde;o</a>
+                    <a href="/index.php?sec=galeria">Pastor Igreja</a>
+                    <a href="/index.php?sec=intercambio">Interc&acirc;mbio</a>
+                    <div class="titSec" style="color:#c78800">\Canais</div>
+                    <a href="http://www.abecad.com.br" target="_blank">ABECAD</a>
+                    <a href="http://www.igrejaemcasa.com.br" target="_blank">Igreja em Casa</a>
+                    <a href="http://www.redeinternacional.com.br" target="_blank">Rede Internacional</a>
+                    <a href="/index.php?sec=parceiros">Parceiro</a>
+                    <div class="titSec" style="color:#730477">\Diversos</div>
+                    <a href="/index.php?sec=podcast">PodCast</a>
+                    <a href="/index.php?sec=noticias_visual">Cantores</a>
+                    <a href="/index.php?sec=redes_sociais">Redes Sociais</a>
+                    <a href="http://www.youtube.com/faculdadegospel" target="_blank">Youtube</a>
+                    <a href="/index.php?sec=mais_buscadas">Mais Buscadas</a>
+                    <div class="titSec" style="color:#000000">\Servi&ccedil;os</div>
+                    <a href="/index.php?sec=ganhebrinde">Ganhe Brindes</a>
+                    <a href="/index.php?sec=tv-radio">Tv e R&aacute;dio</a>
+                    <a href="/index.php?sec=cadastro_pastor">Cadastro de Pastor</a>
+                    <a href="/index.php?sec=cadastro_igreja">Cadastro de Igreja</a>
+                    <a href="/igrejas">Igrejas do Brasil</a>
+                    <a href="/index.php?sec=links">Link's &Uacute;teis</a>
+                    <a href="/index.php?sec=faleconosco">Fale Conosco</a>
+                    <div class="titSec" style="color:#000000">\Produtos Gospel</div>
+                    <a href="/produtos/biblia">Bíblia</a><a href="/produtos/cd">CD</a><a href="/produtos/livro">Livro</a><a href="/produtos/pastor-dvd">Pastor DVD</a>                </div>
+                <br /><br />
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_conselho_federal_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.igrejaemcasa.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_igreja_em_casa.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.faculdadegospel.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_faculdade_gospel.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.cgiadb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_cgiadb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.apameb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_apameb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_formacao_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.kellencristine.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/banner_kellen.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><img src="http://www.buscapaz.com/newgospel/images/bann_tv.jpg" width="153" height="81" border="0" /></div>
+                <div class="bannerP"><a href="/index.php?sec=doacao"><img src="http://www.buscapaz.com/newgospel/images/bann_doacao.jpg" width="153" height="81" border="0" /></a></div>
+                <br /><br /><a href="#"><img src="http://www.buscapaz.com/newgospel/images/bann_dvds.jpg" width="153" height="335" border="0" /></a>
+<a href="http://www.gospelinternacional.com.br" target="_blank" style="color: #000000;"><b>ACIMAD</b><br />Academia Internacional de Músicos e Adoradores de Deus.</a><br /><br /><a href="http://www.conselhonacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>ABRALOE</b><br />Academia Brasileira de Letras e Oradores Evangélicos.</a><br /><br /><a href="http://www.assembleiainternacional.com.br" target="_blank" style="color: #000000;"><b>CINIAD</b><br />Convenção Internacional das Igrejas Evangélicas Assembléias de Deus</a><br /><br /><a href="http://www.apameb.com.br" target="_blank" style="color: #000000;"><b>APAMEB</b><br />Associação dos Pastores e Ministros Evangélicos do Brasil</a><br /><br /><a href="http://www.modelodecristo.com.br" target="_blank" style="color: #000000;"><b>CODICE</b><br />Convenção das Igrejas e Comunidades em Células</a><br /><br /><a href="http://www.conselhodepastor.com.br" target="_blank" style="color: #000000;"><b>CIPAM</b><br />Conselho Internacional de Pastor e Ministros</a><br /><br /><a href="http://www.pastornaeuropa.com.br" target="_blank" style="color: #000000;"><b>CEP</b><br />Convenção Européia de Pastores. Faça Missões na Europa!!</a><br /><br /><a href="http://www.cgiadb.com.br" target="_blank" style="color: #000000;"><b>CGIADB</b><br />Convenção Geral Assembléia de Deus Internacional</a><br /><br /><a href="http://www.psicologopastor.com.br" target="_blank" style="color: #000000;"><b>SIPPA</b><br />Sociedade Internacional de Psicólogos e Pastores</a><br /><br /><a href="http://www.pregadorevangelico.com.br" target="_blank" style="color: #000000;"><b>CIPE</b><br />Conselho Internacional de Pregadores Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OIPAR</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.conselhofederaldepastor.com.br" target="_blank" style="color: #000000;"><b>CFP</b><br />Seja representante em sua federação</a><br /><br /><a href="http://www.sejabatista.com.br" target="_blank" style="color: #000000;"><b>CBI</b><br />Convenção Batista Internacional (Convention International Baptist)</a><br /><br /><a href="http://www.igrejaindependente.com.br" target="_blank" style="color: #000000;"><b>CICAI</b><br />Convenção das Igrejas e Comunidades Autônomas e Independentes</a><br /><br /><a href="http://www.presbiterianainternacional.com.br" target="_blank" style="color: #000000;"><b>CPI</b><br />Convenção Presbiteriana Internacional</a><br /><br /><a href="http://www.conferencistaevangelico.com.br" target="_blank" style="color: #000000;"><b>AICE</b><br />Associação Internacional de Conferencistas Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OMPAME</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.redelondres.com.br" target="_blank" style="color: #000000;"><b>REDE LONDRES</b><br />Milhares de cursos Livres a Distância. Bolsa de 90%. Estude em casa.</a><br /><br />                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>
+                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>			
+            </div><!-- /areaMenu -->
+            <div id="areaCorpo" class="f_left">
+<div style="font-size: 13pt; color: #693107; font-family: Arial; width:100%"><b>MAIS BUSCADAS</b></div>
+<div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igrejas-cristas" style="text-decoration:none; color:#0000FF;">Igrejas Cristãs</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/bancada-evangelica" style="text-decoration:none; color:#0000FF;">Bancada Evangélica</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/livro-infantil" style="text-decoration:none; color:#0000FF;">Livro Infantil</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/brincar-com-deus" style="text-decoration:none; color:#0000FF;">Brincar com Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/foguetes-contra-jerusalem" style="text-decoration:none; color:#0000FF;">Foguetes Contra Jerusalém</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/governo-israelense" style="text-decoration:none; color:#0000FF;">Governo Israelense</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/aecio-neves" style="text-decoration:none; color:#0000FF;">Aécio Neves</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/convencao-geral-das-assembleias-de-deus" style="text-decoration:none; color:#0000FF;">Convenção Geral das Assembleias de Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/jogo-de-rpg" style="text-decoration:none; color:#0000FF;">Jogo de RPG</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/editora-daemon" style="text-decoration:none; color:#0000FF;">Editora Daemon</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pequenas-igrejas" style="text-decoration:none; color:#0000FF;">Pequenas Igrejas</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/grandes-negocios" style="text-decoration:none; color:#0000FF;">Grandes Negócios</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/tv-globo" style="text-decoration:none; color:#0000FF;">TV Globo</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-everaldo" style="text-decoration:none; color:#0000FF;">Pastor Everaldo</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/presidencia-da-republica" style="text-decoration:none; color:#0000FF;">Presidência da República</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/jornal-nacional" style="text-decoration:none; color:#0000FF;">Jornal Nacional</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/segunda-mulher-mais-velha-do-mundo" style="text-decoration:none; color:#0000FF;">Segunda Mulher Mais Velha do Mundo</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/confiar-em-deus" style="text-decoration:none; color:#0000FF;">Confiar em Deus</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/dependencia-de-deus" style="text-decoration:none; color:#0000FF;">Dependência de Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/derrota-da-selecao-brasileira" style="text-decoration:none; color:#0000FF;">Derrota da Seleção Brasileira</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/estrelas-gospel" style="text-decoration:none; color:#0000FF;">Estrelas Gospel</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cantor-andre-valadao" style="text-decoration:none; color:#0000FF;">Cantor André Valadão</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/tirar-selfie" style="text-decoration:none; color:#0000FF;">Tirar Selfie</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cruz-vermelha" style="text-decoration:none; color:#0000FF;">Cruz Vermelha</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/jogos-da-copa-do-mundo" style="text-decoration:none; color:#0000FF;">Jogos da Copa do Mundo</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/programa-catolico" style="text-decoration:none; color:#0000FF;">Programa Católico</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/homossexualidade" style="text-decoration:none; color:#0000FF;">Homossexualidade</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/tv-aparecida" style="text-decoration:none; color:#0000FF;">TV Aparecida</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-assembleia-de-deus" style="text-decoration:none; color:#0000FF;">Igreja Assembleia de Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-silas-malafaia" style="text-decoration:none; color:#0000FF;">Pastor Silas Malafaia</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/gilberto-malafaia" style="text-decoration:none; color:#0000FF;">Gilberto Malafaia</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/dia-abencoado" style="text-decoration:none; color:#0000FF;">Dia Abençoado</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/intolerancia-religiosa" style="text-decoration:none; color:#0000FF;">Intolerância Religiosa</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cristaos" style="text-decoration:none; color:#0000FF;"> Cristãos</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-ed-young" style="text-decoration:none; color:#0000FF;">Pastor Ed Young</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-fellowship-church" style="text-decoration:none; color:#0000FF;">Igreja Fellowship Church</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pregacao-intercortada" style="text-decoration:none; color:#0000FF;"> Pregação Intercortada</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/zagueiro-david-luiz" style="text-decoration:none; color:#0000FF;">zagueiro David Luiz</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/movimento-eu-escolhi-esperar" style="text-decoration:none; color:#0000FF;">Movimento Eu Escolhi Esperar</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/selecao-brasileira" style="text-decoration:none; color:#0000FF;">Seleção Brasileira</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/adoracao-a-deus" style="text-decoration:none; color:#0000FF;">Adoração a Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/retiro-espiritual" style="text-decoration:none; color:#0000FF;">Retiro Espiritual</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pais-famintos" style="text-decoration:none; color:#0000FF;">Pais Famintos</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/coreia-do-norte" style="text-decoration:none; color:#0000FF;">Coreia do Norte</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/perseguicao-aos-cristaos" style="text-decoration:none; color:#0000FF;">Perseguição aos Cristãos</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/proselitismo" style="text-decoration:none; color:#0000FF;">Proselitismo</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/recuperacao-de-neymar" style="text-decoration:none; color:#0000FF;">Recuperação de Neymar</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/assembleia-de-deus" style="text-decoration:none; color:#0000FF;">Assembleia de Deus</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-universal" style="text-decoration:none; color:#0000FF;">Igreja Universal</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/campanhas-de-arrecadacao" style="text-decoration:none; color:#0000FF;">Campanhas de Arrecadação</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-eurico" style="text-decoration:none; color:#0000FF;">Pastor Eurico</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/apresentadora-xuxa" style="text-decoration:none; color:#0000FF;">Apresentadora Xuxa</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/papa-francisco-e-um-catolico-evangelico" style="text-decoration:none; color:#0000FF;">Papa Francisco é um Católico Evangélico</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/fe-crista" style="text-decoration:none; color:#0000FF;">Fé Cristã</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/copa-do-mundo" style="text-decoration:none; color:#0000FF;">Copa do Mundo</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/solidariedade" style="text-decoration:none; color:#0000FF;">Solidariedade</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/contusao-de-neymar" style="text-decoration:none; color:#0000FF;">Contusão de Neymar</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-silas-malafaia" style="text-decoration:none; color:#0000FF;">Pastor Silas Malafaia</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/campanha-contra-a-rede-globo" style="text-decoration:none; color:#0000FF;">Campanha Contra a Rede Globo</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/propaganda-eleitoral-antecipada" style="text-decoration:none; color:#0000FF;">Propaganda Eleitoral Antecipada</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/deputado-estadual" style="text-decoration:none; color:#0000FF;">Deputado Estadual</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/jose-cavalcante-dos-santos" style="text-decoration:none; color:#0000FF;">José Cavalcante dos Santos</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/vitoria-na-fogueira-santa-de-israel" style="text-decoration:none; color:#0000FF;">Vitória na Fogueira Santa de Israel</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-assembleia-de-deus" style="text-decoration:none; color:#0000FF;">Igreja Assembleia de Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/crista" style="text-decoration:none; color:#0000FF;">Cristã</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/miss-universo-stefania-fernandez" style="text-decoration:none; color:#0000FF;">Miss Universo Stefanía Fernández</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/ditadura-na-venezuela" style="text-decoration:none; color:#0000FF;">  Ditadura na Venezuela</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-mormon" style="text-decoration:none; color:#0000FF;">Igreja Mórmon</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/exercito-virtual-para-evangelizacao" style="text-decoration:none; color:#0000FF;">Exército Virtual Para Evangelização</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/ipads-tablets" style="text-decoration:none; color:#0000FF;">iPads Tablets</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/porta-dos-fundos" style="text-decoration:none; color:#0000FF;">Porta dos Fundos</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/ridicularizar-evangelicos" style="text-decoration:none; color:#0000FF;">Ridicularizar Evangélicos</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/visao-positiva-do-inferno" style="text-decoration:none; color:#0000FF;">Visão Positiva? do Inferno</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/expastor-da-igreja-universal" style="text-decoration:none; color:#0000FF;">ExPastor da Igreja Universal</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/adulterionatureza-religiosa" style="text-decoration:none; color:#0000FF;">Adultério,
+Natureza Religiosa</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/modelo-stephannie-oliveira" style="text-decoration:none; color:#0000FF;">Modelo Stephannie Oliveira</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/trabalho-missionario" style="text-decoration:none; color:#0000FF;">Trabalho Missionário</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/convalidacao" style="text-decoration:none; color:#0000FF;">Convalidação</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cursos-livres" style="text-decoration:none; color:#0000FF;"> Cursos Livres</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/dark-hors" style="text-decoration:none; color:#0000FF;">Dark Hors</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cantora-pop" style="text-decoration:none; color:#0000FF;">Cantora Pop</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/katy-perry" style="text-decoration:none; color:#0000FF;">Katy Perry</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/plagio-cantor-gospel" style="text-decoration:none; color:#0000FF;">Plágio  Cantor Gospel</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/keylor-navas" style="text-decoration:none; color:#0000FF;">Keylor Navas</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/selecao-da-costa-rica" style="text-decoration:none; color:#0000FF;">Seleção da Costa Rica</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cristao-evangelico" style="text-decoration:none; color:#0000FF;">Cristão Evangélico</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/o-ceu-e-de-verdade" style="text-decoration:none; color:#0000FF;">O Céu é de Verdade</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/mercado-gospel" style="text-decoration:none; color:#0000FF;">Mercado Gospel</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/filmes-cristaos" style="text-decoration:none; color:#0000FF;">Filmes Cristãos</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pratica-paga" style="text-decoration:none; color:#0000FF;">Prática Pagã</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/tatuagem" style="text-decoration:none; color:#0000FF;">Tatuagem</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/evangelico" style="text-decoration:none; color:#0000FF;">Evangélico</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/denominacoes-neopentecostais" style="text-decoration:none; color:#0000FF;"> Denominações Neopentecostais</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/israel-bombardeia-gaza" style="text-decoration:none; color:#0000FF;">Israel Bombardeia Gaza</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/palestina" style="text-decoration:none; color:#0000FF;">Palestina</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/inferno" style="text-decoration:none; color:#0000FF;">Inferno</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/hamas" style="text-decoration:none; color:#0000FF;">Hamas</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/novela-em-familia" style="text-decoration:none; color:#0000FF;">Novela em Família</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/tv-globo" style="text-decoration:none; color:#0000FF;">TV Globo</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/manoel-carlos" style="text-decoration:none; color:#0000FF;">Manoel Carlos</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/beijo-gay" style="text-decoration:none; color:#0000FF;">Beijo Gay</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/principios-de-deus" style="text-decoration:none; color:#0000FF;">Princípios de Deus</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-mundial-do-poder-de-deus" style="text-decoration:none; color:#0000FF;">Igreja Mundial  do Poder de Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/valdemiro-santiago" style="text-decoration:none; color:#0000FF;">Valdemiro Santiago</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/deusa-hindu" style="text-decoration:none; color:#0000FF;">Deusa Hindu</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/durga" style="text-decoration:none; color:#0000FF;">Durga</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/kumari" style="text-decoration:none; color:#0000FF;">Kumari</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/dilma-rousseff" style="text-decoration:none; color:#0000FF;">Dilma Rousseff</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-everaldo-pereira" style="text-decoration:none; color:#0000FF;">Pastor Everaldo Pereira</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igrejas-evangelicas" style="text-decoration:none; color:#0000FF;">Igrejas Evangélicas</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-catolica" style="text-decoration:none; color:#0000FF;">Igreja Católica</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/casamento-gay" style="text-decoration:none; color:#0000FF;">Casamento Gay</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/papa-francisco" style="text-decoration:none; color:#0000FF;">Papa Francisco</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/vaticano" style="text-decoration:none; color:#0000FF;">Vaticano</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/relacao-com-deus" style="text-decoration:none; color:#0000FF;">Relação com Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-ateu" style="text-decoration:none; color:#0000FF;">Pastor Ateu</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/sucesso-nas-redes-sociais" style="text-decoration:none; color:#0000FF;">Sucesso nas Redes Sociais</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/perdeu-a-fe" style="text-decoration:none; color:#0000FF;">Perdeu a Fé</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-universal-do-reino-de-deus" style="text-decoration:none; color:#0000FF;">Igreja Universal do Reino de Deus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/bispo-macedo" style="text-decoration:none; color:#0000FF;">Bispo Macedo</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/minisserie-milagres-de-jesus" style="text-decoration:none; color:#0000FF;">Minissérie Milagres de Jesus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/aldeia-crista" style="text-decoration:none; color:#0000FF;">Aldeia Cristã</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/faccoes-islamicas" style="text-decoration:none; color:#0000FF;">Facções Islâmicas</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/direitos-humanos" style="text-decoration:none; color:#0000FF;">Direitos Humanos</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/servirem-a-ala" style="text-decoration:none; color:#0000FF;">Servirem a Alá</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/deputado-federal-paulo-freire" style="text-decoration:none; color:#0000FF;">Deputado Federal Paulo Freire</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/bancada-evangelica" style="text-decoration:none; color:#0000FF;">Bancada Evangélica</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/junta-de-missoes-mundiais" style="text-decoration:none; color:#0000FF;">Junta de Missões Mundiais</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/assembleia-da-convencao-batista-brasileira" style="text-decoration:none; color:#0000FF;">Assembleia da Convenção Batista Brasileira</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igrejamesquitasinagoga" style="text-decoration:none; color:#0000FF;">IgrejaMesquitaSinagoga</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/unir-religioes" style="text-decoration:none; color:#0000FF;">Unir Religiões</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/culto-religioso" style="text-decoration:none; color:#0000FF;">Culto religioso</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cantor-elton-john" style="text-decoration:none; color:#0000FF;">Cantor Elton John</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/jesus-e-progay" style="text-decoration:none; color:#0000FF;">Jesus é PróGay</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/igreja-catolica" style="text-decoration:none; color:#0000FF;">Igreja Católica</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/homossexual" style="text-decoration:none; color:#0000FF;">Homossexual</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/milagres-de-jesus" style="text-decoration:none; color:#0000FF;">Milagres de Jesus</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/ibope" style="text-decoration:none; color:#0000FF;">Ibope</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/tv-record" style="text-decoration:none; color:#0000FF;">TV Record</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/partido-social-cristao" style="text-decoration:none; color:#0000FF;">Partido Social Cristão</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pastor-marco-feliciano" style="text-decoration:none; color:#0000FF;">Pastor Marco Feliciano</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/boicote-a-globo" style="text-decoration:none; color:#0000FF;">Boicote à GlobO</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/beijo-gay-em-novela" style="text-decoration:none; color:#0000FF;">Beijo Gay em Novela</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/em-familia" style="text-decoration:none; color:#0000FF;">Em Família</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/lider-cristao" style="text-decoration:none; color:#0000FF;">Líder Cristão</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cantora-beyonce" style="text-decoration:none; color:#0000FF;">Cantora Beyoncé</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/musicas-gospel" style="text-decoration:none; color:#0000FF;">Músicas Gospel</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/movimento-illuminati" style="text-decoration:none; color:#0000FF;">Movimento Illuminati</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/crente-fiel" style="text-decoration:none; color:#0000FF;">Crente Fiel</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/conto-de-fadas-gay" style="text-decoration:none; color:#0000FF;">Conto de Fadas Gay</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/os-principes-e-o-tesouro" style="text-decoration:none; color:#0000FF;">Os Príncipes e o Tesouro</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cerimonia-religiosa" style="text-decoration:none; color:#0000FF;">Cerimônia Religiosa</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/extravesti" style="text-decoration:none; color:#0000FF;">ExTravesti</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/redes-sociais" style="text-decoration:none; color:#0000FF;">Redes Sociais</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/mudanca-de-vida" style="text-decoration:none; color:#0000FF;">Mudança de Vida</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/transformacao-de-deus" style="text-decoration:none; color:#0000FF;">  Transformação de Deus</a></div><div class="limpa"></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cristaos-do-iraque" style="text-decoration:none; color:#0000FF;">Cristãos do Iraque</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/cirurgias-plasticas" style="text-decoration:none; color:#0000FF;">Cirurgias Plásticas</a></div><div style="width:27%; padding:1% 3%; font-size:12px" class="f_left"><a href="/noticias/busca/pecado" style="text-decoration:none; color:#0000FF;">Pecado</a></div><br><br><div align="center" style="font-size:12px;" class="limpa"><span >1</span> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=2'>2</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=3'>3</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=4'>4</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=5'>5</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=6'>6</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=7'>7</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=8'>8</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=9'>9</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=2'>Pr&oacute;xima &raquo;</a> | <a  href='/index.php?sec=mais_buscadas&_pagi_pg=41'>&Uacute;ltima &raquo;&raquo;</a></div>            </div><!-- /areaCorpo -->
+        </div><!-- /area_site -->
+        <div class="limpa"></div>
+        <div id="rodape">
+            <div id="area_rodape" style="margin-left: 350px;">
+                <div id="bloco_link" class="f_left" style="margin-left:70px">
+                    <div class="corBranco" style="font-weight:bold">INSTITUCIONAL</div>
+                    <a href="/index.php?sec=quem_somos" class="Lrodape">Quem Somos</a><br />
+                    <a href="/index.php?sec=compromisso" class="Lrodape">Nossos Compromissos</a><br />
+                    <a href="/index.php?sec=ingressar" class="Lrodape">Quem pode ingressar</a><br />
+                    <a href="/index.php?sec=filiese" class="Lrodape">Filie-se agora</a><br />
+                    <a href="http://loja.escoladepastor.com.br/" target="_blank" class="Lrodape">Loja virtual</a><br />
+                    <a href="/index.php?sec=promocao" class="Lrodape">Promo&ccedil;&otilde;es</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">AJUDA</div>
+                    <a href="/index.php?sec=cursos" class="Lrodape">Quais s&atilde;o os cursos</a><br />
+                    <a href="/index.php?sec=missao" class="Lrodape">Como funciona?</a><br />
+                    <a href="/index.php?sec=vantagens" class="Lrodape">Perguntas frequentes</a><br />
+                    <a href="/index.php?sec=pagamento" class="Lrodape">Formas de pagamento</a><br />
+                    <a href="/index.php?sec=politica_privacidade" class="Lrodape">Politica de Privacidade</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Central de atendimento</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">REDES SOCIAIS </div>
+                    <a href="#" class="Lrodape">MySpace</a><br />
+                    <a href="http://twitter.com/igrejaemcasa" target="_blank" class="Lrodape">Twitter</a><br />
+                    <a href="http://www.orkut.com.br/Main#Profile?uid=13960611504068135313" target="_blank" class="Lrodape">Orkut</a><br />
+                    <a href="#" class="Lrodape">Ning</a><br />
+                    <a href="http://youtube.com/igrejaemcas" target="_blank" class="Lrodape">YouTube</a><br />
+                    <a href="msnim:add?contact=igrejaemcasa@hotmail.com" target="_blank" class="Lrodape">Messenger</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">FALE CONOSCO </div>
+                    <a href="#" class="Lrodape">Ligue: 0800 9423153</a><br />
+                    <a href="#" class="Lrodape">Formul&aacute;rio Contato</a><br />
+                    <a href="#" class="Lrodape">Atendimento Online</a><br />
+                    <a href="#" class="Lrodape">Atendimento por e-mail</a><br />
+                    <a href="/index.php?sec=matriculas" class="Lrodape">Matricula</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <style  type="text/css">
+    /* CSS do banner sobre a criaÃ¯Â¿Â½Ã¯Â¿Â½o de igrejas */
+    #Layer1 {position:fixed; width:510px; height:289px; z-index: 8999; left: 30%;	top: 100px; display:block;}
+    #fechar{display:block; width:25px; height:30px; margin-top:0px; margin-right:15px; float: right}
+</style>
+
+<script type="text/javascript">
+    function fechaCad(){
+        document.getElementById('Layer1').style.display = 'none';
+    }
+</script>
+
+<div id="Layer1" style="background: url( http://www.buscapaz.com/faculdadegospel/images/BannerPromocao.jpg) no-repeat top center; width:510px; height:289px;">
+    <a id="fechar" href="javascript:fechaCad();" title="Fechar"></a>
+    <form name="CadastroNewsletter" id="CadastroNewsletter" method="post" action="/index.php" style="padding-top: 230px; padding-left: 12px;">
+        <input type="text" name="formNewsNome" id="formNewsNome" placeholder="Digite seu nome" style="width: 157px; margin-top: 10px; float: left;" />
+        <input type="text" name="formNewsFone" id="formNewsFone" placeholder="DDD Cel" class="fone" style="width: 112px; margin-left: 8px; margin-top: 10px; float: left;" onKeyPress="return txtBoxFormat(this, '(99) 999999999', event);" maxlength="14" />
+        <input type="text" name="formNewsEmail" id="formNewsEmail" placeholder="Digite seu email" style="width: 150px; margin-left: 7px; margin-top: 10px;float: left;" />
+        <input type="hidden" name="formNewsSegmento" id="formNewsSegmento" value="1">
+        <input type="hidden" name="formNewsOrigem" id="formNewsOrigem" value="ebook-do-curso-internacional-de-teologia">
+        <input type="hidden" name="formNewsLink" id="formNewsLink" value="psicologopastor.com.br/index.php?sec=mais_buscadas" />
+        <input type="image" src="/images/enviaBann.png" style="margin-left: 3px;margin-top: 10px;float: left;">
+    </form>
+</div>
+
+        <!-- Cï¿½digo de renderizaï¿½ï¿½o do botï¿½o mais um | <g:plusone size="medium"></g:plusone> -->
+        <script type="text/javascript">
+                        window.___gcfg = {lang: 'pt-BR'};
+
+                        (function() {
+                            var po = document.createElement('script');
+                            po.type = 'text/javascript';
+                            po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(po, s);
+                        })();
+        </script>
+
+        <script>
+
+            $(function() {
+                $('#menProdu li a').click(function(e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                });
+            });
+
+
+            function chamaPagina(url) {
+                location.href = url.value;
+                exit();
+            }
+
+            function txtBoxFormat(objeto, sMask, evtKeyPress) {
+                var i, nCount, sValue, fldLen, mskLen, bolMask, sCod, nTecla;
+
+                if (document.all) { // Internet Explorer
+                    nTecla = evtKeyPress.keyCode;
+                } else if (document.layers) { // Nestcape
+                    nTecla = evtKeyPress.which;
+                } else {
+                    nTecla = evtKeyPress.which;
+                    if (nTecla == 8) {
+                        return true;
+                    }
+                }
+
+                sValue = objeto.value;
+
+                // Limpa todos os caracteres de formatao que
+                // j estiverem no campo.
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(" ", "");
+                sValue = sValue.toString().replace(" ", "");
+                fldLen = sValue.length;
+                mskLen = sMask.length;
+
+                i = 0;
+                nCount = 0;
+                sCod = "";
+                mskLen = fldLen;
+
+                while (i <= mskLen) {
+                    bolMask = ((sMask.charAt(i) == "-") || (sMask.charAt(i) == ".") || (sMask.charAt(i) == "/") || (sMask.charAt(i) == ":"))
+                    bolMask = bolMask || ((sMask.charAt(i) == "(") || (sMask.charAt(i) == ")") || (sMask.charAt(i) == " "))
+
+                    if (bolMask) {
+                        sCod += sMask.charAt(i);
+                        mskLen++;
+                    }
+                    else {
+                        sCod += sValue.charAt(nCount);
+                        nCount++;
+                    }
+
+                    i++;
+                }
+
+                objeto.value = sCod;
+
+                if ((nTecla != 8) || (nTecla != 11)) { // backspace
+                    if (sMask.charAt(i - 1) == "9") { // apenas nmeros...
+                        return ((nTecla > 47) && (nTecla < 58));
+                    }
+                    else { // qualquer caracter...
+                        return true;
+                    }
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+
+
+    </body>
+</html>

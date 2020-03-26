@@ -1,0 +1,594 @@
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <meta name="title" content="SIPP - Sociedade Internacional de Psicólogos e Pastores" />
+        <meta name="Keywords" content="Psicologo, Pastor, cursos, online, distância, fé, Assembléia, Deus, Gideões, Missões, pecado, história, pregação, arrebatamento, virtual, teologia, igreja, ministério, pregações, gospel, evangélicos, seminário, , CPAD" />
+        <meta name="Description" content="Psicologo Pastor história pregação arrebatamento virtual teologia igreja ministériocursos online distância Assembleia Deus Gideões Missões pecado " />
+        <meta name="distribution" content="Global" />
+        <meta http-equiv="Content-language" content="pt-br, pt" />
+        <meta name="REVISIT-AFTER" content="3 DAYS" />
+                <title>SIPP - Sociedade Internacional de Psicólogos e Pastores</title>
+
+        <link href="/stylesCNP/conselhonacionaldepastor.css" rel="stylesheet" media="screen" type="text/css" />
+                        <link href="http://www.buscapaz.com/abraloe/styles/skel.css" rel="stylesheet" media="screen" type="text/css" />
+                        <style type="text/css">
+                            <!--
+                                body {margin: 0px;background-color: #FFFFFF;background-image: url(http://www.buscapaz.com/gform/upload/topos/psicologopastor.jpg);background-position: top center;background-repeat:repeat-x;}
+                            -->
+                        </style>
+                            <link href="/estilos.css" rel="stylesheet" media="screen" type="text/css" />
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_js/scripts.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.form.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.corner.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.dimensions.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.lightbox-0.5.min.js"></script>
+
+        <script type="text/javascript" src="http://www.buscapaz.com/api/_js/cadFormNewsletter.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+
+            function limpa_topo(campo) {
+                var f = document.getElementById(campo);
+
+                switch (campo) {
+                    case 'busca_top_field' :
+                        if (f.value.toUpperCase() == "BUSCAR NO SITE") {
+                            f.value = "";
+                        }
+                        break;
+                    case 'formNewsEmailTopo' :
+                        if (f.value.toUpperCase() == "E-MAIL") {
+                            f.value = "";
+                        }
+                        break;
+                }
+            }
+
+            function retVal_topo(campo) {
+                var f = document.getElementById(campo);
+                if ((f.value == "")) {
+                    if (campo == 'busca_top_field') {
+                        f.value = "BUSCAR NO SITE";
+                    } else {
+                        f.value = "E-MAIL";
+                    }
+                }
+            }
+
+            function CapEnterBusca(event) {
+                if (event.keyCode == 13) {
+                    valida_busca();
+                }
+            }
+            function valida_busca() {
+                f = document.getElementById('busca_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'BUSCAR NO SITE')) {
+                    alert('Informe o que voce deseja buscar no site!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=busca&q=' + f.value;
+                    return true;
+                }
+            }
+
+            function valida_email() {
+                f = document.getElementById('newsletter_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'E-MAIL')) {
+                    alert('Informe seu e-mail!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=grava_email&email=' + f.value;
+                    return true;
+                }
+            }
+        </script>
+        <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42983353-45', 'psicologopastor.com.br');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body style="font-size: 12px; font-family: Verdana, Arial, sans-serif;">
+        <div id="area_site">
+            
+                        <div id="top">
+                            <a href="/?sec=home" class="PHome f_left"></a>
+                            <a href="/?sec=noticias_visual" class="PNoticias f_left"></a>
+                            <a href="/?sec=cursos" class="PCursos f_left"></a>
+                            <a href="/?sec=cadastro_pastor" class="PCadPastores f_left"></a>
+                            <a href="http://www.faculdadegospel.com.br" target="_blank" class="PFaculdade f_left"></a>
+                            <a href="/?sec=faleconosco" class="PContato f_left"></a>
+                        </div>
+                        <div id="subtopo">
+                            <div id="busca_top" class="f_left"><input id="busca_top_field" name="busca_top_field" value="BUSCAR NO SITE" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterBusca(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top_conselhonacionaldepastor.jpg" border="0" onclick="valida_busca()" /></a></div>
+                            <div id="atendimento_top" class="f_left">
+                                <div id="atendimento_online" style="width: 151px; height: 37px;">
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/support_status.php?COMPANY_ID=11479&SITE_ID=13464&ssl=1"></script>
+                                    <!--INCIO RASTREADOR - TRACK -->	
+                                    <script language="JavaScript" >
+                                        var _webtrack_domain = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_company_id = 11479;
+                                        var _webtrack_site_id = 13452;
+                                        var _webtrack_domain_chatwindow = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_variables = new Array();
+                                        var _webtrack_ssl = 1;
+                                    </script>
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/webtrack.js"></script>
+                                </div>			
+                            </div>
+                            <div id="newsletter_top" class="f_left"><input id="newsletter_top_field" name="newsletter_top_field" value="CADASTRE SEU E-MAIL" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterEmail(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top2_conselhonacionaldepastor.jpg" border="0" onclick="valida_email()" /></a></div>
+                            <div class="limpa"></div>
+                        </div>
+                                
+            <div class="limpa"></div>
+            <div id="areaMenu" style="padding-top:5px;">
+                <a href="/index.php?sec=matriculas"><img src="http://www.buscapaz.com/newgospel/images/bann_congresso.jpg" width="153" height="197" border="0" /></a>
+                <div id="linksMenu">
+                    <div class="titSec" style="color:#1d682b">\Destaque</div>
+                    <a href="/index.php?sec=historia">Hist&oacute;ria</a> <a href="/index.php?sec=compromisso">Compromisso</a>
+                    <a href="/index.php?sec=ingressar">Ingressar</a>
+                    <a href="/index.php?sec=filiese">Filie-se</a>
+                    <a href="/index.php?sec=galeria">Lista de Pastores </a>
+                    <a href="/index.php?sec=galeria_fotos">Galeria de Fotos </a>
+                    <a href="/autores">Autores</a>
+                    <div class="titSec" style="color:#0e1f5e">\Principal</div>
+                    <a href="/index.php?sec=noticias_visual">Not&iacute;cias</a>
+                    <a href="/index.php?sec=atendimento_online">Atendimento</a>
+                    <a href="/index.php?sec=pagamento">Pagamentos</a>
+                    <a href="/index.php?sec=vantagens">Vantagens</a>
+                    <a href="/index.php?sec=promocao">Promo&ccedil;&otilde;es</a>
+                    <a href="/index.php?sec=doacao">Doa&ccedil;&otilde;es</a>
+                    <div class="titSec" style="color:#817d06">\Produtos</div>
+                    <a href="/index.php?sec=prod">Pre&ccedil;o Pedido</a>
+                    <a href="/index.php?sec=cursos">Curso Reconhecido</a>
+                    <a href="/index.php?sec=titulos&tipo=h">T&iacute;tulo Honor&iacute;fico</a>
+                    <a href="/index.php?sec=titulos">T&iacute;tulo Internacional</a>
+                    <a href="/index.php?sec=titulos&tipo=e">T&iacute;tulo Em&eacute;rito</a>
+                    <a href="/produtos" target="_blank">Loja Virtual</a>
+                    <a href="/produtos/pastor-dvd">Dvd's</a>
+                    <a href="/produtos/livro">Livraria</a>
+                    <div class="titSec" style="color:#e32e10">\Faculdade Gospel</div>
+                    <a href="/index.php?sec=quem_somos">Quem Somos</a>
+                    <a href="/index.php?sec=missao">Nossa Miss&atilde;o</a>
+                    <a href="/index.php?sec=galeria">Pastor Igreja</a>
+                    <a href="/index.php?sec=intercambio">Interc&acirc;mbio</a>
+                    <div class="titSec" style="color:#c78800">\Canais</div>
+                    <a href="http://www.abecad.com.br" target="_blank">ABECAD</a>
+                    <a href="http://www.igrejaemcasa.com.br" target="_blank">Igreja em Casa</a>
+                    <a href="http://www.redeinternacional.com.br" target="_blank">Rede Internacional</a>
+                    <a href="/index.php?sec=parceiros">Parceiro</a>
+                    <div class="titSec" style="color:#730477">\Diversos</div>
+                    <a href="/index.php?sec=podcast">PodCast</a>
+                    <a href="/index.php?sec=noticias_visual">Cantores</a>
+                    <a href="/index.php?sec=redes_sociais">Redes Sociais</a>
+                    <a href="http://www.youtube.com/faculdadegospel" target="_blank">Youtube</a>
+                    <a href="/index.php?sec=mais_buscadas">Mais Buscadas</a>
+                    <div class="titSec" style="color:#000000">\Servi&ccedil;os</div>
+                    <a href="/index.php?sec=ganhebrinde">Ganhe Brindes</a>
+                    <a href="/index.php?sec=tv-radio">Tv e R&aacute;dio</a>
+                    <a href="/index.php?sec=cadastro_pastor">Cadastro de Pastor</a>
+                    <a href="/index.php?sec=cadastro_igreja">Cadastro de Igreja</a>
+                    <a href="/igrejas">Igrejas do Brasil</a>
+                    <a href="/index.php?sec=links">Link's &Uacute;teis</a>
+                    <a href="/index.php?sec=faleconosco">Fale Conosco</a>
+                    <div class="titSec" style="color:#000000">\Produtos Gospel</div>
+                    <a href="/produtos/biblia">Bíblia</a><a href="/produtos/cd">CD</a><a href="/produtos/livro">Livro</a><a href="/produtos/pastor-dvd">Pastor DVD</a>                </div>
+                <br /><br />
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_conselho_federal_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.igrejaemcasa.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_igreja_em_casa.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.faculdadegospel.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_faculdade_gospel.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.cgiadb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_cgiadb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.apameb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_apameb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_formacao_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.kellencristine.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/banner_kellen.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><img src="http://www.buscapaz.com/newgospel/images/bann_tv.jpg" width="153" height="81" border="0" /></div>
+                <div class="bannerP"><a href="/index.php?sec=doacao"><img src="http://www.buscapaz.com/newgospel/images/bann_doacao.jpg" width="153" height="81" border="0" /></a></div>
+                <br /><br /><a href="#"><img src="http://www.buscapaz.com/newgospel/images/bann_dvds.jpg" width="153" height="335" border="0" /></a>
+<a href="http://www.gospelinternacional.com.br" target="_blank" style="color: #000000;"><b>ACIMAD</b><br />Academia Internacional de Músicos e Adoradores de Deus.</a><br /><br /><a href="http://www.conselhonacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>ABRALOE</b><br />Academia Brasileira de Letras e Oradores Evangélicos.</a><br /><br /><a href="http://www.assembleiainternacional.com.br" target="_blank" style="color: #000000;"><b>CINIAD</b><br />Convenção Internacional das Igrejas Evangélicas Assembléias de Deus</a><br /><br /><a href="http://www.apameb.com.br" target="_blank" style="color: #000000;"><b>APAMEB</b><br />Associação dos Pastores e Ministros Evangélicos do Brasil</a><br /><br /><a href="http://www.modelodecristo.com.br" target="_blank" style="color: #000000;"><b>CODICE</b><br />Convenção das Igrejas e Comunidades em Células</a><br /><br /><a href="http://www.conselhodepastor.com.br" target="_blank" style="color: #000000;"><b>CIPAM</b><br />Conselho Internacional de Pastor e Ministros</a><br /><br /><a href="http://www.pastornaeuropa.com.br" target="_blank" style="color: #000000;"><b>CEP</b><br />Convenção Européia de Pastores. Faça Missões na Europa!!</a><br /><br /><a href="http://www.cgiadb.com.br" target="_blank" style="color: #000000;"><b>CGIADB</b><br />Convenção Geral Assembléia de Deus Internacional</a><br /><br /><a href="http://www.psicologopastor.com.br" target="_blank" style="color: #000000;"><b>SIPPA</b><br />Sociedade Internacional de Psicólogos e Pastores</a><br /><br /><a href="http://www.pregadorevangelico.com.br" target="_blank" style="color: #000000;"><b>CIPE</b><br />Conselho Internacional de Pregadores Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OIPAR</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.conselhofederaldepastor.com.br" target="_blank" style="color: #000000;"><b>CFP</b><br />Seja representante em sua federação</a><br /><br /><a href="http://www.sejabatista.com.br" target="_blank" style="color: #000000;"><b>CBI</b><br />Convenção Batista Internacional (Convention International Baptist)</a><br /><br /><a href="http://www.igrejaindependente.com.br" target="_blank" style="color: #000000;"><b>CICAI</b><br />Convenção das Igrejas e Comunidades Autônomas e Independentes</a><br /><br /><a href="http://www.presbiterianainternacional.com.br" target="_blank" style="color: #000000;"><b>CPI</b><br />Convenção Presbiteriana Internacional</a><br /><br /><a href="http://www.conferencistaevangelico.com.br" target="_blank" style="color: #000000;"><b>AICE</b><br />Associação Internacional de Conferencistas Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OMPAME</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.redelondres.com.br" target="_blank" style="color: #000000;"><b>REDE LONDRES</b><br />Milhares de cursos Livres a Distância. Bolsa de 90%. Estude em casa.</a><br /><br />                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>
+                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>			
+            </div><!-- /areaMenu -->
+            <div id="areaCorpo" class="f_left">
+		
+		<div id="CONTENT">
+			<div style="width: 810px; border-bottom: solid 2px #9ea23d; font-family: Arial; font-size: 13pt;">
+				<span style="color: #693107; "><b>LIVROS</b></span>									
+			</div>
+			<div style="margin-left: 10px; margin-top: 15px; width: 787px;">
+				<img src="http://www.buscapaz.com/faculdadegospel/imgs/livraria.jpg" alt="" title="" />
+			</div>
+			<div style="margin-left: 10px; margin-top: 15px; width: 787px;">
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Viva_a_Vida_Sem_Drogas.jpg" width="74" height="110" alt="Viver a Vida sem Drogas" title="Viver a Vida sem Drogas" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=1"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Viver a Vida sem Drogas</b><br /><br />É um trabalho de teatro <br /><br /><b>Valor: R$15,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/3_e_4_Guerra_Mundial_Do_Apoc.jpg" width="74" height="110" alt="3ª e 4ª Guerra Mundial do Apocalipse " title="3ª e 4ª Guerra Mundial do Apocalipse " style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=2"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>3ª e 4ª Guerra Mundial do Apocalipse </b><br /><br />Um verdadeiro tratado sobre Escatologia, estuda tudo sobre o Apocalípse. Saiba tudo sobre Arrebatamento, Grande Tribulação, Milênio, Juízo Final e Apocalipse na Linguagem de hoje. Esse é o único livro do mundo que conseguiu contar por estatística quantas <br /><br /><b>Valor: R$30,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/os_sete_pecados_capitais.jpg" width="74" height="110" alt="7 Pecados Capitais " title="7 Pecados Capitais " style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=4"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>7 Pecados Capitais </b><br /><br />Os sete pecados capitais têm sido uma ameaça constante para prejudicar essa estratégia de integração e crescimento, dos <br /><br /><b>Valor: R$46,80</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Hora_de_Jogar_80_Atividades_pa.jpg" width="74" height="110" alt="Hora de Jogar" title="Hora de Jogar" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=6"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Hora de Jogar</b><br /><br />Antigo Testamento Gênesis - êxodo - Números - Josué Você gostaria de dar uma <br /><br /><b>Valor: R$26,25</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Igrejas_que_Prevalecem.jpg" width="74" height="110" alt="Igrejas que Prevalecem" title="Igrejas que Prevalecem" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=7"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Igrejas que Prevalecem</b><br /><br />Fundada há 60 anos, a Primeira Igreja Batista de São José dos Campos (SP) vem experimentando um período de mudanças e crescimento que pode servir de modelo e estímulo para outras igrejas brasileiras.<br /><br /><b>Valor: R$30,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/21_indispensaveis_qualidades_d.jpg" width="74" height="110" alt="21 Indispensáveis Qualidades de Um Líder" title="21 Indispensáveis Qualidades de Um Líder" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=10"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>21 Indispensáveis Qualidades de Um Líder</b><br /><br />Comunicativo... Carismático... Responsável... Você se considera um bom líder? Sua equipe sente-se motivada e satisfeita sob sua liderança? Até onde você se sente seguro como líder?<br /><br /><b>Valor: R$38,40</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/52_esbocos_de_mensagens_de_enc.jpg" width="74" height="110" alt="52 Esboços de Mensagens de Encorajamento" title="52 Esboços de Mensagens de Encorajamento" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=11"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>52 Esboços de Mensagens de Encorajamento</b><br /><br /><br /><br /><b>Valor: R$46,80</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/A_Arte_de_Influenciar_Pessoas.jpg" width="74" height="110" alt="A Arte de Influenciar Pessoas" title="A Arte de Influenciar Pessoas" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=12"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>A Arte de Influenciar Pessoas</b><br /><br />Use todo o tempo disponível para aprimorar talentos e habilidades, seja qual for sua área de atuação. Participe de palestras e seminários, assista a vídeos...<br /><br /><b>Valor: R$37,35</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/A_Igreja_que_Voce_Sempre_Quis.jpg" width="74" height="110" alt="A Igreja que Você Sempre Quis" title="A Igreja que Você Sempre Quis" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=13"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>A Igreja que Você Sempre Quis</b><br /><br />O autor ama genuinamente a igreja e tem dedicado sua vida a ajudá-la a crescer não apenas numericamente, mas também em força espiritual e em maturidade.<br /><br /><b>Valor: R$42,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Aprofundando_o_Dialogo_com_Deu.jpg" width="74" height="110" alt="Aprofundando o Diálogo com Deus" title="Aprofundando o Diálogo com Deus" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=14"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Aprofundando o Diálogo com Deus</b><br /><br />De maneira simples e cativante, o escritor desafia os leitores a assumir com perseverança o ministério da oração. Somente aprofundando o diálogo trilharemos o caminho da intimidade com o Criador.<br /><br /><b>Valor: R$30,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Como_Preparar_Mensagens_para_T.jpg" width="74" height="110" alt="Como Preparar Mensagens Para Transformar Vidas" title="Como Preparar Mensagens Para Transformar Vidas" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=16"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Como Preparar Mensagens Para Transformar Vidas</b><br /><br />Como preparar mensagens para transformar vidas é ferramenta indispensável para pastores e líderes que anseiam por uma exposição prática, criativa e pessoal da Palavra.<br /><br /><b>Valor: R$34,80</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/De_Pastor_para_Pastor.jpg" width="74" height="110" alt="De Pastor Para Pastor" title="De Pastor Para Pastor" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=17"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>De Pastor Para Pastor</b><br /><br />Diariamente, os líderes são atingidos por problemas e desafios que requerem graça e eficiência para resolvê-los.<br /><br /><b>Valor: R$30,11</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Edificando_uma_Igreja_de_Grupo.jpg" width="74" height="110" alt="Edificando uma Igreja de Grupos Pequenos" title="Edificando uma Igreja de Grupos Pequenos" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=18"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Edificando uma Igreja de Grupos Pequenos</b><br /><br />Fomos criados para viver em comunidade. Nosso coração anseia pelo tipo de relacionamento autêntico e profundo no qual Jesus pensou ao orar para que seus discípulos fossem um.<br /><br /><b>Valor: R$27,60</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Igreja_S_A.jpg" width="74" height="110" alt="Igreja S.A." title="Igreja S.A." style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=21"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Igreja S.A.</b><br /><br />Este livro nasceu de uma paixão pela igreja e por seus pastores. Muitos líderes lutam contra a desilusão e o estresse no ministério, percebendo que algumas coisas não vão bem.<br /><br /><b>Valor: R$42,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/ESCOLA_E_COMUNIDADE_NO_COMBATE_0.jpg" width="74" height="110" alt="Escola e Comunidade no Combate às Drogas" title="Escola e Comunidade no Combate às Drogas" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=30"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Escola e Comunidade no Combate às Drogas</b><br /><br />Um livro escrito para orientar escolas, associações, entidades, estudantes ,adolescentes , pais e comunidade em geral. Um trabalho educativo e preventivo e muito usado pelas escolas em trabalhos escolares.<br /><br /><b>Valor: R$20,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/7_razoes_para_confiar_na_bibli.jpg" width="74" height="110" alt="7 Razões para Confiar na Bíblia" title="7 Razões para Confiar na Bíblia" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=34"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>7 Razões para Confiar na Bíblia</b><br /><br />A leitura desta obra renovará em seu coração o desejo ardente de proclamar as verdades eternas do Livro Santo.<br /><br /><b>Valor: R$33,00</b>					</div>
+				</div>
+								
+				<div>
+					<div style="float: left; width: 77px; height: 175px;">
+						<img src="http://www.buscapaz.com/gform/upload/Gospellivros/Em_Defesa_da_Fe.jpg" width="74" height="110" alt="Em Defesa da Fé" title="Em Defesa da Fé" style="border: 2px solid #9ea23d;" />
+						<div>
+							<a href="?sec=livro&amp;c=35"><img src="http://www.buscapaz.com/faculdadegospel/imgs/carrinho_facu.jpg" alt="" title="" /></a>
+						</div>
+					</div>
+					<div style="float: left; width: 675px; height: 175px; margin-left: 10px; color: #737932;">
+						<b>Em Defesa da Fé</b><br /><br />O livro conta tudo sobre a história de Jesus Cristo relacionados em um dos fundamentos do cristianismo (A Fé).<br /><br /><b>Valor: R$27,60</b>					</div>
+				</div>
+							</div>
+			<div align="center" style="margin-left: 300px; clear: both; color: #737932; margin-top: 15px; display: table; font-weight: bold;">
+				[1]&nbsp;&nbsp;<a href='?sec=livros&amp;pg=2' style='text-decoration: none; color: #737932;'>2</a>&nbsp;&nbsp;<a href='?sec=livros&amp;pg=3' style='text-decoration: none; color: #737932;'>3</a>&nbsp;&nbsp;<a href='?sec=livros&amp;pg=2' style='text-decoration: none; color: #737932;'>&gt;</a>&nbsp;&nbsp;<a href='?sec=livros&amp;pg=13' style='text-decoration: none; color: #737932;'>&gt;&gt;</a>&nbsp;&nbsp;			</div>
+		</div>	            </div><!-- /areaCorpo -->
+        </div><!-- /area_site -->
+        <div class="limpa"></div>
+        <div id="rodape">
+            <div id="area_rodape" style="margin-left: 350px;">
+                <div id="bloco_link" class="f_left" style="margin-left:70px">
+                    <div class="corBranco" style="font-weight:bold">INSTITUCIONAL</div>
+                    <a href="/index.php?sec=quem_somos" class="Lrodape">Quem Somos</a><br />
+                    <a href="/index.php?sec=compromisso" class="Lrodape">Nossos Compromissos</a><br />
+                    <a href="/index.php?sec=ingressar" class="Lrodape">Quem pode ingressar</a><br />
+                    <a href="/index.php?sec=filiese" class="Lrodape">Filie-se agora</a><br />
+                    <a href="http://loja.escoladepastor.com.br/" target="_blank" class="Lrodape">Loja virtual</a><br />
+                    <a href="/index.php?sec=promocao" class="Lrodape">Promo&ccedil;&otilde;es</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">AJUDA</div>
+                    <a href="/index.php?sec=cursos" class="Lrodape">Quais s&atilde;o os cursos</a><br />
+                    <a href="/index.php?sec=missao" class="Lrodape">Como funciona?</a><br />
+                    <a href="/index.php?sec=vantagens" class="Lrodape">Perguntas frequentes</a><br />
+                    <a href="/index.php?sec=pagamento" class="Lrodape">Formas de pagamento</a><br />
+                    <a href="/index.php?sec=politica_privacidade" class="Lrodape">Politica de Privacidade</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Central de atendimento</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">REDES SOCIAIS </div>
+                    <a href="#" class="Lrodape">MySpace</a><br />
+                    <a href="http://twitter.com/igrejaemcasa" target="_blank" class="Lrodape">Twitter</a><br />
+                    <a href="http://www.orkut.com.br/Main#Profile?uid=13960611504068135313" target="_blank" class="Lrodape">Orkut</a><br />
+                    <a href="#" class="Lrodape">Ning</a><br />
+                    <a href="http://youtube.com/igrejaemcas" target="_blank" class="Lrodape">YouTube</a><br />
+                    <a href="msnim:add?contact=igrejaemcasa@hotmail.com" target="_blank" class="Lrodape">Messenger</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">FALE CONOSCO </div>
+                    <a href="#" class="Lrodape">Ligue: 0800 9423153</a><br />
+                    <a href="#" class="Lrodape">Formul&aacute;rio Contato</a><br />
+                    <a href="#" class="Lrodape">Atendimento Online</a><br />
+                    <a href="#" class="Lrodape">Atendimento por e-mail</a><br />
+                    <a href="/index.php?sec=matriculas" class="Lrodape">Matricula</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <style  type="text/css">
+    /* CSS do banner sobre a criaÃ¯Â¿Â½Ã¯Â¿Â½o de igrejas */
+    #Layer1 {position:fixed; width:510px; height:289px; z-index: 8999; left: 30%;	top: 100px; display:block;}
+    #fechar{display:block; width:25px; height:30px; margin-top:0px; margin-right:15px; float: right}
+</style>
+
+<script type="text/javascript">
+    function fechaCad(){
+        document.getElementById('Layer1').style.display = 'none';
+    }
+</script>
+
+<div id="Layer1" style="background: url( http://www.buscapaz.com/faculdadegospel/images/BannerPromocao.jpg) no-repeat top center; width:510px; height:289px;">
+    <a id="fechar" href="javascript:fechaCad();" title="Fechar"></a>
+    <form name="CadastroNewsletter" id="CadastroNewsletter" method="post" action="/index.php" style="padding-top: 230px; padding-left: 12px;">
+        <input type="text" name="formNewsNome" id="formNewsNome" placeholder="Digite seu nome" style="width: 157px; margin-top: 10px; float: left;" />
+        <input type="text" name="formNewsFone" id="formNewsFone" placeholder="DDD Cel" class="fone" style="width: 112px; margin-left: 8px; margin-top: 10px; float: left;" onKeyPress="return txtBoxFormat(this, '(99) 999999999', event);" maxlength="14" />
+        <input type="text" name="formNewsEmail" id="formNewsEmail" placeholder="Digite seu email" style="width: 150px; margin-left: 7px; margin-top: 10px;float: left;" />
+        <input type="hidden" name="formNewsSegmento" id="formNewsSegmento" value="1">
+        <input type="hidden" name="formNewsOrigem" id="formNewsOrigem" value="ebook-do-curso-internacional-de-teologia">
+        <input type="hidden" name="formNewsLink" id="formNewsLink" value="psicologopastor.com.br/index.php?sec=livros" />
+        <input type="image" src="/images/enviaBann.png" style="margin-left: 3px;margin-top: 10px;float: left;">
+    </form>
+</div>
+
+        <!-- Cï¿½digo de renderizaï¿½ï¿½o do botï¿½o mais um | <g:plusone size="medium"></g:plusone> -->
+        <script type="text/javascript">
+                        window.___gcfg = {lang: 'pt-BR'};
+
+                        (function() {
+                            var po = document.createElement('script');
+                            po.type = 'text/javascript';
+                            po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(po, s);
+                        })();
+        </script>
+
+        <script>
+
+            $(function() {
+                $('#menProdu li a').click(function(e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                });
+            });
+
+
+            function chamaPagina(url) {
+                location.href = url.value;
+                exit();
+            }
+
+            function txtBoxFormat(objeto, sMask, evtKeyPress) {
+                var i, nCount, sValue, fldLen, mskLen, bolMask, sCod, nTecla;
+
+                if (document.all) { // Internet Explorer
+                    nTecla = evtKeyPress.keyCode;
+                } else if (document.layers) { // Nestcape
+                    nTecla = evtKeyPress.which;
+                } else {
+                    nTecla = evtKeyPress.which;
+                    if (nTecla == 8) {
+                        return true;
+                    }
+                }
+
+                sValue = objeto.value;
+
+                // Limpa todos os caracteres de formatao que
+                // j estiverem no campo.
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(" ", "");
+                sValue = sValue.toString().replace(" ", "");
+                fldLen = sValue.length;
+                mskLen = sMask.length;
+
+                i = 0;
+                nCount = 0;
+                sCod = "";
+                mskLen = fldLen;
+
+                while (i <= mskLen) {
+                    bolMask = ((sMask.charAt(i) == "-") || (sMask.charAt(i) == ".") || (sMask.charAt(i) == "/") || (sMask.charAt(i) == ":"))
+                    bolMask = bolMask || ((sMask.charAt(i) == "(") || (sMask.charAt(i) == ")") || (sMask.charAt(i) == " "))
+
+                    if (bolMask) {
+                        sCod += sMask.charAt(i);
+                        mskLen++;
+                    }
+                    else {
+                        sCod += sValue.charAt(nCount);
+                        nCount++;
+                    }
+
+                    i++;
+                }
+
+                objeto.value = sCod;
+
+                if ((nTecla != 8) || (nTecla != 11)) { // backspace
+                    if (sMask.charAt(i - 1) == "9") { // apenas nmeros...
+                        return ((nTecla > 47) && (nTecla < 58));
+                    }
+                    else { // qualquer caracter...
+                        return true;
+                    }
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+
+
+    </body>
+</html>

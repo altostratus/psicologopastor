@@ -1,0 +1,29 @@
+<br />
+<b>Warning</b>:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in <b>/home2/psicolov/public_html/new/desc_curso.php</b> on line <b>5</b><br />
+<html>
+  <head>
+    <style type='text/css'>
+      <! --
+        a:link {text-decoration: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+        a:visited {text-decoration: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+        a:hover {text-decoration: underline; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+
+        .v1b    {font-family: Verdana, Arial, Helvetica; font-size: 7.5pt; color: #000000;}
+        select  {font-size : 10px; font-family: Verdana; width:150; border-width: 1; background-color: #C0C0C0; color: #000000;}
+      -- >
+    </style>
+    <script language="javascript" src="js/functions.js" type="text/javascript"></script>
+  </head>
+  <body marginwidth=0 marginheight=0 leftMargin=0 topMargin=0 onLoad="parent.RedimensionaIframe();">
+    <center>
+      <table cellSpacing=0 cellPadding=0 width=545 align=center border=0 class=v1b>
+        <tr>
+          <td align=center class=v1b width=100%>
+            <div align=justify>
+                          </div>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

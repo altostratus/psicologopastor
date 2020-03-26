@@ -1,0 +1,1365 @@
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <meta name="title" content="SIPP - Sociedade Internacional de Psicólogos e Pastores" />
+        <meta name="Keywords" content="Psicologo, Pastor, cursos, online, distância, fé, Assembléia, Deus, Gideões, Missões, pecado, história, pregação, arrebatamento, virtual, teologia, igreja, ministério, pregações, gospel, evangélicos, seminário, , CPAD" />
+        <meta name="Description" content="Psicologo Pastor história pregação arrebatamento virtual teologia igreja ministériocursos online distância Assembleia Deus Gideões Missões pecado " />
+        <meta name="distribution" content="Global" />
+        <meta http-equiv="Content-language" content="pt-br, pt" />
+        <meta name="REVISIT-AFTER" content="3 DAYS" />
+                <title>SIPP - Sociedade Internacional de Psicólogos e Pastores</title>
+
+        <link href="/stylesCNP/conselhonacionaldepastor.css" rel="stylesheet" media="screen" type="text/css" />
+                        <link href="http://www.buscapaz.com/abraloe/styles/skel.css" rel="stylesheet" media="screen" type="text/css" />
+                        <style type="text/css">
+                            <!--
+                                body {margin: 0px;background-color: #FFFFFF;background-image: url(http://www.buscapaz.com/gform/upload/topos/psicologopastor.jpg);background-position: top center;background-repeat:repeat-x;}
+                            -->
+                        </style>
+                            <link href="/estilos.css" rel="stylesheet" media="screen" type="text/css" />
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_js/scripts.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.form.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.corner.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.dimensions.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.lightbox-0.5.min.js"></script>
+
+        <script type="text/javascript" src="http://www.buscapaz.com/api/_js/cadFormNewsletter.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+
+            function limpa_topo(campo) {
+                var f = document.getElementById(campo);
+
+                switch (campo) {
+                    case 'busca_top_field' :
+                        if (f.value.toUpperCase() == "BUSCAR NO SITE") {
+                            f.value = "";
+                        }
+                        break;
+                    case 'formNewsEmailTopo' :
+                        if (f.value.toUpperCase() == "E-MAIL") {
+                            f.value = "";
+                        }
+                        break;
+                }
+            }
+
+            function retVal_topo(campo) {
+                var f = document.getElementById(campo);
+                if ((f.value == "")) {
+                    if (campo == 'busca_top_field') {
+                        f.value = "BUSCAR NO SITE";
+                    } else {
+                        f.value = "E-MAIL";
+                    }
+                }
+            }
+
+            function CapEnterBusca(event) {
+                if (event.keyCode == 13) {
+                    valida_busca();
+                }
+            }
+            function valida_busca() {
+                f = document.getElementById('busca_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'BUSCAR NO SITE')) {
+                    alert('Informe o que voce deseja buscar no site!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=busca&q=' + f.value;
+                    return true;
+                }
+            }
+
+            function valida_email() {
+                f = document.getElementById('newsletter_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'E-MAIL')) {
+                    alert('Informe seu e-mail!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=grava_email&email=' + f.value;
+                    return true;
+                }
+            }
+        </script>
+        <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42983353-45', 'psicologopastor.com.br');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body style="font-size: 12px; font-family: Verdana, Arial, sans-serif;">
+        <div id="area_site">
+            
+                        <div id="top">
+                            <a href="/?sec=home" class="PHome f_left"></a>
+                            <a href="/?sec=noticias_visual" class="PNoticias f_left"></a>
+                            <a href="/?sec=cursos" class="PCursos f_left"></a>
+                            <a href="/?sec=cadastro_pastor" class="PCadPastores f_left"></a>
+                            <a href="http://www.faculdadegospel.com.br" target="_blank" class="PFaculdade f_left"></a>
+                            <a href="/?sec=faleconosco" class="PContato f_left"></a>
+                        </div>
+                        <div id="subtopo">
+                            <div id="busca_top" class="f_left"><input id="busca_top_field" name="busca_top_field" value="BUSCAR NO SITE" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterBusca(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top_conselhonacionaldepastor.jpg" border="0" onclick="valida_busca()" /></a></div>
+                            <div id="atendimento_top" class="f_left">
+                                <div id="atendimento_online" style="width: 151px; height: 37px;">
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/support_status.php?COMPANY_ID=11479&SITE_ID=13464&ssl=1"></script>
+                                    <!--INCIO RASTREADOR - TRACK -->	
+                                    <script language="JavaScript" >
+                                        var _webtrack_domain = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_company_id = 11479;
+                                        var _webtrack_site_id = 13452;
+                                        var _webtrack_domain_chatwindow = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_variables = new Array();
+                                        var _webtrack_ssl = 1;
+                                    </script>
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/webtrack.js"></script>
+                                </div>			
+                            </div>
+                            <div id="newsletter_top" class="f_left"><input id="newsletter_top_field" name="newsletter_top_field" value="CADASTRE SEU E-MAIL" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterEmail(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top2_conselhonacionaldepastor.jpg" border="0" onclick="valida_email()" /></a></div>
+                            <div class="limpa"></div>
+                        </div>
+                                
+            <div class="limpa"></div>
+            <div id="areaMenu" style="padding-top:5px;">
+                <a href="/index.php?sec=matriculas"><img src="http://www.buscapaz.com/newgospel/images/bann_congresso.jpg" width="153" height="197" border="0" /></a>
+                <div id="linksMenu">
+                    <div class="titSec" style="color:#1d682b">\Destaque</div>
+                    <a href="/index.php?sec=historia">Hist&oacute;ria</a> <a href="/index.php?sec=compromisso">Compromisso</a>
+                    <a href="/index.php?sec=ingressar">Ingressar</a>
+                    <a href="/index.php?sec=filiese">Filie-se</a>
+                    <a href="/index.php?sec=galeria">Lista de Pastores </a>
+                    <a href="/index.php?sec=galeria_fotos">Galeria de Fotos </a>
+                    <a href="/autores">Autores</a>
+                    <div class="titSec" style="color:#0e1f5e">\Principal</div>
+                    <a href="/index.php?sec=noticias_visual">Not&iacute;cias</a>
+                    <a href="/index.php?sec=atendimento_online">Atendimento</a>
+                    <a href="/index.php?sec=pagamento">Pagamentos</a>
+                    <a href="/index.php?sec=vantagens">Vantagens</a>
+                    <a href="/index.php?sec=promocao">Promo&ccedil;&otilde;es</a>
+                    <a href="/index.php?sec=doacao">Doa&ccedil;&otilde;es</a>
+                    <div class="titSec" style="color:#817d06">\Produtos</div>
+                    <a href="/index.php?sec=prod">Pre&ccedil;o Pedido</a>
+                    <a href="/index.php?sec=cursos">Curso Reconhecido</a>
+                    <a href="/index.php?sec=titulos&tipo=h">T&iacute;tulo Honor&iacute;fico</a>
+                    <a href="/index.php?sec=titulos">T&iacute;tulo Internacional</a>
+                    <a href="/index.php?sec=titulos&tipo=e">T&iacute;tulo Em&eacute;rito</a>
+                    <a href="/produtos" target="_blank">Loja Virtual</a>
+                    <a href="/produtos/pastor-dvd">Dvd's</a>
+                    <a href="/produtos/livro">Livraria</a>
+                    <div class="titSec" style="color:#e32e10">\Faculdade Gospel</div>
+                    <a href="/index.php?sec=quem_somos">Quem Somos</a>
+                    <a href="/index.php?sec=missao">Nossa Miss&atilde;o</a>
+                    <a href="/index.php?sec=galeria">Pastor Igreja</a>
+                    <a href="/index.php?sec=intercambio">Interc&acirc;mbio</a>
+                    <div class="titSec" style="color:#c78800">\Canais</div>
+                    <a href="http://www.abecad.com.br" target="_blank">ABECAD</a>
+                    <a href="http://www.igrejaemcasa.com.br" target="_blank">Igreja em Casa</a>
+                    <a href="http://www.redeinternacional.com.br" target="_blank">Rede Internacional</a>
+                    <a href="/index.php?sec=parceiros">Parceiro</a>
+                    <div class="titSec" style="color:#730477">\Diversos</div>
+                    <a href="/index.php?sec=podcast">PodCast</a>
+                    <a href="/index.php?sec=noticias_visual">Cantores</a>
+                    <a href="/index.php?sec=redes_sociais">Redes Sociais</a>
+                    <a href="http://www.youtube.com/faculdadegospel" target="_blank">Youtube</a>
+                    <a href="/index.php?sec=mais_buscadas">Mais Buscadas</a>
+                    <div class="titSec" style="color:#000000">\Servi&ccedil;os</div>
+                    <a href="/index.php?sec=ganhebrinde">Ganhe Brindes</a>
+                    <a href="/index.php?sec=tv-radio">Tv e R&aacute;dio</a>
+                    <a href="/index.php?sec=cadastro_pastor">Cadastro de Pastor</a>
+                    <a href="/index.php?sec=cadastro_igreja">Cadastro de Igreja</a>
+                    <a href="/igrejas">Igrejas do Brasil</a>
+                    <a href="/index.php?sec=links">Link's &Uacute;teis</a>
+                    <a href="/index.php?sec=faleconosco">Fale Conosco</a>
+                    <div class="titSec" style="color:#000000">\Produtos Gospel</div>
+                    <a href="/produtos/biblia">Bíblia</a><a href="/produtos/cd">CD</a><a href="/produtos/livro">Livro</a><a href="/produtos/pastor-dvd">Pastor DVD</a>                </div>
+                <br /><br />
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_conselho_federal_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.igrejaemcasa.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_igreja_em_casa.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.faculdadegospel.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_faculdade_gospel.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.cgiadb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_cgiadb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.apameb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_apameb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_formacao_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.kellencristine.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/banner_kellen.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><img src="http://www.buscapaz.com/newgospel/images/bann_tv.jpg" width="153" height="81" border="0" /></div>
+                <div class="bannerP"><a href="/index.php?sec=doacao"><img src="http://www.buscapaz.com/newgospel/images/bann_doacao.jpg" width="153" height="81" border="0" /></a></div>
+                <br /><br /><a href="#"><img src="http://www.buscapaz.com/newgospel/images/bann_dvds.jpg" width="153" height="335" border="0" /></a>
+<a href="http://www.gospelinternacional.com.br" target="_blank" style="color: #000000;"><b>ACIMAD</b><br />Academia Internacional de Músicos e Adoradores de Deus.</a><br /><br /><a href="http://www.conselhonacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>ABRALOE</b><br />Academia Brasileira de Letras e Oradores Evangélicos.</a><br /><br /><a href="http://www.assembleiainternacional.com.br" target="_blank" style="color: #000000;"><b>CINIAD</b><br />Convenção Internacional das Igrejas Evangélicas Assembléias de Deus</a><br /><br /><a href="http://www.apameb.com.br" target="_blank" style="color: #000000;"><b>APAMEB</b><br />Associação dos Pastores e Ministros Evangélicos do Brasil</a><br /><br /><a href="http://www.modelodecristo.com.br" target="_blank" style="color: #000000;"><b>CODICE</b><br />Convenção das Igrejas e Comunidades em Células</a><br /><br /><a href="http://www.conselhodepastor.com.br" target="_blank" style="color: #000000;"><b>CIPAM</b><br />Conselho Internacional de Pastor e Ministros</a><br /><br /><a href="http://www.pastornaeuropa.com.br" target="_blank" style="color: #000000;"><b>CEP</b><br />Convenção Européia de Pastores. Faça Missões na Europa!!</a><br /><br /><a href="http://www.cgiadb.com.br" target="_blank" style="color: #000000;"><b>CGIADB</b><br />Convenção Geral Assembléia de Deus Internacional</a><br /><br /><a href="http://www.psicologopastor.com.br" target="_blank" style="color: #000000;"><b>SIPPA</b><br />Sociedade Internacional de Psicólogos e Pastores</a><br /><br /><a href="http://www.pregadorevangelico.com.br" target="_blank" style="color: #000000;"><b>CIPE</b><br />Conselho Internacional de Pregadores Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OIPAR</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.conselhofederaldepastor.com.br" target="_blank" style="color: #000000;"><b>CFP</b><br />Seja representante em sua federação</a><br /><br /><a href="http://www.sejabatista.com.br" target="_blank" style="color: #000000;"><b>CBI</b><br />Convenção Batista Internacional (Convention International Baptist)</a><br /><br /><a href="http://www.igrejaindependente.com.br" target="_blank" style="color: #000000;"><b>CICAI</b><br />Convenção das Igrejas e Comunidades Autônomas e Independentes</a><br /><br /><a href="http://www.presbiterianainternacional.com.br" target="_blank" style="color: #000000;"><b>CPI</b><br />Convenção Presbiteriana Internacional</a><br /><br /><a href="http://www.conferencistaevangelico.com.br" target="_blank" style="color: #000000;"><b>AICE</b><br />Associação Internacional de Conferencistas Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OMPAME</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.redelondres.com.br" target="_blank" style="color: #000000;"><b>REDE LONDRES</b><br />Milhares de cursos Livres a Distância. Bolsa de 90%. Estude em casa.</a><br /><br />                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>
+                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>			
+            </div><!-- /areaMenu -->
+            <div id="areaCorpo" class="f_left">
+<link href="http://www.buscapaz.com/newgospel/styles/home.css" rel="stylesheet" media="screen" type="text/css" />
+<div id="area_content">
+    <div id="nossas_noticias" class="f_left">
+        <script type="text/javascript">
+            var timer_id;
+            function scroll_iframe(frm, inc, dir) {
+                if (timer_id)
+                    clearTimeout(timer_id);
+                if (window.frames[frm]) {
+                    if (dir == "v")
+                        window.frames[frm].scrollBy(0, inc);
+                    else
+                        window.frames[frm].scrollBy(inc, 0);
+                    timer_id = setTimeout("scroll_iframe('" + frm + "'," + inc + ",'" + dir + "')", 20);
+                }
+            }
+
+            function stopScroll() {
+                if (timer_id)
+                    clearTimeout(timer_id);
+            }
+        </script>		
+        <a href="#" class="mov_esquerda f_left" onMouseOver="this.style.color = 'red';
+                scroll_iframe('scr1', -4, 'h');
+                window.status = 'Left.';
+                return true" onMouseOut="this.style.color = '';
+                        stopScroll();
+                        window.status = '';
+                        return true"></a>
+        <div id="area_noticias" class="f_left"><iframe name=scr1 src="pastor_home.php" scrolling="no" frameborder="0" allowtransparency="1" width="422" height="152"></iframe></div>
+        <a href="#" class="mov_direita f_left" onMouseOver="this.style.color = 'red';
+                scroll_iframe('scr1', 4, 'h');
+                window.status = 'right.';
+                return true" onMouseOut="this.style.color = '';
+                        stopScroll();
+                        window.status = '';
+                        return true"></a>
+    </div>
+    <div style="width:263px; height:216px; margin:3px 0px 0px 13px;" class="f_left">
+        <object width="263" height="216">
+            <param name="movie" value="http://www.youtube.com/v/v2OZie1-N5Y" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowscriptaccess" value="always" />
+            <embed src="http://www.youtube.com/v/v2OZie1-N5Y" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="263" height="216"></embed>
+        </object>	
+    </div>
+    <div class="limpa"></div>
+            <div id="noticias" class="f_left">
+            <a href="/noticias/pastor-rick-warren-diz-que-evangelicos-devem-se-unir-a-catolicos-na-defesa-da-vida-e-da-familia/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_pastor-rick-warren-diz-que-evangelicos-devem-se-unir-a-catolicos-na-defesa-da-vida-e-da-familia.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/pastor-rick-warren-diz-que-evangelicos-devem-se-unir-a-catolicos-na-defesa-da-vida-e-da-familia/" class="linNot">Pastor Rick Warren diz que evangélicos devem se unir a católicos na defesa da vida e da família</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/justica-decide-manter-totem-cristao-em-sorocaba/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_justica-decide-manter-totem-cristao-em-sorocaba.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/justica-decide-manter-totem-cristao-em-sorocaba/" class="linNot">Justiça decide manter totem cristão em Sorocaba</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/arabia-saudita-decreta-pena-de-morte-para-quem-carregar-biblia/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_arabia-saudita-decreta-pena-de-morte-para-quem-carregar-biblia.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/arabia-saudita-decreta-pena-de-morte-para-quem-carregar-biblia/" class="linNot">Arábia Saudita decreta pena de morte para quem carregar Bíblia</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/lancada-programacao-final-da-consciencia-crista-2015/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_lancada-programacao-final-da-consciencia-crista-2015.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/lancada-programacao-final-da-consciencia-crista-2015/" class="linNot">Lançada programação final da Consciência Cristã 2015</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/pastor-usa-cavalo-vestido-de-noiva-para-protestar-contra-casamento-gay-assista/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_pastor-usa-cavalo-vestido-de-noiva-para-protestar-contra-casamento-gay-assista.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/pastor-usa-cavalo-vestido-de-noiva-para-protestar-contra-casamento-gay-assista/" class="linNot">Pastor usa cavalo vestido de noiva para protestar contra casamento gay; Assista</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/criancas-de-9-religioes-falam-o-que-deus-representa-para-elas/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_cada-uma-delas-explicou-deus-de-uma-forma-e-fez-um-desenho-para-mostrar-como-encara-a-fe.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/criancas-de-9-religioes-falam-o-que-deus-representa-para-elas/" class="linNot">Crianças de 9 religiões falam o que Deus representa para elas</a></div>
+        </div>
+            <div class="limpa"></div>
+    <div id="banner_home">
+        <a href="#"><img src="http://www.buscapaz.com/newgospel/images/bann_home01.jpg" class="f_left" /></a>
+        <div class="f_left"></div>
+        <a href="http://www.cgiadb.com.br" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_home02.jpg" class="f_left" /></a>
+        <div class="f_left"></div>
+        <a href="http://www.faculdadegospel.com.br" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_home03.jpg" class="f_left" /></a>
+    </div>
+            <div id="noticias" class="f_left">
+            <a href="/noticias/igreja-batista-da-lagoinha-apresenta-projeto-da-construcao-de-mega-templo-para-35-mil-pessoas-veja-fotos/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_igreja-batista-da-lagoinha-apresenta-projeto-da-construcao-de-mega-templo-para-35-mil-pessoas-veja-fotos.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/igreja-batista-da-lagoinha-apresenta-projeto-da-construcao-de-mega-templo-para-35-mil-pessoas-veja-fotos/" class="linNot">Igreja Batista da Lagoinha apresenta projeto da construção de mega templo para 35 mil pessoas. Veja fotos</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/igrejas-lancam-aplicativos-para-celular/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_igrejas-lancam-aplicativos-para-celular.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/igrejas-lancam-aplicativos-para-celular/" class="linNot">Igrejas lançam aplicativos para celular</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/ana-paula-valadao-pode-ser-a-nova-contratado-da-tv-globo/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_ana-paula-valadao-pode-ser-a-nova-contratado-da-tv-globo.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/ana-paula-valadao-pode-ser-a-nova-contratado-da-tv-globo/" class="linNot">Ana Paula Valadão pode ser a nova contratado da TV Globo</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/polemico-pastor-ricardo-gondim-afirma-ser-a-favor-da-uniao-civil-gay-nem-todas-as-relacoes-homossexuais-sao-promiscuas/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_polemico-pastor-ricardo-gondim-afirma-ser-a-favor-da-uniao-civil-gay-nem-todas-as-relacoes-homossexuais-sao-promiscuas.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/polemico-pastor-ricardo-gondim-afirma-ser-a-favor-da-uniao-civil-gay-nem-todas-as-relacoes-homossexuais-sao-promiscuas/" class="linNot">Polêmico Pastor Ricardo Gondim afirma ser a favor da união civil gay: Nem todas as relações homossexuais são promíscuas</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/catolicos-e-evangelicos-se-unem-na-marcha-para-jesus-2011/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_catolicos-e-evangelicos-se-unem-na-marcha-para-jesus-2011.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/catolicos-e-evangelicos-se-unem-na-marcha-para-jesus-2011/" class="linNot">Católicos e Evangélicos se unem na Marcha para Jesus 2011</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/filha-de-kaka-ja-tem-ate-twitter-oficial-veja-fotos-de-isabella-que-nasceu-de-parto-normal/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_filha-de-kaka-ja-tem-ate-twitter-oficial-veja-fotos-de-isabella-que-nasceu-de-parto-normal.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/filha-de-kaka-ja-tem-ate-twitter-oficial-veja-fotos-de-isabella-que-nasceu-de-parto-normal/" class="linNot">Filha de Kaká já tem até twitter oficial. Veja fotos de Isabella, que nasceu de parto normal</a></div>
+        </div>
+            <div class="limpa"></div>
+    <div style="padding-bottom:10px; font-size:14px; font-weight:bold; color:#145c93">NOSSOS CURSOS</div>
+    <div id="nossos_cursos">
+        <div class="area_curso f_left" style="margin-left:7px;">
+            <a href="/curso/curso-de-graduacao-ministerial-em-pastor"><img src="http://www.buscapaz.com/newgospel/images/home_curso_pastor.jpg" border="0" /></a>
+            <a href="/curso/curso-de-graduacao-ministerial-em-pastor" class="linCursos">Curso de Pastor </a>		</div>
+        <div class="area_curso f_left" style="margin-left:23px;">
+            <a href="/curso/curso-de-bacharel-em-teologia"><img src="http://www.buscapaz.com/newgospel/images/home_bacharel_teologia.jpg" border="0" /></a>
+            <a href="/curso/curso-de-bacharel-em-teologia" class="linCursos">Bacharel em Teologia</a>		</div>
+        <div class="area_curso f_left" style="margin-left:27px;">
+            <a href="/curso/curso-de-mestrado-em-teologia"><img src="http://www.buscapaz.com/newgospel/images/home_mestrado_teologia.jpg" /></a>
+            <a href="/curso/curso-de-mestrado-em-teologia" class="linCursos">Mestrado em Teologia</a>
+        </div>
+        <div class="area_curso f_left" style="margin-left:23px;">
+            <a href="/curso/curso-de-phd-em-teologia"><img src="http://www.buscapaz.com/newgospel/images/home_phd_teologia.jpg" /></a>
+            <a href="/curso/curso-de-phd-em-teologia" class="linCursos">Phd em Teologia</a>
+        </div>
+    </div>
+    <div class="limpa"></div>
+            <div id="noticias" class="f_left">
+            <a href="/noticias/hospital-espirita-sera-inaugurado-em-franca/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_hospital-espirita-sera-inaugurado-em-franca.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/hospital-espirita-sera-inaugurado-em-franca/" class="linNot">Hospital espírita será inaugurado em Franca</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/renomado-teologo-diz-que-a-biblia-da-pistas-de-que-o-fim-do-mundo-acontecera-em-2021/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_renomado-teologo-diz-que-a-biblia-da-pistas-de-que-o-fim-do-mundo-acontecera-em-2021-profile-photo-of-tiago-chagas-publicado-por-tiago-chagas-em-16-de-dezembro-de-2014.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/renomado-teologo-diz-que-a-biblia-da-pistas-de-que-o-fim-do-mundo-acontecera-em-2021/" class="linNot">Renomado teólogo diz que a Bíblia dá pistas de que o fim do mundo acontecerá em 2021</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/rachel-sheherazade-fala-sobre-fe-e-canta-musica-gospel-no-raul-gil/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_rachel-sheherazade-fala-sobre-fe-e-canta-musica-gospel-no-raul-gil.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/rachel-sheherazade-fala-sobre-fe-e-canta-musica-gospel-no-raul-gil/" class="linNot">Rachel Sheherazade fala sobre fé e canta música gospel no Raul Gil</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/bispa-sonia-hernandes-recebe-o-titulo-de-cidada-recifense/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_bispa-sonia-hernandes-recebe-o-titulo-de-cidada-recifense.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/bispa-sonia-hernandes-recebe-o-titulo-de-cidada-recifense/" class="linNot">Bispa Sônia Hernandes recebe o título de cidadã recifense</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/pastora-visita-terreiro-de-candomble-em-encontro-ecumenico-e-faz-preces-com-mae-de-santo/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_pastora-visita-terreiro-de-candomble-em-encontro-ecumenico-e-faz-preces-com-mae-de-santo.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/pastora-visita-terreiro-de-candomble-em-encontro-ecumenico-e-faz-preces-com-mae-de-santo/" class="linNot">Pastora visita terreiro de candomblé em encontro ecumênico e faz preces com mãe de santo</a></div>
+        </div>
+                <div id="noticias" class="f_left">
+            <a href="/noticias/marina-silva-e-apontada-como-a-mulher-mais-influente-da-politica/"><img src="http://www.buscapaz.com/gform/upload/noticias/thumb_marina-silva-e-apontada-como-a-mulher-mais-influente-da-politica.jpg" class="f_left" /></a>
+            <div class="f_left"><a href="/noticias/marina-silva-e-apontada-como-a-mulher-mais-influente-da-politica/" class="linNot">Marina Silva é apontada como a mulher mais influente da política</a></div>
+        </div>
+            <div class="limpa"></div>
+    <div id="alunos">
+        <div id="col_direita" class="f_left"></div>
+        
+						<a href='/aluno/jose-augusto-macedo-barros/1486' target='_parent'><img src='http://www.buscapaz.com/gform/upload/formando/jose_augusto_macedo_barros.jpg' alt='Aluno(a) José Augusto Macedo Barros' title='Aluno(a) José Augusto Macedo Barros' class='f_left' style='margin-right:19px;'></a>
+				
+						<a href='/aluno/carlos-humberto-silva-aranha/617' target='_parent'><img src='http://www.buscapaz.com/gform/upload/formando/carloshumbertosilvaaranha.jpg' alt='Aluno(a) Carlos Humberto Silva Aranha' title='Aluno(a) Carlos Humberto Silva Aranha' class='f_left' style='margin-right:19px;'></a>
+				
+						<a href='/aluno/izaque-martins/1243' target='_parent'><img src='http://www.buscapaz.com/gform/upload/formando/izaque.jpg' alt='Aluno(a) Izaque Martins' title='Aluno(a) Izaque Martins' class='f_left' style='margin-right:19px;'></a>
+				
+						<a href='/aluno/claudemir-sampaio-goncalves/2202' target='_parent'><img src='http://www.buscapaz.com/gform/upload/formando/claudemir_sampaio.jpg' alt='Aluno(a) Claudemir Sampaio Gonçalves' title='Aluno(a) Claudemir Sampaio Gonçalves' class='f_left' style='margin-right:19px;'></a>
+				
+						<a href='/aluno/raimundo-marcio-pereira/1300' target='_parent'><img src='http://www.buscapaz.com/gform/upload/formando/raimundo_0.jpg' alt='Aluno(a) Raimundo Marcio Pereira' title='Aluno(a) Raimundo Marcio Pereira' class='f_left' style='margin-right:19px;'></a>
+				
+						<a href='/aluno/guilherme-de-sa-pontes/2030' target='_parent'><img src='http://www.buscapaz.com/gform/upload/formando/guilherme_de_sa.jpg' alt='Aluno(a) Guilherme de Sá Pontes' title='Aluno(a) Guilherme de Sá Pontes' class='f_left' ></a>
+				        <div class="rodape f_left"><a href="/index.php?sec=galeria" class="linAlunos f_right"></a></div>
+    </div>
+    <div id="area_formulario">    <script type="text/javascript" language="javascript">
+	function retVal(){
+		var f = document.cad;
+		if(f.nome.value == ""){
+			f.nome.value = "Nome:";
+		} 
+		
+		if(f.celular_ddd.value == ""){
+			f.celular_ddd.value = "DDD";
+		}
+		
+		if(f.celular.value == ""){
+			f.celular.value = "Celular:";
+		}
+		
+		if(f.fone_ddd.value == ""){
+			f.fone_ddd.value = "DDD";
+		}
+		
+		if(f.fone.value == ""){
+			f.fone.value = "Telefone Residencial:";
+		}
+		
+			if(f.cpf.value == ""){
+				f.cpf.value = "CPF / CNPJ:";
+			}
+		
+		if(f.email.value == ""){
+			f.email.value = "Email:";
+		}
+		
+		if(f.rua.value == ""){
+			f.rua.value = "Rua:";
+		}
+		
+		if(f.numero.value == ""){
+			f.numero.value = "Número:";
+		}
+		
+		if(f.bairro.value == ""){
+			f.bairro.value = "Bairro:";
+		}
+		
+		if(f.cidade.value == ""){
+			f.cidade.value = "Cidade:";
+		}
+		
+		if(f.cep.value == ""){
+			f.cep.value = "CEP:";
+		}
+		
+		if(f.msg.value == ""){
+			f.msg.value = "Em caso de dúvida ou sugestão deixe sua mensagem:";
+		}
+		
+		if(f.mais_curso.value == ""){
+			f.mais_curso.value = "Digite aqui o seu curso desejado:";
+		}
+	}
+	
+	function limpa(campo) {
+		var f = document.cad;
+		
+		switch (campo) {
+			case 'nome' :
+				if(f.nome.value == "Nome:"){
+					f.nome.value = "";
+				} 
+				break;	
+				
+			case 'celular_ddd' :
+				if(f.celular_ddd.value == "DDD"){
+					f.celular_ddd.value = "";
+				}
+				break;	
+				
+			case 'celular' :
+				if(f.celular.value == "Celular:"){
+					f.celular.value = "";
+				}
+				break;	
+				
+			case 'fone_ddd' :
+				if(f.fone_ddd.value == "DDD"){
+					f.fone_ddd.value = "";
+				}
+				break;	
+				
+			case 'fone' :
+				if(f.fone.value == "Telefone Residencial:"){
+					f.fone.value = "";
+				}
+				break;	
+				
+			case 'email' :
+				if(f.email.value == "Email:"){
+					f.email.value = "";
+				}		
+				break;
+		
+			case 'cpf' :
+				if(f.cpf.value == "CPF / CNPJ:"){
+					f.cpf.value = "";
+				}	
+				break;	
+			
+			case 'rua' :
+				if(f.rua.value == "Rua:"){
+					f.rua.value = "";
+				}	
+				break;		
+
+			case 'numero' :
+				if(f.numero.value == "Número:"){
+					f.numero.value = "";
+				}	
+				break;	
+				
+			case 'bairro' :
+				if(f.bairro.value == "Bairro:"){
+					f.bairro.value = "";
+				}		
+				break;		
+
+			case 'cidade' :
+				if(f.cidade.value == "Cidade:"){
+					f.cidade.value = "";
+				}	
+				break;	
+				
+			case 'cep' :
+				if(f.cep.value == "CEP:"){
+					f.cep.value = "";
+				}		
+				break;		
+
+			case 'msg' :
+				if(f.msg.value == "Em caso de dúvida ou sugestão deixe sua mensagem:"){
+					f.msg.value = "";
+				}		
+				break;	
+
+			case 'mais_curso' :
+				if(f.mais_curso.value == "Digite aqui o seu curso desejado:"){
+					f.mais_curso.value = "";
+				}		
+				break;		
+		}
+	}
+</script>
+<script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/api/_js/cad_fast.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.buscapaz.com/api/_js/load_states.js"></script>
+			<div id="aviso"></div>
+				<form name="cad" id="fcontato" method="post" action="index.php">
+				<div id="cad_rapido" style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/cad_rapido_top.jpg) #f5f6e7 no-repeat top left;">
+					<div style="margin-left: 20px;">
+						<center>
+							<table cellpadding="0" cellspacing="3" style="width: 98%;">
+								<tr>
+									<td><input type="text" class="cad_rpd" name="nome" id="nome" value="Nome:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="cpf" id="cpf" value="CPF / CNPJ:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input name="celular_ddd" type="text" class="cad_rpd" id="celular_ddd" style="width:32px; margin-right:0px;" onfocus="limpa(this.id)" onblur="retVal()" value="DDD" maxlength="3" /><input type="text" class="cad_rpd" name="celular" id="celular" value="Celular:" onfocus="limpa(this.id)" onblur="retVal()" style="width:170px;" /></td>
+								</tr>
+								<tr>
+									<td><input name="fone_ddd" type="text" class="cad_rpd" id="fone_ddd" style="width:32px; margin-right:0px;" onfocus="limpa(this.id)" onblur="retVal()" value="DDD" maxlength="3" /><input type="text" class="cad_rpd" name="fone" id="fone" value="Telefone Residencial:" onfocus="limpa(this.id)" onblur="retVal()" style="width:170px;" /></td>
+									<td><input type="text" class="cad_rpd" name="email" id="email" value="Email:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="rua" id="rua" value="Rua:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+								</tr>
+								<tr>
+									<td><input type="text" class="cad_rpd" name="numero" id="numero" value="Número:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="bairro" id="bairro" value="Bairro:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="cidade" id="cidade" value="Cidade:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+								</tr>
+								<tr>
+									<td><input type="text" class="cad_rpd" name="cep" id="cep" value="CEP:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td>
+										<select id="pais" name="pais" onChange="pegaSubCat(this)" class="cad_rpd">
+											<option value=130>Afeganistão</option>
+<option value=5>África do Sul</option>
+<option value=224>Alasca</option>
+<option value=114>Albânia</option>
+<option value=6>Alemanha</option>
+<option value=129>Andorra</option>
+<option value=7>Angola</option>
+<option value=131>Anguilla</option>
+<option value=132>Antígua e Barbuda</option>
+<option value=133>Antilhas Holandesas</option>
+<option value=8>Arábia Saudita</option>
+<option value=9>Argélia</option>
+<option value=10>Argentina</option>
+<option value=134>Armênia</option>
+<option value=135>Aruba</option>
+<option value=11>Austrália</option>
+<option value=76>Áustria</option>
+<option value=205>Azerbaijão</option>
+<option value=136>Bahamas</option>
+<option value=137>Bahrein</option>
+<option value=12>Bangladesh</option>
+<option value=138>Barbados</option>
+<option value=139>Belarus</option>
+<option value=13>Bélgica</option>
+<option value=140>Belize</option>
+<option value=141>Benin</option>
+<option value=142>Bermudas</option>
+<option value=143>Birmânia</option>
+<option value=14>Bolívia</option>
+<option value=144>Bósnia-Herzegovina</option>
+<option value=145>Botsuana</option>
+<option value=1 selected='selected'>Brasil</option>
+<option value=146>Brunei Darussalam</option>
+<option value=15>Bulgária</option>
+<option value=147>Burkina Faso</option>
+<option value=148>Burundi</option>
+<option value=149>Butão</option>
+<option value=108>Cabo Verde</option>
+<option value=110>Camarões</option>
+<option value=150>Camboja</option>
+<option value=18>Canadá</option>
+<option value=151>Casaquistão</option>
+<option value=152>Catar</option>
+<option value=153>Chade</option>
+<option value=19>Chile</option>
+<option value=20>China</option>
+<option value=154>Chipre</option>
+<option value=157>Cidade do Vaticano</option>
+<option value=79>Cingapura</option>
+<option value=21>Colômbia</option>
+<option value=155>Comores</option>
+<option value=156>Congo</option>
+<option value=22>Coréia do Sul</option>
+<option value=24>Costa do Marfim</option>
+<option value=23>Costa Rica</option>
+<option value=25>Croácia</option>
+<option value=26>Cuba</option>
+<option value=27>Dinamarca</option>
+<option value=158>Djibuti</option>
+<option value=159>Dominica</option>
+<option value=28>Egito</option>
+<option value=29>El Salvador</option>
+<option value=160>Emirados Árabes</option>
+<option value=30>Equador</option>
+<option value=161>Eritréia</option>
+<option value=31>Eslováquia</option>
+<option value=162>Eslovênia</option>
+<option value=32>Espanha</option>
+<option value=33>Estados Unidos da América</option>
+<option value=163>Estónia</option>
+<option value=115>Etiópia</option>
+<option value=165>Fiji</option>
+<option value=34>Filipinas</option>
+<option value=35>Finlandia</option>
+<option value=36>França</option>
+<option value=38>Gabão</option>
+<option value=166>Gâmbia </option>
+<option value=39>Gana</option>
+<option value=167>Geórgia</option>
+<option value=168>Gibraltar</option>
+<option value=169>Granada</option>
+<option value=40>Grécia</option>
+<option value=170>Groenlândia</option>
+<option value=171>Guadalupe</option>
+<option value=172>Guam</option>
+<option value=41>Guatemala</option>
+<option value=173>Guernsey</option>
+<option value=42>Guiana</option>
+<option value=174>Guiana Francesa</option>
+<option value=175>Guiné</option>
+<option value=176>Guiné Equatorial</option>
+<option value=111>Guiné-Bissau</option>
+<option value=43>Haiti</option>
+<option value=44>Holanda</option>
+<option value=94>Honduras</option>
+<option value=177>Hong Kong</option>
+<option value=45>Hungria</option>
+<option value=178>Iêmen</option>
+<option value=179>Ilhas Caimão</option>
+<option value=180>Ilhas Cook</option>
+<option value=181>Ilhas Malvinas</option>
+<option value=182>Ilhas Marshall</option>
+<option value=183>Ilhas Salomão</option>
+<option value=184>Ilhas Turks e Caicos</option>
+<option value=185>Ilhas Virgens Britânicas</option>
+<option value=46>Índia</option>
+<option value=47>Indonésia</option>
+<option value=2>Inglaterra</option>
+<option value=48>Irã</option>
+<option value=49>Iraque</option>
+<option value=80>Irlanda</option>
+<option value=186>Islândia</option>
+<option value=50>Israel</option>
+<option value=51>Itália</option>
+<option value=77>Jamaica</option>
+<option value=4>Japão</option>
+<option value=53>Jordania</option>
+<option value=102>Kenya</option>
+<option value=188>Kiribati</option>
+<option value=54>Kuwait</option>
+<option value=189>Laos</option>
+<option value=116>Lesoto</option>
+<option value=190>Letónia</option>
+<option value=55>Líbano</option>
+<option value=56>Líbia</option>
+<option value=191>Lituânia</option>
+<option value=117>Luxemburgo</option>
+<option value=118>Madagascar</option>
+<option value=104>Malásia</option>
+<option value=119>Malawi</option>
+<option value=192>Maldivas</option>
+<option value=112>Mali</option>
+<option value=193>Malta</option>
+<option value=58>Marrocos</option>
+<option value=194>Mauritânia</option>
+<option value=59>México</option>
+<option value=60>Moçambique</option>
+<option value=195>Moldávia</option>
+<option value=196>Mongólia</option>
+<option value=197>Montenegro</option>
+<option value=198>Montserrat</option>
+<option value=107>Namíbia</option>
+<option value=199>Nauru</option>
+<option value=200>Nepal</option>
+<option value=61>Nicarágua</option>
+<option value=113>Niger</option>
+<option value=62>Nigéria</option>
+<option value=201>Niue</option>
+<option value=63>Noruega</option>
+<option value=120>Nova Zelandia</option>
+<option value=64>Ordem de Malta</option>
+<option value=123>País de Gales</option>
+<option value=65>Palestina</option>
+<option value=66>Panamá</option>
+<option value=202>Papua Nova Guiné</option>
+<option value=67>Paquistão</option>
+<option value=68>Paraguai</option>
+<option value=69>Peru</option>
+<option value=70>Polônia</option>
+<option value=121>Porto Rico</option>
+<option value=71>Portugal</option>
+<option value=204>Quirguistão</option>
+<option value=86>República Dominicana</option>
+<option value=106>República Theca</option>
+<option value=100>Romenia</option>
+<option value=206>Ruanda</option>
+<option value=92>Rússia</option>
+<option value=124>São Tomé e Príncipe</option>
+<option value=103>Senegal</option>
+<option value=207>Serra Leoa</option>
+<option value=208>Sérvia</option>
+<option value=52>Servia e Montenegro</option>
+<option value=209>Seychelles</option>
+<option value=81>Síria</option>
+<option value=210>Somália</option>
+<option value=211>Sri Lanka</option>
+<option value=125>Suazilandia</option>
+<option value=105>Suécia</option>
+<option value=75>Suíça</option>
+<option value=213>Suriname</option>
+<option value=214>Tadjiquistão</option>
+<option value=101>Tailandia</option>
+<option value=126>Tanzania</option>
+<option value=215>Togo</option>
+<option value=216>Tonga</option>
+<option value=217>Trinidad e Tobago</option>
+<option value=93>Tunísia</option>
+<option value=218>Turcomenistão</option>
+<option value=99>Turquia</option>
+<option value=219>Tuvalu</option>
+<option value=83>Ucrania</option>
+<option value=220>Uganda</option>
+<option value=89>Uruguai</option>
+<option value=221>Uzbequistão</option>
+<option value=222>Vanuatu</option>
+<option value=96>Venezuela</option>
+<option value=84>Vietnã</option>
+<option value=223>Zaire</option>
+<option value=127>Zambia</option>
+<option value=82>Zimbabue</option>
+										</select>									</td>
+									<td>
+										<select id="estado" name="estado" class="cad_rpd">
+											<option value=''>Selecione o Estado:</option>
+<option value=44>Acre</option>
+<option value=6>Alagoas</option>
+<option value=3>Amapá</option>
+<option value=1>Amazonas</option>
+<option value=8>Bahia</option>
+<option value=45>Ceara</option>
+<option value=9>Distrito Federal</option>
+<option value=10>Espirito Santo</option>
+<option value=11>Goias</option>
+<option value=46>Maranhão</option>
+<option value=47>Mato Grosso</option>
+<option value=48>Mato Grosso do Sul</option>
+<option value=7>Minas Gerais</option>
+<option value=12>Pará</option>
+<option value=13>Paráiba</option>
+<option value=14>Paraná</option>
+<option value=15>Pernambuco</option>
+<option value=16>Piauí</option>
+<option value=17>Rio de Janeiro</option>
+<option value=18>Rio Grande do Norte</option>
+<option value=21>Rio Grande do Sul</option>
+<option value=19>Rondonia</option>
+<option value=20>Roraima</option>
+<option value=22>Santa Catarina</option>
+<option value=23>São Paulo</option>
+<option value=24>Sergipe</option>
+<option value=25>Tocantins</option>
+										</select>									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<table cellpadding="0" cellspacing="0" border="0" width="98%	">
+											<tr>
+												<td>
+													<textarea cols="50" rows="3" class="cad_rpd_tex" name="msg" id="msg" onfocus="limpa(this.id)" onblur="retVal()">Em caso de dúvida ou sugestão deixe sua mensagem:</textarea>												</td>
+												<td style="width: 10px;"></td>
+												<td>
+													<textarea cols="50" rows="3" class="cad_rpd_tex" name="mais_curso" id="mais_curso" onfocus="limpa(this.id)" onblur="retVal()">Digite aqui o seu curso desejado:</textarea>												</td>
+											</tr>
+										</table>									</td>
+								</tr>
+								<tr><td height="10"></td></tr>
+								<tr>
+									<td colspan="3">
+										<input type="hidden" name="idioma" id="idioma" value="1" />
+																				<table cellpadding="0" cellspacing="0" style="width: 98%" class="cur_cad"><tr><td colspan="2">Ao preencher este formul&aacute;rio declaro que li e concordo com a <a href="/?sec=politica_privacidade" target="_blank">Pol&iacute;tica de privacidade</a> deste Web Site.</td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id257' value='Curso de Levita' /><label for='id257' class='rap'>Curso de Levita</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id253' value='Curso de Capelão' /><label for='id253' class='rap'>Curso de Capelão</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id20' value='Curso de Bacharel em Aconselhamento Pastoral' /><label for='id20' class='rap'>Curso de Bacharel em Aconselhamento Pastoral</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id193' value='Curso de PhD em Ministério Pastoral' /><label for='id193' class='rap'>Curso de PhD em Ministério Pastoral</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id120' value='Curso do Livro de I Pedro' /><label for='id120' class='rap'>Curso do Livro de I Pedro</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id19' value='Curso de Bacharel em Aconselhamento Cristão' /><label for='id19' class='rap'>Curso de Bacharel em Aconselhamento Cristão</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id89' value='Curso de Doutorado em Psicopedagogia Cristã' /><label for='id89' class='rap'>Curso de Doutorado em Psicopedagogia Cristã</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id159' value='Curso de Mestrado em Educação Religiosa ' /><label for='id159' class='rap'>Curso de Mestrado em Educação Religiosa </label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id165' value='Curso de Mestrado em Marketing Cristão' /><label for='id165' class='rap'>Curso de Mestrado em Marketing Cristão</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id71' value='Curso de Doutorado em Ciências Sociais Cristã' /><label for='id71' class='rap'>Curso de Doutorado em Ciências Sociais Cristã</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id199' value='Curso de PhD em Psicanálise Cristã' /><label for='id199' class='rap'>Curso de PhD em Psicanálise Cristã</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id46' value='Curso de Bacharel em Neopentecoste Cristã' /><label for='id46' class='rap'>Curso de Bacharel em Neopentecoste Cristã</label><br /></td><td></td></tr></table>									</td>
+								</tr>
+							</table>
+						</center>
+					</div>
+					<div style="margin:15px 50px;"><img src="/captcha/_captcha_imagem.php?t=1418935166" width="110" height="25" /><br />Digite os números que você vê acima: <input name="captcha_response" style="width:45px;" maxlength="4" /><input type="hidden" name="captcha_challenge" value="yuaqC3lCYNZ57Z5NYhZ1Bw==" /><input type="hidden" name="captcha_challenge2" value="OWVjYjZlNGVjZDczZTBiMw==" /></div>
+				</div>
+				<div style="width: 813px; height: 83px; margin-left: 4px; background: url(http://www.buscapaz.com/faculdadegospel/imgs/cad_rapido_base.jpg) no-repeat top left;">
+					<div style="float: left; width: 150px;  margin-top: 25px;">
+						<p align="center" style="font-size: 10pt;"><b>Escolha o cart&atilde;o<br /> de sua op&ccedil;&atilde;o:</b></p>
+					</div>
+					<div style="float: left; width: 20px; height: 20px; margin-top: 45px; margin-left: 120px;">
+						<input type="checkbox" name="card[]" value="American Express"/>
+					</div>
+					<div style="float: left; width: 20px; height: 20px; margin-top: 45px; margin-left: 130px;">
+						<input type="checkbox" name="card[]" value="Master Card"/>
+					</div>
+					<div style="float: left; width: 20px; height: 20px; margin-top: 45px; margin-left: 135px;">
+						<input type="checkbox" name="card[]" value="Visa"/>
+					</div>
+					<div id="enviar" style="float: right; width: 75px; height: 65px; margin-top: 5px; padding-top: 10px; padding-right: 10px;">
+						<input type="hidden" name="origem" value="Matricula rapida - " />
+						<input type="hidden" name="segmento" value="1" />
+						<input type="image" src="http://www.buscapaz.com/faculdadegospel/images/enviar_cad_rapido.png" />
+					</div>
+				</div>
+			</form>						
+</div>
+    <div id="titulos_internacionais">
+        
+					<div class="area_titulo f_left" style="margin-right:55px;">
+						<a href="/titulo/convencao-dos-pastores-pentecostais" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Conveno.jpg" class="f_left" />
+							<div class="f_left"><strong>Convenção dos Pastores Pentecostais</strong><br />
+								A todos os Pastores Pentecostais, cheios de Unção que desejam ter seu devid...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" >
+						<a href="/titulo/convencao-das-igrejas-e-comunidades-em-celulas" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Conveno.jpg" class="f_left" />
+							<div class="f_left"><strong>Convenção das Igrejas e Comunidades em Células</strong><br />
+								Indicada a todos os Pastores, que queiram filiar suas Igrejas ou Comunidade...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" style="margin-right:55px;">
+						<a href="/titulo/federacao-americana-de-pastores" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Federao.jpg" class="f_left" />
+							<div class="f_left"><strong>Federação Americana de Pastores</strong><br />
+								Tratamento VIP e Preferencial em Convenções, Simpósios, Seminários, Fóruns ...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" >
+						<a href="/titulo/uniao-mundial-dos-advogados-e-pastores-evangelicos" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Unio.jpg" class="f_left" />
+							<div class="f_left"><strong>União Mundial dos Advogados e Pastores Evangélicos</strong><br />
+								Podem associar-se a UMAPE todos os Advogados e Pastores desde que exerça as...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" style="margin-right:55px;">
+						<a href="/titulo/associacao-internacional-de-conferencistas-evangelicos" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Associao.jpg" class="f_left" />
+							<div class="f_left"><strong>Associação Internacional de Conferencistas Evangélicos</strong><br />
+								Os Conferencistas Evangélicos que buscam ser reconhecidos e glorificados na...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" >
+						<a href="/titulo/conselho-mundial-de-capelaes-e-ministros" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Conselho.jpg" class="f_left" />
+							<div class="f_left"><strong>Conselho Mundial de Capelães e Ministros</strong><br />
+								Para Capelães e Ministros de todos os países, que buscam seu reconhecimento...<br />
+							</div>
+						</a>
+					</div>
+				        <a href="/index.php?sec=titulos" class="linInternacionais f_left"></a>
+    </div>
+    <br />
+    <img src="http://www.buscapaz.com/newgospel/images/bann_home04.jpg" width="834" height="217" border="0" usemap="#MapHome" />
+    <div id="titulos_honorificos">
+        
+					<div class="area_titulo f_left" style="margin-right:55px;">
+						<a href="/titulo/especialista-em-aconselhamento-familiar" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg" class="f_left" />
+							<div class="f_left"><strong>Especialista em Aconselhamento Familiar</strong><br />
+								Instruir através de uma concepção sociológica religiosa, a comunidade em ge...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" >
+						<a href="/titulo/doutor-em-cidadania" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg" class="f_left" />
+							<div class="f_left"><strong>Doutor em Cidadania</strong><br />
+								Por sua imposição que o reconhecimento aos habitantes do território, indepe...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" style="margin-right:55px;">
+						<a href="/titulo/doutor-em-historia-do-cristianismo" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg" class="f_left" />
+							<div class="f_left"><strong>Doutor em História do Cristianismo</strong><br />
+								Para concentrar na sua Igreja todas as Revelações contidas na História do C...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" >
+						<a href="/titulo/mestre-em-missiologia" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg" class="f_left" />
+							<div class="f_left"><strong>Mestre em Missiologia</strong><br />
+								Que todos os pontos de vista moral, pessoal das circunstâncias da vida, pas...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" style="margin-right:55px;">
+						<a href="/titulo/doutor-em-antropologia-social" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg" class="f_left" />
+							<div class="f_left"><strong>Doutor em Antropologia Social</strong><br />
+								Que a dimensão da Antropologia e não só a origem da sua Palavra avance na C...<br />
+							</div>
+						</a>
+					</div>
+				
+					<div class="area_titulo f_left" >
+						<a href="/titulo/mestre-em-espiritualidade-crista" class="corPreto">
+							<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg" class="f_left" />
+							<div class="f_left"><strong>Mestre em Espiritualidade Cristã</strong><br />
+								Intuir a todos num movimento de conversão completa a espiritualidade, facil...<br />
+							</div>
+						</a>
+					</div>
+				        <a href="/index.php?sec=titulos&tipo=h" class="linHonorificos f_left"></a>
+    </div>
+    <div id="area_noticias">
+        <div style="height:26px; font-size:14px; font-weight:bold; color:#000000; padding-top:25px;">VEJA OUTRAS NOT&Iacute;CIAS</div>
+        <div id="notDestaque" class="f_left">
+            <script type="text/javascript" src="_js/jquery.min.js"></script>
+<script type="text/javascript" src="_js/fadeslideshow.js"></script>
+<style type="text/css">
+<!--
+#fadeshow2 img{
+	width: 299px;
+	height: 223px;
+	border: 3px solid #000000;
+}
+a.linDest:link, a.linDest:visited, a.linDest:hover {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+-->
+</style>
+<script type="text/javascript">
+
+var mynoticegallery=new fadeSlideShow({
+	wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
+	dimensions: [305, 229], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	// ["path_to_image", "optional_url", "optional_linktarget", "optional_description"]
+	imagearray: [
+	 
+	["http://www.buscapaz.com/gform/upload/noticias/meio_hospital-espirita-sera-inaugurado-em-franca.jpg", "/noticias/hospital-espirita-sera-inaugurado-em-franca/", "", "Hospital espírita será inaugurado em Franca"],["http://www.buscapaz.com/gform/upload/noticias/meio_renomado-teologo-diz-que-a-biblia-da-pistas-de-que-o-fim-do-mundo-acontecera-em-2021-profile-photo-of-tiago-chagas-publicado-por-tiago-chagas-em-16-de-dezembro-de-2014.jpg", "/noticias/renomado-teologo-diz-que-a-biblia-da-pistas-de-que-o-fim-do-mundo-acontecera-em-2021/", "", "Renomado teólogo diz que a Bíblia dá pistas de que o fim do mundo acontecerá em 2021"],["http://www.buscapaz.com/gform/upload/noticias/meio_rachel-sheherazade-fala-sobre-fe-e-canta-musica-gospel-no-raul-gil.jpg", "/noticias/rachel-sheherazade-fala-sobre-fe-e-canta-musica-gospel-no-raul-gil/", "", "Rachel Sheherazade fala sobre fé e canta música gospel no Raul Gil"],["http://www.buscapaz.com/gform/upload/noticias/meio_bispa-sonia-hernandes-recebe-o-titulo-de-cidada-recifense.jpg", "/noticias/bispa-sonia-hernandes-recebe-o-titulo-de-cidada-recifense/", "", "Bispa Sônia Hernandes recebe o título de cidadã recifense"],["http://www.buscapaz.com/gform/upload/noticias/meio_pastora-visita-terreiro-de-candomble-em-encontro-ecumenico-e-faz-preces-com-mae-de-santo.jpg", "/noticias/pastora-visita-terreiro-de-candomble-em-encontro-ecumenico-e-faz-preces-com-mae-de-santo/", "", "Pastora visita terreiro de candomblé em encontro ecumênico e faz preces com mãe de santo"] 
+	],
+	displaymode: {type:'auto', pause:3000, cycles:0, wraparound:true},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 500, //transition duration (milliseconds)
+	descreveal: "always",
+	togglerid: "fadeshow2toggler"
+})
+</script>
+<div id="fadeshow2"></div>
+<div id="fadeshow2toggler" style="width:305px; color:#FFFFFF; text-align:center; margin-top:10px; background-color:#000000;">
+<a href="#" class="prev linDest">Anterior</a>  <span class="status" style="margin:0 50px; font-weight:bold"></span> <a href="#" class="next linDest">Pr&oacute;ximo</a>
+</div>
+        </div>
+        <div id="notTexto" class="f_left">
+            <a href="/noticias/hospital-espirita-sera-inaugurado-em-franca/" style="font-size:18px; font-weight:bold; color:#000000; text-decoration:none;">Hospital espírita será inaugurado em Franca</a><br />Hospital esp&iacute;rita ser&aacute; inaugurado em Franca
+O m&eacute;dium Jo&atilde;o Berbel opera as pessoas incorporando o esp&iacute;rito do m&eacute;dico Ismael Alonso y Alons...<br /><br /><a href="/noticias/renomado-teologo-diz-que-a-biblia-da-pistas-de-que-o-fim-do-mundo-acontecera-em-2021/" style="font-size:18px; font-weight:bold; color:#000000; text-decoration:none;">Renomado teólogo diz que a Bíblia dá pistas de que o fim do mundo acontecerá em 2021</a><br />Renomado te&oacute;logo diz que a B&iacute;blia d&aacute; pistas de que o fim do mundo acontecer&aacute; em 2021
+Renomado te&oacute;logo diz que a B&iacute;blia d&aacute; pistas d...<br /><br /><a href="/noticias/rachel-sheherazade-fala-sobre-fe-e-canta-musica-gospel-no-raul-gil/" style="font-size:18px; font-weight:bold; color:#000000; text-decoration:none;">Rachel Sheherazade fala sobre fé e canta música gospel no Raul Gil</a><br />Rachel Sheherazade fala sobre f&eacute; e canta m&uacute;sica gospel no Raul Gil
+A apresentadora do SBT interpretou a can&ccedil;&atilde;o "Eu te agrade&ccedil;o Deus" do cantor K...<br /><br />        </div>
+    </div>
+    <div id="cantores_gospel">
+        <div id="col_direita_cantores_gospel" class="f_left"></div>
+        
+                    <a href='/noticias/30/fernandinho/' target='_parent'><img src='http://www.buscapaz.com/gform/upload/Gospelpastor/foto_NOTICIA_CANTOR_5.jpg' alt='Cantor(a) Fernandinho' title='Fernandinho' class='f_left cantores_gospel' style='margin-right:19px;'></a>
+				
+                    <a href='/noticias/29/fernanda-brum/' target='_parent'><img src='http://www.buscapaz.com/gform/upload/Gospelpastor/foto_NOTICIA_CANTOR_1.jpg' alt='Cantor(a) Fernanda Brum' title='Fernanda Brum' class='f_left cantores_gospel' style='margin-right:19px;'></a>
+				
+                    <a href='/noticias/32/andre-valadao/' target='_parent'><img src='http://www.buscapaz.com/gform/upload/Gospelpastor/foto_NOTICIA_CANTOR_6.jpg' alt='Cantor(a) André Valadão' title='André Valadão' class='f_left cantores_gospel' style='margin-right:19px;'></a>
+				
+                    <a href='/noticias/35/aline-barros/' target='_parent'><img src='http://www.buscapaz.com/gform/upload/Gospelpastor/foto_NOTICIA_CANTOR_0.jpg' alt='Cantor(a) Aline Barros' title='Aline Barros' class='f_left cantores_gospel' style='margin-right:19px;'></a>
+				
+                    <a href='/noticias/38/gaspar-reis/' target='_parent'><img src='http://www.buscapaz.com/gform/upload/Gospelpastor/foto_gasparroque.jpg' alt='Cantor(a) Gaspar Reis' title='Gaspar Reis' class='f_left cantores_gospel' style='margin-right:19px;'></a>
+				
+                    <a href='/noticias/33/oficina-g3/' target='_parent'><img src='http://www.buscapaz.com/gform/upload/Gospelpastor/foto_NOTICIA_CANTOR_4.jpg' alt='Cantor(a) Oficina G3' title='Oficina G3' class='f_left cantores_gospel' ></a>
+				        <div class="rodape_cantores_gospel f_left"><a href="/index.php?sec=noticias_visual" class="lincantores_gospel f_right"></a></div>
+    </div>
+    <div id="cursosTop">
+        <div id="boxCursos" class="f_left">
+            
+                    <div class="area_titulo">
+                        <a href="/curso/curso-de-graduacao-biblica-em-pastor" class="corPreto">
+                            <img src="http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg" class="f_left" alt="Curso de Graduação Bíblica em Pastor" title="Curso de Graduação Bíblica em Pastor" />
+                            <div class="f_left">
+                                <strong>Curso de Graduação Bíblica em Pastor</strong><br />
+                                Curso de Graduação Bíblica em Pastor da Faculdade Gospel traz ensinamentos ...<br />
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="area_titulo">
+                        <a href="/curso/curso-de-pos-graduacao-em-teologia-eclesiastica" class="corPreto">
+                            <img src="http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg" class="f_left" alt="Curso de Pós Graduação em Teologia Eclesiástica" title="Curso de Pós Graduação em Teologia Eclesiástica" />
+                            <div class="f_left">
+                                <strong>Curso de Pós Graduação em Teologia Eclesiástica</strong><br />
+                                Curso de Pós Graduação em Teologia Eclesiástica da Faculdade Gospel traz en...<br />
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="area_titulo">
+                        <a href="/curso/curso-de-especializacao-em-administracao-de-igrejas" class="corPreto">
+                            <img src="http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg" class="f_left" alt="Curso de Especialização em Administração de Igrejas" title="Curso de Especialização em Administração de Igrejas" />
+                            <div class="f_left">
+                                <strong>Curso de Especialização em Administração de Igrejas</strong><br />
+                                Curso de Especialização em Administração de Igrejas da Faculdade Gospel tra...<br />
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="area_titulo">
+                        <a href="/curso/curso-de-aperfeicoamento-em-aconselhamento-cristao" class="corPreto">
+                            <img src="http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg" class="f_left" alt="Curso de Aperfeiçoamento em Aconselhamento Cristão" title="Curso de Aperfeiçoamento em Aconselhamento Cristão" />
+                            <div class="f_left">
+                                <strong>Curso de Aperfeiçoamento em Aconselhamento Cristão</strong><br />
+                                Curso de Aperfeiçoamento em Aconselhamento Cristão da Faculdade Gospel traz...<br />
+                            </div>
+                        </a>
+                    </div>
+                        </div>
+        <div id="boxTitulos" class="f_left">
+            
+						<div class="area_titulo">
+							<a href="/titulo/escritor" class="corPreto">
+								<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg" class="f_left" />
+								<div class="f_left">
+									<strong>Escritor</strong><br />
+									Este título emérito vem lhe homenagear e lhe destacar dentro dos demais. Co...<br />
+								</div>
+							</a>
+						</div>
+					
+						<div class="area_titulo">
+							<a href="/titulo/doutor" class="corPreto">
+								<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg" class="f_left" />
+								<div class="f_left">
+									<strong>Doutor</strong><br />
+									Como você esta sempre disponível a atender a todos e desempenhar um magnífi...<br />
+								</div>
+							</a>
+						</div>
+					
+						<div class="area_titulo">
+							<a href="/titulo/apostolo" class="corPreto">
+								<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg" class="f_left" />
+								<div class="f_left">
+									<strong>Apóstolo</strong><br />
+									Como destaque de seu trabalho em sua igreja e nos ministérios que exerce os...<br />
+								</div>
+							</a>
+						</div>
+					
+						<div class="area_titulo">
+							<a href="/titulo/levita" class="corPreto">
+								<img src="http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg" class="f_left" />
+								<div class="f_left">
+									<strong>Levita</strong><br />
+									A santificação é o elemento chave para que um levita tenha o seu ministério...<br />
+								</div>
+							</a>
+						</div>
+					        </div>
+    </div>
+    <br />
+    <img src="http://www.buscapaz.com/newgospel/images/bann_home05.jpg" width="837" height="216" border="0" usemap="#MapHome2" />
+    <div id="area_videos">
+        	
+                <div class="video f_left">
+                    <a href="http://www.youtube.com/watch?v=kj0kc9DZkpk&feature=youtube_gdata_player" target="_blank" class="corPreto">
+                        <img src="http://i.ytimg.com/vi/kj0kc9DZkpk/0.jpg" width="120" height="90" />
+                        <br />
+                        <b>Pastor Gecilon Fragoso - Facul</b></a>
+                </div>
+                	
+                <div class="video f_left">
+                    <a href="http://www.youtube.com/watch?v=OIHsVvT8e1s&feature=youtube_gdata_player" target="_blank" class="corPreto">
+                        <img src="http://i.ytimg.com/vi/OIHsVvT8e1s/0.jpg" width="120" height="90" />
+                        <br />
+                        <b>Pastor Egidio - Faculdade Gosp</b></a>
+                </div>
+                	
+                <div class="video f_left">
+                    <a href="http://www.youtube.com/watch?v=XMTCO5FfnA4&feature=youtube_gdata_player" target="_blank" class="corPreto">
+                        <img src="http://i.ytimg.com/vi/XMTCO5FfnA4/0.jpg" width="120" height="90" />
+                        <br />
+                        <b>Pastor Anselmo - Faculdade Gos</b></a>
+                </div>
+                	
+                <div class="video f_left">
+                    <a href="http://www.youtube.com/watch?v=FY0bigBJElo&feature=youtube_gdata_player" target="_blank" class="corPreto">
+                        <img src="http://i.ytimg.com/vi/FY0bigBJElo/0.jpg" width="120" height="90" />
+                        <br />
+                        <b>Pastor Elisel - Faculdade Gosp</b></a>
+                </div>
+                	
+                <div class="video f_left">
+                    <a href="http://www.youtube.com/watch?v=JvZO69Bb1ms&feature=youtube_gdata_player" target="_blank" class="corPreto">
+                        <img src="http://i.ytimg.com/vi/JvZO69Bb1ms/0.jpg" width="120" height="90" />
+                        <br />
+                        <b>Pastor Joao Regis - Faculdade </b></a>
+                </div>
+                        <div align="right"><br /><a href="http://www.youtube.com/faculdadegospel" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/home_veja_mais_videos.jpg" width="146" height="16" border="0" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+    <div id="area_livros">
+        
+					<a href="/livro/edificando-uma-igreja-de-grupos-pequenos/18"><img src="http://www.buscapaz.com/gform/upload/Gospellivros/Edificando_uma_Igreja_de_Grupo.jpg" class="f_left" alt="Edificando uma Igreja de Grupos Pequenos" title="Edificando uma Igreja de Grupos Pequenos" style="margin-left:180px;" /></a>
+				
+					<a href="/livro/iniciacao-a-teologia/408"><img src="http://www.buscapaz.com/gform/upload/Gospellivros/Iniciacao_a_Teologia.jpg" class="f_left" alt="Iniciação à Teologia" title="Iniciação à Teologia"  /></a>
+				
+					<a href="/livro/adoracao-ao-show/611"><img src="http://www.buscapaz.com/gform/upload/Gospellivros/Adoracao_ao_Show_0.jpg" class="f_left" alt="Adoração ao show" title="Adoração ao show"  /></a>
+				
+					<a href="/livro/como-vencer-a-rejeicao/93"><img src="http://www.buscapaz.com/gform/upload/Gospellivros/Como_Vencer_a_Rejeicao.jpg" class="f_left" alt="Como Vencer a Rejeição" title="Como Vencer a Rejeição"  /></a>
+				
+					<a href="/livro/em-defesa-de-cristo/36"><img src="http://www.buscapaz.com/gform/upload/Gospellivros/Em_Defesa_de_Cristo.jpg" class="f_left" alt="Em Defesa de Cristo" title="Em Defesa de Cristo"  /></a>
+				
+					<a href="/livro/forca-da-luz/624"><img src="http://www.buscapaz.com/gform/upload/Gospellivros/Forca_da_Luz.jpg" class="f_left" alt="Força da luz" title="Força da luz"  /></a>
+				
+					<a href="/livro/ei-deus/464"><img src="http://www.buscapaz.com/gform/upload/Gospellivros/EI_DEUS.jpg" class="f_left" alt="Ei, Deus!" title="Ei, Deus!"  /></a>
+						
+        <a href="/index.php?sec=livros" class="linLivros f_left"></a>
+    </div>
+    <div id="area_dvds">
+
+					<a href="/dvd/uncao-e-consagracao-de-pastor/23"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/Uno_e_Consagrao_de_Pastor.jpg" class="f_left" alt="Unção e Consagração de Pastor" title="Unção e Consagração de Pastor" style="margin-left:90px;" /></a>
+				
+					<a href="/dvd/o-rico-e-o-lazaro/10"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/O_Rico_e_Lzaro_0.jpg" class="f_left" alt="O Rico e o Lázaro " title="O Rico e o Lázaro "  /></a>
+				
+					<a href="/dvd/curso-antidrogas-em-peca-teatral/1"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/Curso_AntiDrogas_em_Pea_Teat_0.jpg" class="f_left" alt="Curso Antidrogas em Peça Teatral " title="Curso Antidrogas em Peça Teatral "  /></a>
+				
+					<a href="/dvd/curso-de-missoes-e-evangelismo/9"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/Curso_de_Misses_e_Evangelismo.jpg" class="f_left" alt="Curso de Missões e Evangelismo" title="Curso de Missões e Evangelismo"  /></a>
+				
+					<a href="/dvd/dvd-como-ser-um-campeao/20"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/Como_ser_um_Campeo.jpg" class="f_left" alt="DVD Como Ser Um Campeão " title="DVD Como Ser Um Campeão "  /></a>
+				
+					<a href="/dvd/curso-escatologico--volume-4/15"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/Curso_Escatolgico_Volume_4.jpg" class="f_left" alt="Curso Escatológico - Volume 4 " title="Curso Escatológico - Volume 4 "  /></a>
+				
+					<a href="/dvd/cursos-escatologico--compacto-4-em-1/11"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/Cursos_Escatolgico_Compacto_4.jpg" class="f_left" alt="Cursos Escatológico - Compacto 4 Em 1 " title="Cursos Escatológico - Compacto 4 Em 1 "  /></a>
+				
+					<a href="/dvd/dvd-colecao-auto-ajuda-3-em-1/16"><img src="http://www.buscapaz.com/gform/upload/Gospeldvd/Curso_de_AutoAjuda_3x1.jpg" class="f_left" alt="DVD Coleção Auto Ajuda 3 em 1" title="DVD Coleção Auto Ajuda 3 em 1"  /></a>
+				        <a href="/index.php?sec=dvds" class="linDvds f_left"></a>
+    </div>
+    <div id="area_cursos_livres">
+        <div id="box_cursos" class="f_left">
+            <div class="area_titulo"><a href="http://redelondres.com.br/curso/curso-avancado-de-matematica-para-o-ensino-fundamental" target="_blank" class="corPreto"><img src="http://www.buscapaz.com/redelondres/imgs/diploma_1.jpg" class="f_left" /><div class="f_left"><strong>Curso Avançado de Matemática para o Ensino Fundamental</strong></div></a></div><div class="area_titulo"><a href="http://redelondres.com.br/curso/curso-de-aperfeiaoamento-em-processos-logisticos-em-empresas-de-servicos" target="_blank" class="corPreto"><img src="http://www.buscapaz.com/redelondres/imgs/diploma_1.jpg" class="f_left" /><div class="f_left"><strong>Curso de Aperfeiçoamento em Processos Logísticos em Empresas de Serviços</strong></div></a></div><div class="area_titulo"><a href="http://redelondres.com.br/curso/curso-de-aperfeicoamento-em-telemarketing-e-call-center" target="_blank" class="corPreto"><img src="http://www.buscapaz.com/redelondres/imgs/diploma_1.jpg" class="f_left" /><div class="f_left"><strong>Curso de Aperfeiçoamento em Telemarketing e Call Center</strong></div></a></div>        </div>
+        <a href="http://www.redelondres.com.br" target="_blank" class="linCursosLivres f_left"></a>
+    </div>
+    <div class="limpa"></div>
+    <map name="MapHome2" id="MapHome2">
+        <area shape="rect" coords="2,1,410,214" href="#" />
+        <area shape="rect" coords="427,1,835,214" href="#" /></map></div>
+<map name="MapHome" id="MapHome">
+    <area shape="rect" coords="3,3,406,213" href="/curso/curso-de-formacao-de-pastor" />
+    <area shape="rect" coords="420,3,831,214" href="http://www.faculdadegospel.com.br" target="_blank" />
+</map>            </div><!-- /areaCorpo -->
+        </div><!-- /area_site -->
+        <div class="limpa"></div>
+        <div id="rodape">
+            <div id="area_rodape" style="margin-left: 350px;">
+                <div id="bloco_link" class="f_left" style="margin-left:70px">
+                    <div class="corBranco" style="font-weight:bold">INSTITUCIONAL</div>
+                    <a href="/index.php?sec=quem_somos" class="Lrodape">Quem Somos</a><br />
+                    <a href="/index.php?sec=compromisso" class="Lrodape">Nossos Compromissos</a><br />
+                    <a href="/index.php?sec=ingressar" class="Lrodape">Quem pode ingressar</a><br />
+                    <a href="/index.php?sec=filiese" class="Lrodape">Filie-se agora</a><br />
+                    <a href="http://loja.escoladepastor.com.br/" target="_blank" class="Lrodape">Loja virtual</a><br />
+                    <a href="/index.php?sec=promocao" class="Lrodape">Promo&ccedil;&otilde;es</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">AJUDA</div>
+                    <a href="/index.php?sec=cursos" class="Lrodape">Quais s&atilde;o os cursos</a><br />
+                    <a href="/index.php?sec=missao" class="Lrodape">Como funciona?</a><br />
+                    <a href="/index.php?sec=vantagens" class="Lrodape">Perguntas frequentes</a><br />
+                    <a href="/index.php?sec=pagamento" class="Lrodape">Formas de pagamento</a><br />
+                    <a href="/index.php?sec=politica_privacidade" class="Lrodape">Politica de Privacidade</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Central de atendimento</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">REDES SOCIAIS </div>
+                    <a href="#" class="Lrodape">MySpace</a><br />
+                    <a href="http://twitter.com/igrejaemcasa" target="_blank" class="Lrodape">Twitter</a><br />
+                    <a href="http://www.orkut.com.br/Main#Profile?uid=13960611504068135313" target="_blank" class="Lrodape">Orkut</a><br />
+                    <a href="#" class="Lrodape">Ning</a><br />
+                    <a href="http://youtube.com/igrejaemcas" target="_blank" class="Lrodape">YouTube</a><br />
+                    <a href="msnim:add?contact=igrejaemcasa@hotmail.com" target="_blank" class="Lrodape">Messenger</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">FALE CONOSCO </div>
+                    <a href="#" class="Lrodape">Ligue: 0800 9423153</a><br />
+                    <a href="#" class="Lrodape">Formul&aacute;rio Contato</a><br />
+                    <a href="#" class="Lrodape">Atendimento Online</a><br />
+                    <a href="#" class="Lrodape">Atendimento por e-mail</a><br />
+                    <a href="/index.php?sec=matriculas" class="Lrodape">Matricula</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <style  type="text/css">
+    /* CSS do banner sobre a criaÃ¯Â¿Â½Ã¯Â¿Â½o de igrejas */
+    #Layer1 {position:fixed; width:510px; height:289px; z-index: 8999; left: 30%;	top: 100px; display:block;}
+    #fechar{display:block; width:25px; height:30px; margin-top:0px; margin-right:15px; float: right}
+</style>
+
+<script type="text/javascript">
+    function fechaCad(){
+        document.getElementById('Layer1').style.display = 'none';
+    }
+</script>
+
+<div id="Layer1" style="background: url( http://www.buscapaz.com/faculdadegospel/images/BannerPromocao.jpg) no-repeat top center; width:510px; height:289px;">
+    <a id="fechar" href="javascript:fechaCad();" title="Fechar"></a>
+    <form name="CadastroNewsletter" id="CadastroNewsletter" method="post" action="/index.php" style="padding-top: 230px; padding-left: 12px;">
+        <input type="text" name="formNewsNome" id="formNewsNome" placeholder="Digite seu nome" style="width: 157px; margin-top: 10px; float: left;" />
+        <input type="text" name="formNewsFone" id="formNewsFone" placeholder="DDD Cel" class="fone" style="width: 112px; margin-left: 8px; margin-top: 10px; float: left;" onKeyPress="return txtBoxFormat(this, '(99) 999999999', event);" maxlength="14" />
+        <input type="text" name="formNewsEmail" id="formNewsEmail" placeholder="Digite seu email" style="width: 150px; margin-left: 7px; margin-top: 10px;float: left;" />
+        <input type="hidden" name="formNewsSegmento" id="formNewsSegmento" value="1">
+        <input type="hidden" name="formNewsOrigem" id="formNewsOrigem" value="ebook-do-curso-internacional-de-teologia">
+        <input type="hidden" name="formNewsLink" id="formNewsLink" value="www.psicologopastor.com.br/" />
+        <input type="image" src="/images/enviaBann.png" style="margin-left: 3px;margin-top: 10px;float: left;">
+    </form>
+</div>
+
+        <!-- Cï¿½digo de renderizaï¿½ï¿½o do botï¿½o mais um | <g:plusone size="medium"></g:plusone> -->
+        <script type="text/javascript">
+                        window.___gcfg = {lang: 'pt-BR'};
+
+                        (function() {
+                            var po = document.createElement('script');
+                            po.type = 'text/javascript';
+                            po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(po, s);
+                        })();
+        </script>
+
+        <script>
+
+            $(function() {
+                $('#menProdu li a').click(function(e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                });
+            });
+
+
+            function chamaPagina(url) {
+                location.href = url.value;
+                exit();
+            }
+
+            function txtBoxFormat(objeto, sMask, evtKeyPress) {
+                var i, nCount, sValue, fldLen, mskLen, bolMask, sCod, nTecla;
+
+                if (document.all) { // Internet Explorer
+                    nTecla = evtKeyPress.keyCode;
+                } else if (document.layers) { // Nestcape
+                    nTecla = evtKeyPress.which;
+                } else {
+                    nTecla = evtKeyPress.which;
+                    if (nTecla == 8) {
+                        return true;
+                    }
+                }
+
+                sValue = objeto.value;
+
+                // Limpa todos os caracteres de formatao que
+                // j estiverem no campo.
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(" ", "");
+                sValue = sValue.toString().replace(" ", "");
+                fldLen = sValue.length;
+                mskLen = sMask.length;
+
+                i = 0;
+                nCount = 0;
+                sCod = "";
+                mskLen = fldLen;
+
+                while (i <= mskLen) {
+                    bolMask = ((sMask.charAt(i) == "-") || (sMask.charAt(i) == ".") || (sMask.charAt(i) == "/") || (sMask.charAt(i) == ":"))
+                    bolMask = bolMask || ((sMask.charAt(i) == "(") || (sMask.charAt(i) == ")") || (sMask.charAt(i) == " "))
+
+                    if (bolMask) {
+                        sCod += sMask.charAt(i);
+                        mskLen++;
+                    }
+                    else {
+                        sCod += sValue.charAt(nCount);
+                        nCount++;
+                    }
+
+                    i++;
+                }
+
+                objeto.value = sCod;
+
+                if ((nTecla != 8) || (nTecla != 11)) { // backspace
+                    if (sMask.charAt(i - 1) == "9") { // apenas nmeros...
+                        return ((nTecla > 47) && (nTecla < 58));
+                    }
+                    else { // qualquer caracter...
+                        return true;
+                    }
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+
+
+    </body>
+</html>

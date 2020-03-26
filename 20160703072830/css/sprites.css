@@ -1,0 +1,90 @@
+.icon-facebook, .icon-google-plus, .icon-twitter, .icon-youtube, .bandeira-inglaterra, .bandeira-israel, .bandeira-nacoes-unidas, .bandeira-usa, .icon-brasil, .icon-claro, .icon-oi, .icon-tim, .icon-vivo{
+	background: url(/images/sprites.png) no-repeat;
+}
+
+.icon-facebook{
+	background-position: -68px 0;
+	width: 31px;
+	height: 31px;
+}
+
+.icon-google-plus{
+	background-position: -103px 0;
+	width: 31px;
+	height: 31px;
+}
+
+.icon-twitter{
+	background-position: -34px 0;
+	width: 31px;
+	height: 31px;
+}
+
+.icon-youtube{
+	background-position: 0 0;
+	width: 31px;
+	height: 31px;
+}
+
+.bandeira-inglaterra{
+	background-position: -66px -34px ;
+	width: 30px;
+	height: 21px;
+}
+
+.bandeira-israel{
+	background-position: -33px -34px ;
+	width: 30px;
+	height: 21px;
+}
+
+.bandeira-nacoes-unidas{
+	background-position: 0 -34px ;
+	width: 30px;
+	height: 21px;
+}
+
+.bandeira-usa{
+	background-position: -99px -34px ;
+	width: 30px;
+	height: 21px;
+}
+
+.icon-brasil{
+	background-position: -161px -30px ;
+	width: 25px;
+	height: 25px;
+}
+
+.icon-claro{
+	background-position: -139px 0;
+	width: 12px;
+	height: 12px;
+        display: block;
+        margin: 3px 0 0 3px
+}
+
+.icon-oi{
+	background-position: -137px -17px ;
+	width: 15px;
+	height: 14px;
+        display: block;
+        margin: 3px 0 0 3px
+}
+
+.icon-tim{
+	background-position: -160px -16px ;
+	width: 30px;
+	height: 13px;
+        display: block;
+        margin: 3px 0 0 3px
+}
+
+.icon-vivo{
+	background-position: -156px 0;
+	width: 33px;
+	height: 12px;
+        display: block;
+        margin: 3px 0 0 3px
+}
+

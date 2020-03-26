@@ -1,0 +1,2215 @@
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <meta name="title" content="SIPP - Sociedade Internacional de Psicólogos e Pastores" />
+        <meta name="Keywords" content="Psicologo, Pastor, cursos, online, distância, fé, Assembléia, Deus, Gideões, Missões, pecado, história, pregação, arrebatamento, virtual, teologia, igreja, ministério, pregações, gospel, evangélicos, seminário, , CPAD" />
+        <meta name="Description" content="Psicologo Pastor história pregação arrebatamento virtual teologia igreja ministériocursos online distância Assembleia Deus Gideões Missões pecado " />
+        <meta name="distribution" content="Global" />
+        <meta http-equiv="Content-language" content="pt-br, pt" />
+        <meta name="REVISIT-AFTER" content="3 DAYS" />
+                <title>SIPP - Sociedade Internacional de Psicólogos e Pastores</title>
+
+        <link href="/stylesCNP/conselhonacionaldepastor.css" rel="stylesheet" media="screen" type="text/css" />
+                        <link href="http://www.buscapaz.com/abraloe/styles/skel.css" rel="stylesheet" media="screen" type="text/css" />
+                        <style type="text/css">
+                            <!--
+                                body {margin: 0px;background-color: #FFFFFF;background-image: url(http://www.buscapaz.com/gform/upload/topos/psicologopastor.jpg);background-position: top center;background-repeat:repeat-x;}
+                            -->
+                        </style>
+                            <link href="/estilos.css" rel="stylesheet" media="screen" type="text/css" />
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_js/scripts.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.form.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.corner.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.dimensions.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.lightbox-0.5.min.js"></script>
+
+        <script type="text/javascript" src="http://www.buscapaz.com/api/_js/cadFormNewsletter.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+
+            function limpa_topo(campo) {
+                var f = document.getElementById(campo);
+
+                switch (campo) {
+                    case 'busca_top_field' :
+                        if (f.value.toUpperCase() == "BUSCAR NO SITE") {
+                            f.value = "";
+                        }
+                        break;
+                    case 'formNewsEmailTopo' :
+                        if (f.value.toUpperCase() == "E-MAIL") {
+                            f.value = "";
+                        }
+                        break;
+                }
+            }
+
+            function retVal_topo(campo) {
+                var f = document.getElementById(campo);
+                if ((f.value == "")) {
+                    if (campo == 'busca_top_field') {
+                        f.value = "BUSCAR NO SITE";
+                    } else {
+                        f.value = "E-MAIL";
+                    }
+                }
+            }
+
+            function CapEnterBusca(event) {
+                if (event.keyCode == 13) {
+                    valida_busca();
+                }
+            }
+            function valida_busca() {
+                f = document.getElementById('busca_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'BUSCAR NO SITE')) {
+                    alert('Informe o que voce deseja buscar no site!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=busca&q=' + f.value;
+                    return true;
+                }
+            }
+
+            function valida_email() {
+                f = document.getElementById('newsletter_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'E-MAIL')) {
+                    alert('Informe seu e-mail!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=grava_email&email=' + f.value;
+                    return true;
+                }
+            }
+        </script>
+        <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42983353-45', 'psicologopastor.com.br');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body style="font-size: 12px; font-family: Verdana, Arial, sans-serif;">
+        <div id="area_site">
+            
+                        <div id="top">
+                            <a href="/?sec=home" class="PHome f_left"></a>
+                            <a href="/?sec=noticias_visual" class="PNoticias f_left"></a>
+                            <a href="/?sec=cursos" class="PCursos f_left"></a>
+                            <a href="/?sec=cadastro_pastor" class="PCadPastores f_left"></a>
+                            <a href="http://www.faculdadegospel.com.br" target="_blank" class="PFaculdade f_left"></a>
+                            <a href="/?sec=faleconosco" class="PContato f_left"></a>
+                        </div>
+                        <div id="subtopo">
+                            <div id="busca_top" class="f_left"><input id="busca_top_field" name="busca_top_field" value="BUSCAR NO SITE" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterBusca(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top_conselhonacionaldepastor.jpg" border="0" onclick="valida_busca()" /></a></div>
+                            <div id="atendimento_top" class="f_left">
+                                <div id="atendimento_online" style="width: 151px; height: 37px;">
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/support_status.php?COMPANY_ID=11479&SITE_ID=13464&ssl=1"></script>
+                                    <!--INCIO RASTREADOR - TRACK -->	
+                                    <script language="JavaScript" >
+                                        var _webtrack_domain = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_company_id = 11479;
+                                        var _webtrack_site_id = 13452;
+                                        var _webtrack_domain_chatwindow = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_variables = new Array();
+                                        var _webtrack_ssl = 1;
+                                    </script>
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/webtrack.js"></script>
+                                </div>			
+                            </div>
+                            <div id="newsletter_top" class="f_left"><input id="newsletter_top_field" name="newsletter_top_field" value="CADASTRE SEU E-MAIL" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterEmail(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top2_conselhonacionaldepastor.jpg" border="0" onclick="valida_email()" /></a></div>
+                            <div class="limpa"></div>
+                        </div>
+                                
+            <div class="limpa"></div>
+            <div id="areaMenu" style="padding-top:5px;">
+                <a href="/index.php?sec=matriculas"><img src="http://www.buscapaz.com/newgospel/images/bann_congresso.jpg" width="153" height="197" border="0" /></a>
+                <div id="linksMenu">
+                    <div class="titSec" style="color:#1d682b">\Destaque</div>
+                    <a href="/index.php?sec=historia">Hist&oacute;ria</a> <a href="/index.php?sec=compromisso">Compromisso</a>
+                    <a href="/index.php?sec=ingressar">Ingressar</a>
+                    <a href="/index.php?sec=filiese">Filie-se</a>
+                    <a href="/index.php?sec=galeria">Lista de Pastores </a>
+                    <a href="/index.php?sec=galeria_fotos">Galeria de Fotos </a>
+                    <a href="/autores">Autores</a>
+                    <div class="titSec" style="color:#0e1f5e">\Principal</div>
+                    <a href="/index.php?sec=noticias_visual">Not&iacute;cias</a>
+                    <a href="/index.php?sec=atendimento_online">Atendimento</a>
+                    <a href="/index.php?sec=pagamento">Pagamentos</a>
+                    <a href="/index.php?sec=vantagens">Vantagens</a>
+                    <a href="/index.php?sec=promocao">Promo&ccedil;&otilde;es</a>
+                    <a href="/index.php?sec=doacao">Doa&ccedil;&otilde;es</a>
+                    <div class="titSec" style="color:#817d06">\Produtos</div>
+                    <a href="/index.php?sec=prod">Pre&ccedil;o Pedido</a>
+                    <a href="/index.php?sec=cursos">Curso Reconhecido</a>
+                    <a href="/index.php?sec=titulos&tipo=h">T&iacute;tulo Honor&iacute;fico</a>
+                    <a href="/index.php?sec=titulos">T&iacute;tulo Internacional</a>
+                    <a href="/index.php?sec=titulos&tipo=e">T&iacute;tulo Em&eacute;rito</a>
+                    <a href="/produtos" target="_blank">Loja Virtual</a>
+                    <a href="/produtos/pastor-dvd">Dvd's</a>
+                    <a href="/produtos/livro">Livraria</a>
+                    <div class="titSec" style="color:#e32e10">\Faculdade Gospel</div>
+                    <a href="/index.php?sec=quem_somos">Quem Somos</a>
+                    <a href="/index.php?sec=missao">Nossa Miss&atilde;o</a>
+                    <a href="/index.php?sec=galeria">Pastor Igreja</a>
+                    <a href="/index.php?sec=intercambio">Interc&acirc;mbio</a>
+                    <div class="titSec" style="color:#c78800">\Canais</div>
+                    <a href="http://www.abecad.com.br" target="_blank">ABECAD</a>
+                    <a href="http://www.igrejaemcasa.com.br" target="_blank">Igreja em Casa</a>
+                    <a href="http://www.redeinternacional.com.br" target="_blank">Rede Internacional</a>
+                    <a href="/index.php?sec=parceiros">Parceiro</a>
+                    <div class="titSec" style="color:#730477">\Diversos</div>
+                    <a href="/index.php?sec=podcast">PodCast</a>
+                    <a href="/index.php?sec=noticias_visual">Cantores</a>
+                    <a href="/index.php?sec=redes_sociais">Redes Sociais</a>
+                    <a href="http://www.youtube.com/faculdadegospel" target="_blank">Youtube</a>
+                    <a href="/index.php?sec=mais_buscadas">Mais Buscadas</a>
+                    <div class="titSec" style="color:#000000">\Servi&ccedil;os</div>
+                    <a href="/index.php?sec=ganhebrinde">Ganhe Brindes</a>
+                    <a href="/index.php?sec=tv-radio">Tv e R&aacute;dio</a>
+                    <a href="/index.php?sec=cadastro_pastor">Cadastro de Pastor</a>
+                    <a href="/index.php?sec=cadastro_igreja">Cadastro de Igreja</a>
+                    <a href="/igrejas">Igrejas do Brasil</a>
+                    <a href="/index.php?sec=links">Link's &Uacute;teis</a>
+                    <a href="/index.php?sec=faleconosco">Fale Conosco</a>
+                    <div class="titSec" style="color:#000000">\Produtos Gospel</div>
+                    <a href="/produtos/biblia">Bíblia</a><a href="/produtos/cd">CD</a><a href="/produtos/livro">Livro</a><a href="/produtos/pastor-dvd">Pastor DVD</a>                </div>
+                <br /><br />
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_conselho_federal_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.igrejaemcasa.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_igreja_em_casa.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.faculdadegospel.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_faculdade_gospel.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.cgiadb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_cgiadb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.apameb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_apameb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_formacao_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.kellencristine.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/banner_kellen.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><img src="http://www.buscapaz.com/newgospel/images/bann_tv.jpg" width="153" height="81" border="0" /></div>
+                <div class="bannerP"><a href="/index.php?sec=doacao"><img src="http://www.buscapaz.com/newgospel/images/bann_doacao.jpg" width="153" height="81" border="0" /></a></div>
+                <br /><br /><a href="#"><img src="http://www.buscapaz.com/newgospel/images/bann_dvds.jpg" width="153" height="335" border="0" /></a>
+<a href="http://www.gospelinternacional.com.br" target="_blank" style="color: #000000;"><b>ACIMAD</b><br />Academia Internacional de Músicos e Adoradores de Deus.</a><br /><br /><a href="http://www.conselhonacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>ABRALOE</b><br />Academia Brasileira de Letras e Oradores Evangélicos.</a><br /><br /><a href="http://www.assembleiainternacional.com.br" target="_blank" style="color: #000000;"><b>CINIAD</b><br />Convenção Internacional das Igrejas Evangélicas Assembléias de Deus</a><br /><br /><a href="http://www.apameb.com.br" target="_blank" style="color: #000000;"><b>APAMEB</b><br />Associação dos Pastores e Ministros Evangélicos do Brasil</a><br /><br /><a href="http://www.modelodecristo.com.br" target="_blank" style="color: #000000;"><b>CODICE</b><br />Convenção das Igrejas e Comunidades em Células</a><br /><br /><a href="http://www.conselhodepastor.com.br" target="_blank" style="color: #000000;"><b>CIPAM</b><br />Conselho Internacional de Pastor e Ministros</a><br /><br /><a href="http://www.pastornaeuropa.com.br" target="_blank" style="color: #000000;"><b>CEP</b><br />Convenção Européia de Pastores. Faça Missões na Europa!!</a><br /><br /><a href="http://www.cgiadb.com.br" target="_blank" style="color: #000000;"><b>CGIADB</b><br />Convenção Geral Assembléia de Deus Internacional</a><br /><br /><a href="http://www.psicologopastor.com.br" target="_blank" style="color: #000000;"><b>SIPPA</b><br />Sociedade Internacional de Psicólogos e Pastores</a><br /><br /><a href="http://www.pregadorevangelico.com.br" target="_blank" style="color: #000000;"><b>CIPE</b><br />Conselho Internacional de Pregadores Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OIPAR</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.conselhofederaldepastor.com.br" target="_blank" style="color: #000000;"><b>CFP</b><br />Seja representante em sua federação</a><br /><br /><a href="http://www.sejabatista.com.br" target="_blank" style="color: #000000;"><b>CBI</b><br />Convenção Batista Internacional (Convention International Baptist)</a><br /><br /><a href="http://www.igrejaindependente.com.br" target="_blank" style="color: #000000;"><b>CICAI</b><br />Convenção das Igrejas e Comunidades Autônomas e Independentes</a><br /><br /><a href="http://www.presbiterianainternacional.com.br" target="_blank" style="color: #000000;"><b>CPI</b><br />Convenção Presbiteriana Internacional</a><br /><br /><a href="http://www.conferencistaevangelico.com.br" target="_blank" style="color: #000000;"><b>AICE</b><br />Associação Internacional de Conferencistas Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OMPAME</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.redelondres.com.br" target="_blank" style="color: #000000;"><b>REDE LONDRES</b><br />Milhares de cursos Livres a Distância. Bolsa de 90%. Estude em casa.</a><br /><br />                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>
+                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>			
+            </div><!-- /areaMenu -->
+            <div id="areaCorpo" class="f_left">
+		<div id="CONTENT">
+			<div style="width: 810px; border-bottom: solid 2px #9ea23d; font-family: Arial; font-size: 13pt;">
+				<span style="color: #693107; "><b>LISTA DE PASTORES</b></span> <span style="color:#abb03f;"><b></b></span>									
+			</div>
+						<div style="width: 798px; margin-top: 20px;" align="center">
+				<a href=index.php?sec=curso.php&id_curso=6 ><img src="http://www.buscapaz.com/faculdadegospel/images/banners/160.jpg" width="522" height="144" style="border: 3px solid #9ea23d; margin-top: -10px;"  /></a>			</div>
+			<!--   div style="color: #870a0a; font-size: 12pt; font-family: Arial; margin-top: 10px;" align="center">Central de atendimento e televendas:   0800 942 3153</div -->			<div style="background: url(http://www.buscapaz.com/faculdadegospel/images/fundo_formandos.jpg) no-repeat top left; width: 801px; height: 35px; margin-top: 15px; padding-top: 3px;">
+				<div style="background: url(http://www.buscapaz.com/faculdadegospel/images/fundo_bandeiras.png) no-repeat top left; width: 400px; height: 27px; padding-top: 3px; float: left;">
+					<div style="margin-left: 75px; float: left; width: 36px; height: 23px;">
+						<img src="http://www.buscapaz.com/gform/upload/pais/mini_bandeira_brasil.jpg" alt="Brasil" title="Brasil" width="36" height="23" style="border: 1px solid #2f3a01;" />
+					</div>
+					<div style="float: left; margin-left: 60px; color: #fff; margin-top: 7px;"><b>Brasil</b></div>
+				</div>
+							</div>
+				
+				<div style="clear: both;">
+					
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=44' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/acre.jpg' style='border: 1px solid #2f3a01;' alt='Acre' title='Acre' />
+								Acre
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=6' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/alagoas.jpg' style='border: 1px solid #2f3a01;' alt='Alagoas' title='Alagoas' />
+								Alagoas
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=3' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/amapa.jpg' style='border: 1px solid #2f3a01;' alt='Amapá' title='Amapá' />
+								Amapá
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=1' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/amazonas.jpg' style='border: 1px solid #2f3a01;' alt='Amazonas' title='Amazonas' />
+								Amazonas
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=8' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/bahia.jpg' style='border: 1px solid #2f3a01;' alt='Bahia' title='Bahia' />
+								Bahia
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=45' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/ceara.jpg' style='border: 1px solid #2f3a01;' alt='Ceara' title='Ceara' />
+								Ceara
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=9' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/brasilia.jpg' style='border: 1px solid #2f3a01;' alt='Distrito Federal' title='Distrito Federal' />
+								Distrito Federal
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=10' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/espirito_santo.jpg' style='border: 1px solid #2f3a01;' alt='Espirito Santo' title='Espirito Santo' />
+								Espirito Santo
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=11' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/goias.jpg' style='border: 1px solid #2f3a01;' alt='Goias' title='Goias' />
+								Goias
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=46' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/maranhao.jpg' style='border: 1px solid #2f3a01;' alt='Maranhão' title='Maranhão' />
+								Maranhão
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=47' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/mato_grosso.jpg' style='border: 1px solid #2f3a01;' alt='Mato Grosso' title='Mato Grosso' />
+								Mato Grosso
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=48' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/rio_grande_do_sul.jpg' style='border: 1px solid #2f3a01;' alt='Mato Grosso do Sul' title='Mato Grosso do Sul' />
+								Mato Grosso do Sul
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=7' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/minas_gerais.jpg' style='border: 1px solid #2f3a01;' alt='Minas Gerais' title='Minas Gerais' />
+								Minas Gerais
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=12' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/para.jpg' style='border: 1px solid #2f3a01;' alt='Pará' title='Pará' />
+								Pará
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=13' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/paraiba.jpg' style='border: 1px solid #2f3a01;' alt='Paráiba' title='Paráiba' />
+								Paráiba
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=14' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/parana.jpg' style='border: 1px solid #2f3a01;' alt='Paraná' title='Paraná' />
+								Paraná
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=15' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/pernambuco.jpg' style='border: 1px solid #2f3a01;' alt='Pernambuco' title='Pernambuco' />
+								Pernambuco
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=16' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/piaui.jpg' style='border: 1px solid #2f3a01;' alt='Piauí' title='Piauí' />
+								Piauí
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=17' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/rio_de_janeiro.jpg' style='border: 1px solid #2f3a01;' alt='Rio de Janeiro' title='Rio de Janeiro' />
+								Rio de Janeiro
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=18' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/rio_grande_do_norte.jpg' style='border: 1px solid #2f3a01;' alt='Rio Grande do Norte' title='Rio Grande do Norte' />
+								Rio Grande do Norte
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=21' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/rio_grande_do_sul.jpg' style='border: 1px solid #2f3a01;' alt='Rio Grande do Sul' title='Rio Grande do Sul' />
+								Rio Grande do Sul
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=19' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/rondonia.jpg' style='border: 1px solid #2f3a01;' alt='Rondonia' title='Rondonia' />
+								Rondonia
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=20' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/roraima.jpg' style='border: 1px solid #2f3a01;' alt='Roraima' title='Roraima' />
+								Roraima
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=22' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/santa_catarina.jpg' style='border: 1px solid #2f3a01;' alt='Santa Catarina' title='Santa Catarina' />
+								Santa Catarina
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=23' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/sao_paulo.jpg' style='border: 1px solid #2f3a01;' alt='São Paulo' title='São Paulo' />
+								São Paulo
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=24' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/sergipe.jpg' style='border: 1px solid #2f3a01;' alt='Sergipe' title='Sergipe' />
+								Sergipe
+							</a>
+						</center>
+					</div>
+				 
+					<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+						<center>
+							<a href='?sec=galeria&amp;estado=25' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/estados/tocantins.jpg' style='border: 1px solid #2f3a01;' alt='Tocantins' title='Tocantins' />
+								Tocantins
+							</a>
+						</center>
+					</div>
+								</div>
+				<div style="clear: both; display: table;">
+					<div style="margin-left: 15px; background: url(http://www.buscapaz.com/faculdadegospel/imgs/pais.jpg) no-repeat top left; height: 50px;"></div>
+					
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=130' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Afghanistan.jpg' style='border: 1px solid #2f3a01;' alt='Afeganistão' title='Afeganistão'/>
+						Afeganistão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=5' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/africa_do_sul.jpg' style='border: 1px solid #2f3a01;' alt='África do Sul' title='África do Sul'/>
+						África do Sul
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=114' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/albania.jpg' style='border: 1px solid #2f3a01;' alt='Albânia' title='Albânia'/>
+						Albânia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=6' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/alemanha.jpg' style='border: 1px solid #2f3a01;' alt='Alemanha' title='Alemanha'/>
+						Alemanha
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=129' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/andorra.jpg' style='border: 1px solid #2f3a01;' alt='Andorra' title='Andorra'/>
+						Andorra
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=7' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/angola.jpg' style='border: 1px solid #2f3a01;' alt='Angola' title='Angola'/>
+						Angola
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=131' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Anguilla.jpg' style='border: 1px solid #2f3a01;' alt='Anguilla' title='Anguilla'/>
+						Anguilla
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=132' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Antigua_and_Barbudasv.jpg' style='border: 1px solid #2f3a01;' alt='Antígua e Barbuda' title='Antígua e Barbuda'/>
+						Antígua e Barbuda
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=133' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/antilhas_holandesas.jpg' style='border: 1px solid #2f3a01;' alt='Antilhas Holandesas' title='Antilhas Holandesas'/>
+						Antilhas Holandesas
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=8' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/arabia_saudita.jpg' style='border: 1px solid #2f3a01;' alt='Arábia Saudita' title='Arábia Saudita'/>
+						Arábia Saudita
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=9' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/argelia.jpg' style='border: 1px solid #2f3a01;' alt='Argélia' title='Argélia'/>
+						Argélia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=10' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/argentina.jpg' style='border: 1px solid #2f3a01;' alt='Argentina' title='Argentina'/>
+						Argentina
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=134' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Armenia.jpg' style='border: 1px solid #2f3a01;' alt='Armênia' title='Armênia'/>
+						Armênia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=135' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Aruba.jpg' style='border: 1px solid #2f3a01;' alt='Aruba' title='Aruba'/>
+						Aruba
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=11' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/australia.jpg' style='border: 1px solid #2f3a01;' alt='Austrália' title='Austrália'/>
+						Austrália
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=76' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/austria.jpg' style='border: 1px solid #2f3a01;' alt='Áustria' title='Áustria'/>
+						Áustria
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=205' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Azerbaijan.jpg' style='border: 1px solid #2f3a01;' alt='Azerbaijão' title='Azerbaijão'/>
+						Azerbaijão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=136' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Bahamas1.jpg' style='border: 1px solid #2f3a01;' alt='Bahamas' title='Bahamas'/>
+						Bahamas
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=137' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Bahrain.jpg' style='border: 1px solid #2f3a01;' alt='Bahrein' title='Bahrein'/>
+						Bahrein
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=12' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/bangladesh.jpg' style='border: 1px solid #2f3a01;' alt='Bangladesh' title='Bangladesh'/>
+						Bangladesh
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=138' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/barbados.jpg' style='border: 1px solid #2f3a01;' alt='Barbados' title='Barbados'/>
+						Barbados
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=139' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Belarus.jpg' style='border: 1px solid #2f3a01;' alt='Belarus' title='Belarus'/>
+						Belarus
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=13' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/belgica.jpg' style='border: 1px solid #2f3a01;' alt='Bélgica' title='Bélgica'/>
+						Bélgica
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=140' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/belize.jpg' style='border: 1px solid #2f3a01;' alt='Belize' title='Belize'/>
+						Belize
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=141' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/benin.jpg' style='border: 1px solid #2f3a01;' alt='Benin' title='Benin'/>
+						Benin
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=142' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Bermudas_bandeira.jpg' style='border: 1px solid #2f3a01;' alt='Bermudas' title='Bermudas'/>
+						Bermudas
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=143' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/birmania2.jpg' style='border: 1px solid #2f3a01;' alt='Birmânia' title='Birmânia'/>
+						Birmânia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=14' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/bolivia.jpg' style='border: 1px solid #2f3a01;' alt='Bolívia' title='Bolívia'/>
+						Bolívia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=144' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Bosnia-Herzegovina.jpg' style='border: 1px solid #2f3a01;' alt='Bósnia-Herzegovina' title='Bósnia-Herzegovina'/>
+						Bósnia-Herzegovina
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=145' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Botsuana.jpg' style='border: 1px solid #2f3a01;' alt='Botsuana' title='Botsuana'/>
+						Botsuana
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=1' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/bandeira_brasil.jpg' style='border: 1px solid #2f3a01;' alt='Brasil' title='Brasil'/>
+						Brasil
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=146' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Brunei.jpg' style='border: 1px solid #2f3a01;' alt='Brunei Darussalam' title='Brunei Darussalam'/>
+						Brunei Darussalam
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=15' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/bulgaria.jpg' style='border: 1px solid #2f3a01;' alt='Bulgária' title='Bulgária'/>
+						Bulgária
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=147' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Burkina_Faso.jpg' style='border: 1px solid #2f3a01;' alt='Burkina Faso' title='Burkina Faso'/>
+						Burkina Faso
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=148' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Burundi.jpg' style='border: 1px solid #2f3a01;' alt='Burundi' title='Burundi'/>
+						Burundi
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=149' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Bhutan.jpg' style='border: 1px solid #2f3a01;' alt='Butão' title='Butão'/>
+						Butão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=108' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/cabo_verde.jpg' style='border: 1px solid #2f3a01;' alt='Cabo Verde' title='Cabo Verde'/>
+						Cabo Verde
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=110' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/camaroes.jpg' style='border: 1px solid #2f3a01;' alt='Camarões' title='Camarões'/>
+						Camarões
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=150' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Cambodia.jpg' style='border: 1px solid #2f3a01;' alt='Camboja' title='Camboja'/>
+						Camboja
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=18' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/canada.jpg' style='border: 1px solid #2f3a01;' alt='Canadá' title='Canadá'/>
+						Canadá
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=151' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Kyrgyzstan.jpg' style='border: 1px solid #2f3a01;' alt='Casaquistão' title='Casaquistão'/>
+						Casaquistão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=152' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Qatar.jpg' style='border: 1px solid #2f3a01;' alt='Catar' title='Catar'/>
+						Catar
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=153' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Chad.jpg' style='border: 1px solid #2f3a01;' alt='Chade' title='Chade'/>
+						Chade
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=19' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/chile.jpg' style='border: 1px solid #2f3a01;' alt='Chile' title='Chile'/>
+						Chile
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=20' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/china.jpg' style='border: 1px solid #2f3a01;' alt='China' title='China'/>
+						China
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=154' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Cyprus.jpg' style='border: 1px solid #2f3a01;' alt='Chipre' title='Chipre'/>
+						Chipre
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=157' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Vatican_City.jpg' style='border: 1px solid #2f3a01;' alt='Cidade do Vaticano' title='Cidade do Vaticano'/>
+						Cidade do Vaticano
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=79' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/cingapura.jpg' style='border: 1px solid #2f3a01;' alt='Cingapura' title='Cingapura'/>
+						Cingapura
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=21' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/colombia.jpg' style='border: 1px solid #2f3a01;' alt='Colômbia' title='Colômbia'/>
+						Colômbia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=155' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Comoros.jpg' style='border: 1px solid #2f3a01;' alt='Comores' title='Comores'/>
+						Comores
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=156' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Congo.jpg' style='border: 1px solid #2f3a01;' alt='Congo' title='Congo'/>
+						Congo
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=22' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/coreia_do_sul.jpg' style='border: 1px solid #2f3a01;' alt='Coréia do Sul' title='Coréia do Sul'/>
+						Coréia do Sul
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=24' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/costa_do_marfim.jpg' style='border: 1px solid #2f3a01;' alt='Costa do Marfim' title='Costa do Marfim'/>
+						Costa do Marfim
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=23' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/costa_rica.jpg' style='border: 1px solid #2f3a01;' alt='Costa Rica' title='Costa Rica'/>
+						Costa Rica
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=25' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/croacia.jpg' style='border: 1px solid #2f3a01;' alt='Croácia' title='Croácia'/>
+						Croácia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=26' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/cuba.jpg' style='border: 1px solid #2f3a01;' alt='Cuba' title='Cuba'/>
+						Cuba
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=27' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/dinamarca.jpg' style='border: 1px solid #2f3a01;' alt='Dinamarca' title='Dinamarca'/>
+						Dinamarca
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=158' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Djibouti.jpg' style='border: 1px solid #2f3a01;' alt='Djibuti' title='Djibuti'/>
+						Djibuti
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=159' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Dominica.jpg' style='border: 1px solid #2f3a01;' alt='Dominica' title='Dominica'/>
+						Dominica
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=28' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/egito.jpg' style='border: 1px solid #2f3a01;' alt='Egito' title='Egito'/>
+						Egito
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=29' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/el_salvador.jpg' style='border: 1px solid #2f3a01;' alt='El Salvador' title='El Salvador'/>
+						El Salvador
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=160' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/United_Arab_Emirates.jpg' style='border: 1px solid #2f3a01;' alt='Emirados Árabes' title='Emirados Árabes'/>
+						Emirados Árabes
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=30' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/equador.jpg' style='border: 1px solid #2f3a01;' alt='Equador' title='Equador'/>
+						Equador
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=161' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Eritrea.jpg' style='border: 1px solid #2f3a01;' alt='Eritréia' title='Eritréia'/>
+						Eritréia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=31' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/eslovaquia.jpg' style='border: 1px solid #2f3a01;' alt='Eslováquia' title='Eslováquia'/>
+						Eslováquia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=162' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Slovenia.jpg' style='border: 1px solid #2f3a01;' alt='Eslovênia' title='Eslovênia'/>
+						Eslovênia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=32' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/espanha.jpg' style='border: 1px solid #2f3a01;' alt='Espanha' title='Espanha'/>
+						Espanha
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=33' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/usa.jpg' style='border: 1px solid #2f3a01;' alt='Estados Unidos da América' title='Estados Unidos da América'/>
+						Estados Unidos da América
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=163' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Estonia.jpg' style='border: 1px solid #2f3a01;' alt='Estónia' title='Estónia'/>
+						Estónia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=115' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/etiopia.jpg' style='border: 1px solid #2f3a01;' alt='Etiópia' title='Etiópia'/>
+						Etiópia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=165' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Fiji.jpg' style='border: 1px solid #2f3a01;' alt='Fiji' title='Fiji'/>
+						Fiji
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=34' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/filipinas.jpg' style='border: 1px solid #2f3a01;' alt='Filipinas' title='Filipinas'/>
+						Filipinas
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=35' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/finlandia.jpg' style='border: 1px solid #2f3a01;' alt='Finlandia' title='Finlandia'/>
+						Finlandia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=36' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/franca.jpg' style='border: 1px solid #2f3a01;' alt='França' title='França'/>
+						França
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=38' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/gabao.jpg' style='border: 1px solid #2f3a01;' alt='Gabão' title='Gabão'/>
+						Gabão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=166' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Gambia.jpg' style='border: 1px solid #2f3a01;' alt='Gâmbia ' title='Gâmbia '/>
+						Gâmbia 
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=39' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/gana.jpg' style='border: 1px solid #2f3a01;' alt='Gana' title='Gana'/>
+						Gana
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=167' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Georgia.jpg' style='border: 1px solid #2f3a01;' alt='Geórgia' title='Geórgia'/>
+						Geórgia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=168' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Gibraltar.jpg' style='border: 1px solid #2f3a01;' alt='Gibraltar' title='Gibraltar'/>
+						Gibraltar
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=169' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Grenada.jpg' style='border: 1px solid #2f3a01;' alt='Granada' title='Granada'/>
+						Granada
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=40' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/grecia.jpg' style='border: 1px solid #2f3a01;' alt='Grécia' title='Grécia'/>
+						Grécia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=170' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Greenland.jpg' style='border: 1px solid #2f3a01;' alt='Groenlândia' title='Groenlândia'/>
+						Groenlândia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=171' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Guadeloupe.jpg' style='border: 1px solid #2f3a01;' alt='Guadalupe' title='Guadalupe'/>
+						Guadalupe
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=172' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Guam_flag_300.jpg' style='border: 1px solid #2f3a01;' alt='Guam' title='Guam'/>
+						Guam
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=41' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/guatemala.jpg' style='border: 1px solid #2f3a01;' alt='Guatemala' title='Guatemala'/>
+						Guatemala
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=173' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Guernsey.jpg' style='border: 1px solid #2f3a01;' alt='Guernsey' title='Guernsey'/>
+						Guernsey
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=42' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/guiana.jpg' style='border: 1px solid #2f3a01;' alt='Guiana' title='Guiana'/>
+						Guiana
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=174' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/France.jpg' style='border: 1px solid #2f3a01;' alt='Guiana Francesa' title='Guiana Francesa'/>
+						Guiana Francesa
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=175' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Guinea.jpg' style='border: 1px solid #2f3a01;' alt='Guiné' title='Guiné'/>
+						Guiné
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=176' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Equatorial_Guinea.jpg' style='border: 1px solid #2f3a01;' alt='Guiné Equatorial' title='Guiné Equatorial'/>
+						Guiné Equatorial
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=111' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/guine_bissau_bandeira.jpg' style='border: 1px solid #2f3a01;' alt='Guiné-Bissau' title='Guiné-Bissau'/>
+						Guiné-Bissau
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=43' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/haiti.jpg' style='border: 1px solid #2f3a01;' alt='Haiti' title='Haiti'/>
+						Haiti
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=44' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/holanda.jpg' style='border: 1px solid #2f3a01;' alt='Holanda' title='Holanda'/>
+						Holanda
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=94' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/honduras.jpg' style='border: 1px solid #2f3a01;' alt='Honduras' title='Honduras'/>
+						Honduras
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=177' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Hong_Kong.jpg' style='border: 1px solid #2f3a01;' alt='Hong Kong' title='Hong Kong'/>
+						Hong Kong
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=45' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/hungria.jpg' style='border: 1px solid #2f3a01;' alt='Hungria' title='Hungria'/>
+						Hungria
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=178' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Yemen.jpg' style='border: 1px solid #2f3a01;' alt='Iêmen' title='Iêmen'/>
+						Iêmen
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=179' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Cayman_Islands.jpg' style='border: 1px solid #2f3a01;' alt='Ilhas Caimão' title='Ilhas Caimão'/>
+						Ilhas Caimão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=180' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Cook_Islands.jpg' style='border: 1px solid #2f3a01;' alt='Ilhas Cook' title='Ilhas Cook'/>
+						Ilhas Cook
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=181' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Falkland_Islands.jpg' style='border: 1px solid #2f3a01;' alt='Ilhas Malvinas' title='Ilhas Malvinas'/>
+						Ilhas Malvinas
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=182' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Marshall_Islands.jpg' style='border: 1px solid #2f3a01;' alt='Ilhas Marshall' title='Ilhas Marshall'/>
+						Ilhas Marshall
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=183' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Solomon_Islands.jpg' style='border: 1px solid #2f3a01;' alt='Ilhas Salomão' title='Ilhas Salomão'/>
+						Ilhas Salomão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=184' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/island_Turks_and_caicos.jpg' style='border: 1px solid #2f3a01;' alt='Ilhas Turks e Caicos' title='Ilhas Turks e Caicos'/>
+						Ilhas Turks e Caicos
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=185' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/British_Virgin_Islands.jpg' style='border: 1px solid #2f3a01;' alt='Ilhas Virgens Britânicas' title='Ilhas Virgens Britânicas'/>
+						Ilhas Virgens Britânicas
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=46' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/india.jpg' style='border: 1px solid #2f3a01;' alt='Índia' title='Índia'/>
+						Índia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=47' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/indonesia.jpg' style='border: 1px solid #2f3a01;' alt='Indonésia' title='Indonésia'/>
+						Indonésia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=2' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/inglaterra.jpg' style='border: 1px solid #2f3a01;' alt='Inglaterra' title='Inglaterra'/>
+						Inglaterra
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=48' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/ira.jpg' style='border: 1px solid #2f3a01;' alt='Irã' title='Irã'/>
+						Irã
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=49' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/iraque.jpg' style='border: 1px solid #2f3a01;' alt='Iraque' title='Iraque'/>
+						Iraque
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=80' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/irlanda.jpg' style='border: 1px solid #2f3a01;' alt='Irlanda' title='Irlanda'/>
+						Irlanda
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=186' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Iceland.jpg' style='border: 1px solid #2f3a01;' alt='Islândia' title='Islândia'/>
+						Islândia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=50' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/israel.jpg' style='border: 1px solid #2f3a01;' alt='Israel' title='Israel'/>
+						Israel
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=51' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/italia.jpg' style='border: 1px solid #2f3a01;' alt='Itália' title='Itália'/>
+						Itália
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=77' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/jamaica.jpg' style='border: 1px solid #2f3a01;' alt='Jamaica' title='Jamaica'/>
+						Jamaica
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=4' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/japao.jpg' style='border: 1px solid #2f3a01;' alt='Japão' title='Japão'/>
+						Japão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=53' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/jordania.jpg' style='border: 1px solid #2f3a01;' alt='Jordania' title='Jordania'/>
+						Jordania
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=102' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/quenia.jpg' style='border: 1px solid #2f3a01;' alt='Kenya' title='Kenya'/>
+						Kenya
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=188' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Kiribati.jpg' style='border: 1px solid #2f3a01;' alt='Kiribati' title='Kiribati'/>
+						Kiribati
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=54' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/kwait.jpg' style='border: 1px solid #2f3a01;' alt='Kuwait' title='Kuwait'/>
+						Kuwait
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=189' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Laos.jpg' style='border: 1px solid #2f3a01;' alt='Laos' title='Laos'/>
+						Laos
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=116' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/lesoto.jpg' style='border: 1px solid #2f3a01;' alt='Lesoto' title='Lesoto'/>
+						Lesoto
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=190' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Latvia.jpg' style='border: 1px solid #2f3a01;' alt='Letónia' title='Letónia'/>
+						Letónia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=55' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/libano.jpg' style='border: 1px solid #2f3a01;' alt='Líbano' title='Líbano'/>
+						Líbano
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=56' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/libia.jpg' style='border: 1px solid #2f3a01;' alt='Líbia' title='Líbia'/>
+						Líbia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=191' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Lithuania.jpg' style='border: 1px solid #2f3a01;' alt='Lituânia' title='Lituânia'/>
+						Lituânia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=117' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/luxemburgo.jpg' style='border: 1px solid #2f3a01;' alt='Luxemburgo' title='Luxemburgo'/>
+						Luxemburgo
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=118' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/madagascar.jpg' style='border: 1px solid #2f3a01;' alt='Madagascar' title='Madagascar'/>
+						Madagascar
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=104' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/malasia.jpg' style='border: 1px solid #2f3a01;' alt='Malásia' title='Malásia'/>
+						Malásia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=119' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/malawi_bandeira.jpg' style='border: 1px solid #2f3a01;' alt='Malawi' title='Malawi'/>
+						Malawi
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=192' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Maldives.jpg' style='border: 1px solid #2f3a01;' alt='Maldivas' title='Maldivas'/>
+						Maldivas
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=112' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/mali.jpg' style='border: 1px solid #2f3a01;' alt='Mali' title='Mali'/>
+						Mali
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=193' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Malta.jpg' style='border: 1px solid #2f3a01;' alt='Malta' title='Malta'/>
+						Malta
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=58' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/marrocos.jpg' style='border: 1px solid #2f3a01;' alt='Marrocos' title='Marrocos'/>
+						Marrocos
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=194' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Mauritania.jpg' style='border: 1px solid #2f3a01;' alt='Mauritânia' title='Mauritânia'/>
+						Mauritânia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=59' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/mexico.jpg' style='border: 1px solid #2f3a01;' alt='México' title='México'/>
+						México
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=60' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/mocambique.jpg' style='border: 1px solid #2f3a01;' alt='Moçambique' title='Moçambique'/>
+						Moçambique
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=195' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Moldova.jpg' style='border: 1px solid #2f3a01;' alt='Moldávia' title='Moldávia'/>
+						Moldávia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=196' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Mongolia.jpg' style='border: 1px solid #2f3a01;' alt='Mongólia' title='Mongólia'/>
+						Mongólia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=197' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Montenegro.jpg' style='border: 1px solid #2f3a01;' alt='Montenegro' title='Montenegro'/>
+						Montenegro
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=198' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Montserrat.jpg' style='border: 1px solid #2f3a01;' alt='Montserrat' title='Montserrat'/>
+						Montserrat
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=107' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/namibia.jpg' style='border: 1px solid #2f3a01;' alt='Namíbia' title='Namíbia'/>
+						Namíbia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=199' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Nauru.jpg' style='border: 1px solid #2f3a01;' alt='Nauru' title='Nauru'/>
+						Nauru
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=200' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Nepal.jpg' style='border: 1px solid #2f3a01;' alt='Nepal' title='Nepal'/>
+						Nepal
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=61' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/nicaragua.jpg' style='border: 1px solid #2f3a01;' alt='Nicarágua' title='Nicarágua'/>
+						Nicarágua
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=113' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/niger.jpg' style='border: 1px solid #2f3a01;' alt='Niger' title='Niger'/>
+						Niger
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=62' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/nigeria.jpg' style='border: 1px solid #2f3a01;' alt='Nigéria' title='Nigéria'/>
+						Nigéria
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=201' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Niue.jpg' style='border: 1px solid #2f3a01;' alt='Niue' title='Niue'/>
+						Niue
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=63' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/noruega.jpg' style='border: 1px solid #2f3a01;' alt='Noruega' title='Noruega'/>
+						Noruega
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=120' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/nova_zelandia.jpg' style='border: 1px solid #2f3a01;' alt='Nova Zelandia' title='Nova Zelandia'/>
+						Nova Zelandia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=64' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/ordem_de_malta.jpg' style='border: 1px solid #2f3a01;' alt='Ordem de Malta' title='Ordem de Malta'/>
+						Ordem de Malta
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=123' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/reino_unido_bandeira.jpg' style='border: 1px solid #2f3a01;' alt='País de Gales' title='País de Gales'/>
+						País de Gales
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=65' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/palestina.jpg' style='border: 1px solid #2f3a01;' alt='Palestina' title='Palestina'/>
+						Palestina
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=66' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/panama.jpg' style='border: 1px solid #2f3a01;' alt='Panamá' title='Panamá'/>
+						Panamá
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=202' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Papua_New_Guinea.jpg' style='border: 1px solid #2f3a01;' alt='Papua Nova Guiné' title='Papua Nova Guiné'/>
+						Papua Nova Guiné
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=67' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/paquistao.jpg' style='border: 1px solid #2f3a01;' alt='Paquistão' title='Paquistão'/>
+						Paquistão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=68' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/paraguai.jpg' style='border: 1px solid #2f3a01;' alt='Paraguai' title='Paraguai'/>
+						Paraguai
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=69' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/peru.jpg' style='border: 1px solid #2f3a01;' alt='Peru' title='Peru'/>
+						Peru
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=70' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/polonia.jpg' style='border: 1px solid #2f3a01;' alt='Polônia' title='Polônia'/>
+						Polônia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=121' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/portorico.jpg' style='border: 1px solid #2f3a01;' alt='Porto Rico' title='Porto Rico'/>
+						Porto Rico
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=71' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/portugal.jpg' style='border: 1px solid #2f3a01;' alt='Portugal' title='Portugal'/>
+						Portugal
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=204' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Kyrgyzstan.jpg' style='border: 1px solid #2f3a01;' alt='Quirguistão' title='Quirguistão'/>
+						Quirguistão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=86' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/republica_dominicana.jpg' style='border: 1px solid #2f3a01;' alt='República Dominicana' title='República Dominicana'/>
+						República Dominicana
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=106' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/republica_theca.jpg' style='border: 1px solid #2f3a01;' alt='República Theca' title='República Theca'/>
+						República Theca
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=100' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/romenia.jpg' style='border: 1px solid #2f3a01;' alt='Romenia' title='Romenia'/>
+						Romenia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=206' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Rwanda.jpg' style='border: 1px solid #2f3a01;' alt='Ruanda' title='Ruanda'/>
+						Ruanda
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=92' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/russia.jpg' style='border: 1px solid #2f3a01;' alt='Rússia' title='Rússia'/>
+						Rússia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=124' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/saotome.jpg' style='border: 1px solid #2f3a01;' alt='São Tomé e Príncipe' title='São Tomé e Príncipe'/>
+						São Tomé e Príncipe
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=103' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/senegal.jpg' style='border: 1px solid #2f3a01;' alt='Senegal' title='Senegal'/>
+						Senegal
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=207' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Sierra_Leone.jpg' style='border: 1px solid #2f3a01;' alt='Serra Leoa' title='Serra Leoa'/>
+						Serra Leoa
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=208' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Serbia.jpg' style='border: 1px solid #2f3a01;' alt='Sérvia' title='Sérvia'/>
+						Sérvia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=52' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/servia_e_montenegro.jpg' style='border: 1px solid #2f3a01;' alt='Servia e Montenegro' title='Servia e Montenegro'/>
+						Servia e Montenegro
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=209' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Seychelles.jpg' style='border: 1px solid #2f3a01;' alt='Seychelles' title='Seychelles'/>
+						Seychelles
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=81' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/siria.jpg' style='border: 1px solid #2f3a01;' alt='Síria' title='Síria'/>
+						Síria
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=210' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Somalia.jpg' style='border: 1px solid #2f3a01;' alt='Somália' title='Somália'/>
+						Somália
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=211' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Sri_Lanka.jpg' style='border: 1px solid #2f3a01;' alt='Sri Lanka' title='Sri Lanka'/>
+						Sri Lanka
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=125' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/suazilandia.jpg' style='border: 1px solid #2f3a01;' alt='Suazilandia' title='Suazilandia'/>
+						Suazilandia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=105' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/suecia.jpg' style='border: 1px solid #2f3a01;' alt='Suécia' title='Suécia'/>
+						Suécia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=75' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/suica.jpg' style='border: 1px solid #2f3a01;' alt='Suíça' title='Suíça'/>
+						Suíça
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=213' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Suriname.jpg' style='border: 1px solid #2f3a01;' alt='Suriname' title='Suriname'/>
+						Suriname
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=214' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Tajikistan.jpg' style='border: 1px solid #2f3a01;' alt='Tadjiquistão' title='Tadjiquistão'/>
+						Tadjiquistão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=101' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/tailandia.jpg' style='border: 1px solid #2f3a01;' alt='Tailandia' title='Tailandia'/>
+						Tailandia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=126' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/tanzania.jpg' style='border: 1px solid #2f3a01;' alt='Tanzania' title='Tanzania'/>
+						Tanzania
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=215' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Togo.jpg' style='border: 1px solid #2f3a01;' alt='Togo' title='Togo'/>
+						Togo
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=216' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Tonga.jpg' style='border: 1px solid #2f3a01;' alt='Tonga' title='Tonga'/>
+						Tonga
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=217' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Trinidad_and_Tobago.jpg' style='border: 1px solid #2f3a01;' alt='Trinidad e Tobago' title='Trinidad e Tobago'/>
+						Trinidad e Tobago
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=93' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/tunisia.jpg' style='border: 1px solid #2f3a01;' alt='Tunísia' title='Tunísia'/>
+						Tunísia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=218' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Turkmenistan.jpg' style='border: 1px solid #2f3a01;' alt='Turcomenistão' title='Turcomenistão'/>
+						Turcomenistão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=99' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/turquia.jpg' style='border: 1px solid #2f3a01;' alt='Turquia' title='Turquia'/>
+						Turquia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=219' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Tuvalu.jpg' style='border: 1px solid #2f3a01;' alt='Tuvalu' title='Tuvalu'/>
+						Tuvalu
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=83' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/ucrania.jpg' style='border: 1px solid #2f3a01;' alt='Ucrania' title='Ucrania'/>
+						Ucrania
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=220' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Uganda.jpg' style='border: 1px solid #2f3a01;' alt='Uganda' title='Uganda'/>
+						Uganda
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=89' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/uruguai.jpg' style='border: 1px solid #2f3a01;' alt='Uruguai' title='Uruguai'/>
+						Uruguai
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=221' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Uzbekistan.jpg' style='border: 1px solid #2f3a01;' alt='Uzbequistão' title='Uzbequistão'/>
+						Uzbequistão
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=222' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/Vanuatu.jpg' style='border: 1px solid #2f3a01;' alt='Vanuatu' title='Vanuatu'/>
+						Vanuatu
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=96' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/venezuela.jpg' style='border: 1px solid #2f3a01;' alt='Venezuela' title='Venezuela'/>
+						Venezuela
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=84' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/vietnam.jpg' style='border: 1px solid #2f3a01;' alt='Vietnã' title='Vietnã'/>
+						Vietnã
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=127' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/zambiaF.jpg' style='border: 1px solid #2f3a01;' alt='Zambia' title='Zambia'/>
+						Zambia
+					</a>	
+				</center>
+			</div>
+		 
+			<div style='margin-top: 20px; margin-left: 25px; float:left; width:65px; height: 70px;'>
+				<center>
+					<a href='?sec=galeria&amp;pais=82' style='color: #70751c; text-decoration: none;'><img src='http://www.buscapaz.com/gform/upload/pais/zimbabue.jpg' style='border: 1px solid #2f3a01;' alt='Zimbabue' title='Zimbabue'/>
+						Zimbabue
+					</a>	
+				</center>
+			</div>
+						</div>
+					</div>            </div><!-- /areaCorpo -->
+        </div><!-- /area_site -->
+        <div class="limpa"></div>
+        <div id="rodape">
+            <div id="area_rodape" style="margin-left: 350px;">
+                <div id="bloco_link" class="f_left" style="margin-left:70px">
+                    <div class="corBranco" style="font-weight:bold">INSTITUCIONAL</div>
+                    <a href="/index.php?sec=quem_somos" class="Lrodape">Quem Somos</a><br />
+                    <a href="/index.php?sec=compromisso" class="Lrodape">Nossos Compromissos</a><br />
+                    <a href="/index.php?sec=ingressar" class="Lrodape">Quem pode ingressar</a><br />
+                    <a href="/index.php?sec=filiese" class="Lrodape">Filie-se agora</a><br />
+                    <a href="http://loja.escoladepastor.com.br/" target="_blank" class="Lrodape">Loja virtual</a><br />
+                    <a href="/index.php?sec=promocao" class="Lrodape">Promo&ccedil;&otilde;es</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">AJUDA</div>
+                    <a href="/index.php?sec=cursos" class="Lrodape">Quais s&atilde;o os cursos</a><br />
+                    <a href="/index.php?sec=missao" class="Lrodape">Como funciona?</a><br />
+                    <a href="/index.php?sec=vantagens" class="Lrodape">Perguntas frequentes</a><br />
+                    <a href="/index.php?sec=pagamento" class="Lrodape">Formas de pagamento</a><br />
+                    <a href="/index.php?sec=politica_privacidade" class="Lrodape">Politica de Privacidade</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Central de atendimento</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">REDES SOCIAIS </div>
+                    <a href="#" class="Lrodape">MySpace</a><br />
+                    <a href="http://twitter.com/igrejaemcasa" target="_blank" class="Lrodape">Twitter</a><br />
+                    <a href="http://www.orkut.com.br/Main#Profile?uid=13960611504068135313" target="_blank" class="Lrodape">Orkut</a><br />
+                    <a href="#" class="Lrodape">Ning</a><br />
+                    <a href="http://youtube.com/igrejaemcas" target="_blank" class="Lrodape">YouTube</a><br />
+                    <a href="msnim:add?contact=igrejaemcasa@hotmail.com" target="_blank" class="Lrodape">Messenger</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">FALE CONOSCO </div>
+                    <a href="#" class="Lrodape">Ligue: 0800 9423153</a><br />
+                    <a href="#" class="Lrodape">Formul&aacute;rio Contato</a><br />
+                    <a href="#" class="Lrodape">Atendimento Online</a><br />
+                    <a href="#" class="Lrodape">Atendimento por e-mail</a><br />
+                    <a href="/index.php?sec=matriculas" class="Lrodape">Matricula</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <style  type="text/css">
+    /* CSS do banner sobre a criaÃ¯Â¿Â½Ã¯Â¿Â½o de igrejas */
+    #Layer1 {position:fixed; width:510px; height:289px; z-index: 8999; left: 30%;	top: 100px; display:block;}
+    #fechar{display:block; width:25px; height:30px; margin-top:0px; margin-right:15px; float: right}
+</style>
+
+<script type="text/javascript">
+    function fechaCad(){
+        document.getElementById('Layer1').style.display = 'none';
+    }
+</script>
+
+<div id="Layer1" style="background: url( http://www.buscapaz.com/faculdadegospel/images/BannerPromocao.jpg) no-repeat top center; width:510px; height:289px;">
+    <a id="fechar" href="javascript:fechaCad();" title="Fechar"></a>
+    <form name="CadastroNewsletter" id="CadastroNewsletter" method="post" action="/index.php" style="padding-top: 230px; padding-left: 12px;">
+        <input type="text" name="formNewsNome" id="formNewsNome" placeholder="Digite seu nome" style="width: 157px; margin-top: 10px; float: left;" />
+        <input type="text" name="formNewsFone" id="formNewsFone" placeholder="DDD Cel" class="fone" style="width: 112px; margin-left: 8px; margin-top: 10px; float: left;" onKeyPress="return txtBoxFormat(this, '(99) 999999999', event);" maxlength="14" />
+        <input type="text" name="formNewsEmail" id="formNewsEmail" placeholder="Digite seu email" style="width: 150px; margin-left: 7px; margin-top: 10px;float: left;" />
+        <input type="hidden" name="formNewsSegmento" id="formNewsSegmento" value="1">
+        <input type="hidden" name="formNewsOrigem" id="formNewsOrigem" value="ebook-do-curso-internacional-de-teologia">
+        <input type="hidden" name="formNewsLink" id="formNewsLink" value="psicologopastor.com.br/index.php?sec=galeria" />
+        <input type="image" src="/images/enviaBann.png" style="margin-left: 3px;margin-top: 10px;float: left;">
+    </form>
+</div>
+
+        <!-- Cï¿½digo de renderizaï¿½ï¿½o do botï¿½o mais um | <g:plusone size="medium"></g:plusone> -->
+        <script type="text/javascript">
+                        window.___gcfg = {lang: 'pt-BR'};
+
+                        (function() {
+                            var po = document.createElement('script');
+                            po.type = 'text/javascript';
+                            po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(po, s);
+                        })();
+        </script>
+
+        <script>
+
+            $(function() {
+                $('#menProdu li a').click(function(e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                });
+            });
+
+
+            function chamaPagina(url) {
+                location.href = url.value;
+                exit();
+            }
+
+            function txtBoxFormat(objeto, sMask, evtKeyPress) {
+                var i, nCount, sValue, fldLen, mskLen, bolMask, sCod, nTecla;
+
+                if (document.all) { // Internet Explorer
+                    nTecla = evtKeyPress.keyCode;
+                } else if (document.layers) { // Nestcape
+                    nTecla = evtKeyPress.which;
+                } else {
+                    nTecla = evtKeyPress.which;
+                    if (nTecla == 8) {
+                        return true;
+                    }
+                }
+
+                sValue = objeto.value;
+
+                // Limpa todos os caracteres de formatao que
+                // j estiverem no campo.
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(" ", "");
+                sValue = sValue.toString().replace(" ", "");
+                fldLen = sValue.length;
+                mskLen = sMask.length;
+
+                i = 0;
+                nCount = 0;
+                sCod = "";
+                mskLen = fldLen;
+
+                while (i <= mskLen) {
+                    bolMask = ((sMask.charAt(i) == "-") || (sMask.charAt(i) == ".") || (sMask.charAt(i) == "/") || (sMask.charAt(i) == ":"))
+                    bolMask = bolMask || ((sMask.charAt(i) == "(") || (sMask.charAt(i) == ")") || (sMask.charAt(i) == " "))
+
+                    if (bolMask) {
+                        sCod += sMask.charAt(i);
+                        mskLen++;
+                    }
+                    else {
+                        sCod += sValue.charAt(nCount);
+                        nCount++;
+                    }
+
+                    i++;
+                }
+
+                objeto.value = sCod;
+
+                if ((nTecla != 8) || (nTecla != 11)) { // backspace
+                    if (sMask.charAt(i - 1) == "9") { // apenas nmeros...
+                        return ((nTecla > 47) && (nTecla < 58));
+                    }
+                    else { // qualquer caracter...
+                        return true;
+                    }
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+
+
+    </body>
+</html>

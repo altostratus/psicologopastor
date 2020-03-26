@@ -1,0 +1,338 @@
+<html>
+  <head>
+    <style type='text/css'>
+      <!--
+        a.link {text-decoration: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+        a.visited {text-decoration: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+        a.hover {text-decoration: underline; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+
+ 		.v1b    {font-family: Verdana, Arial, Helvetica; font-size: 7.5pt; color: #000000;}
+ 		select  {font-size : 10px; font-family: Verdana; width:150; border-width: 1; background-color: #C0C0C0; color: #000000;}
+      -->
+    </style>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/swf.js"></script>
+<script type="text/javascript">
+  /************************************************************************************************************
+  Ajax que muda o select box conforme a escolha da categoria
+  ************************************************************************************************************/
+  var ajax = new sack();
+
+  function pegaSubCat(sel) {
+    var catCode = sel.options[sel.selectedIndex].value;
+    document.getElementById('sub_cat').options.length = 0;	// Empty city select box
+    if(catCode.length>0) {
+      ajax.requestFile = 'subCat.php?catCode='+catCode;	// Specifying which file to get
+      ajax.onCompletion = criaSubCat;	// Specify function that will be executed after file has been found
+      ajax.runAJAX();		// Execute AJAX function
+    }
+  }
+
+  function criaSubCat() {
+    var obj = document.getElementById('sub_cat');
+    eval(ajax.response);	// Executing the response from Ajax as Javascript code
+  }
+
+
+    function checa_formulario(cad){
+      if (cad.nome.value == "") {
+        alert("Por favor digite seu nome completo!");
+        cad.nome.focus();
+        return (false);
+      }
+
+      if (cad.mae.value == "") {
+        alert("Por favor digite o nome de sua mãe!");
+        cad.mae.focus();
+        return (false);
+      }
+
+      if (cad.sexo.value == "") {
+        alert("Por favor escolha seu sexo!");
+        cad.sexo.focus();
+        return (false);
+      }
+
+      if (cad.data_nascimento.value == "") {
+        alert("Por favor digite sua data de nascimento!");
+        cad.data_nascimento.focus();
+        return (false);
+      }
+
+      if (cad.estado_civil.value == "") {
+        alert("Por favor escolha seu estado civil!");
+        cad.estado_civil.focus();
+        return (false);
+      }
+
+      if (cad.email.value == "") {
+        alert("O Campo E-mail está Vazio !!!");
+        cad.email.focus();
+        return (false);
+      }
+
+      if (cad.email.value.indexOf("@", 0) == -1){
+        alert("O E-mail é Invalido !!!");
+        cad.email.focus();
+        return (false);
+      }
+
+      if (cad.tel_residencial3.value == "") {
+        alert("Por favor digite seu telefone residencial!");
+        cad.tel_residencial3.focus();
+        return (false);
+      }
+
+       if (cad.cpf.value == "") {
+        alert("Por favor digite seu CPF!");
+        cad.cpf.focus();
+        return (false);
+      }
+
+      if (cad.rg.value == "") {
+        alert("Por favor digite seu RG!");
+        cad.rg.focus();
+        return (false);
+      }
+
+      if (cad.cat.value == "") {
+        alert("Por favor escolha o pais!");
+        cad.cat.focus();
+        return (false);
+      }
+
+      if (cad.sub_cat.value == "") {
+        alert("Por favor escolha o estado!");
+        cad.sub_cat.focus();
+        return (false);
+      }
+
+      if (cad.cidade.value == "") {
+        alert("Por favor digite a cidade!");
+        cad.cidade.focus();
+        return (false);
+      }
+
+      if (cad.rua.value == "") {
+        alert("Por favor digite seu endereço!");
+        cad.rua.focus();
+        return (false);
+      }
+
+      if (cad.numero.value == "") {
+        alert("Por favor digite o númeo de sua casa!");
+        cad.numero.focus();
+        return (false);
+      }
+
+      if (cad.bairro.value == "") {
+        alert("Por favor digite o bairro de sua casa!");
+        cad.bairro.focus();
+        return (false);
+      }
+
+      if (cad.cep.value == "") {
+        alert("Por favor digite o cep de sua casa!");
+        cad.cep.focus();
+        return (false);
+      }
+
+      if (cad.senha.value == "") {
+        alert("Por favor escolha uma senha!");
+        cad.senha.focus();
+        return (false);
+      }
+
+      return (true);
+    }
+  </script>
+  </head>
+  <body marginwidth=0 marginheight=0 leftMargin=0 topMargin=0  onLoad="parent.RedimensionaIframe();">
+<table border=0 cellpadding=0 cellspacing=0 width=550 height=354>
+  <tr>
+    <td width=100% align=center class=v1b>
+      <font color=ff0000></font>
+    </td>
+  </tr>
+  <form name=cad method=post onSubmit='return checa_formulario(this)' action=matricular.php>
+    <tr>
+      <td width=100% valign=top>
+	    <table border=0 width=100% bgcolor='#FFFFFF' height=483 cellspacing=1 class=v1b>
+          <tr>
+            <td width=20% height=16 bordercolorlight='#FFFFFF' align=right>Nome<font color=ff0000>*</font>:</td>
+            <td width=80% height=16 bordercolorlight='#FFFFFF'>
+              <input name=nome size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=255 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=21 bordercolorlight='#FFFFFF'>Nome do pai:</td>
+            <td height=21 bordercolorlight='#FFFFFF'>
+              <input name=pai size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=21 bordercolorlight='#FFFFFF'>Nome da mãe<font color=ff0000>*</font>:</td>
+            <td height=21 bordercolorlight='#FFFFFF'>
+              <input name=mae size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=21 bordercolorlight='#FFFFFF'>Sexo<font color=ff0000>*</font>:</td>
+            <td height=21 bordercolorlight='#FFFFFF'>
+              <select name=sexo>
+                <option></option>
+                <option value=m >Masculino</option>
+                <option value=f >Feminino</option>
+              </select>            </td>
+          </tr>
+          <tr>
+            <td align=right height=16 bordercolorlight='#FFFFFF'>Data de Nascimento<font color=ff0000>*</font>:</td>
+            <td height=16 bordercolorlight='#FFFFFF'>
+              <input name=data_nascimento size=12 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"  maxlength=10 >&nbsp;<font color=808080>(dd/mm/aaaa)</font>            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>Estado Civil<font color=ff0000>*</font>:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <select name=estado_civil>
+                <option></option>
+                <option value='Casado' >Casado(a)</option>
+                <option value='Divorciado' >Divorciado(a)</option>
+                <option value='Solteiro' >Solteiro(a)</option>
+                <option value='Viuvo' >Viuvo(a)</option>
+              </select>            </td>
+           </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>Profissão:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=profissao size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>E-mail<font color=ff0000>*</font>:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=email size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >           </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>MSN:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=msn size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >           </td>
+          </tr>
+          <tr>
+            <td align=right height=1 bordercolorlight='#FFFFFF'>Tel Residencial<font color=ff0000>*</font>:</td>
+            <td height=1 bordercolorlight='#FFFFFF'>
+              <input name=tel_residencial1 size=3 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"   maxlength=3> - <input name=tel_residencial2 size=3  maxlength=3 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" > - <input name=tel_residencial3 size=19 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"  maxlength=20 ><font color=808080>(cod/pais - cod/estado - número)            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'> Tel Celular:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=tel_celular1 size=3 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"  maxlength=3 > - <input name=tel_celular2 size=3  maxlength=3 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" > - <input name=tel_celular3 size=19  maxlength=20 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" ><font color=808080>(cod/pais - cod/estado - número)            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'> Tel do trabalho:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=tel_trabalho1 size=3 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"  maxlength=3 > - <input name=tel_trabalho2 size=3 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"  maxlength=3 > - <input name=tel_trabalho3 size=19  maxlength=20 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" > <font color=808080>(cod/pais - cod/estado + número)            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>CPF<font color=ff0000>*</font>:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=cpf size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"  maxlength=14 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>RG<font color=ff0000>*</font>:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=rg size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"  maxlength=14 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>Pais:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <select id="cat" name="cat" onChange="pegaSubCat(this)" style='font-size: 9; font-family: Verdana; border-style: inset; border-width: 1; background-color: #C0C0C0'>
+                <option></option>
+                <option value=5>África do Sul</option><option value=114>Albânia</option><option value=6>Alemanha</option><option value=7>Angola</option><option value=8>Arábia Saudita</option><option value=9>Argélia</option><option value=10>Argentina</option><option value=11>Austrália</option><option value=76>Áustria</option><option value=12>Bangladesh</option><option value=128>Bélgica</option><option value=13>Bélgica</option><option value=14>Bolívia</option><option value=1>Brasil</option><option value=15>Bulgária</option><option value=108>Cabo Verde</option><option value=110>Camarões</option><option value=18>Canadá</option><option value=19>Chile</option><option value=20>China</option><option value=79>Cingapura</option><option value=21>Colombia</option><option value=129>Colômbia</option><option value=22>Coréia do Sul</option><option value=24>Costa do Marfim</option><option value=23>Costa Rica</option><option value=25>Croácia</option><option value=26>Cuba</option><option value=27>Dinamarca</option><option value=28>Egito</option><option value=29>El Salvador</option><option value=30>Equador</option><option value=31>Eslováquia</option><option value=32>Espanha</option><option value=33>Estados Unidos da América</option><option value=115>Etiópia</option><option value=34>Filipinas</option><option value=35>Finlandia</option><option value=36>França</option><option value=38>Gabão</option><option value=39>Gana</option><option value=40>Grécia</option><option value=41>Guatemala</option><option value=42>Guiana</option><option value=111>Guiné-Bissau</option><option value=43>Haiti</option><option value=44>Holanda</option><option value=94>Honduras</option><option value=45>Hungria</option><option value=46>Índia</option><option value=47>Indonésia</option><option value=2>Inglaterra</option><option value=48>Irã</option><option value=49>Iraque</option><option value=80>Irlanda</option><option value=50>Israel</option><option value=51>Itália</option><option value=77>Jamaica</option><option value=4>Japão</option><option value=53>Jordania</option><option value=102>Kenya</option><option value=54>Kuwait</option><option value=116>Lessoto</option><option value=55>Líbano</option><option value=56>Líbia</option><option value=117>Luxemburgo</option><option value=118>Madagascar</option><option value=104>Malásia</option><option value=119>Malawi</option><option value=112>Mali</option><option value=58>Marrocos</option><option value=59>México</option><option value=60>Moçambique</option><option value=107>Namíbia</option><option value=61>Nicarágua</option><option value=113>Niger</option><option value=62>Nigéria</option><option value=63>Noruega</option><option value=120>Nova Zelandia</option><option value=64>Ordem de Malta</option><option value=65>Palestina</option><option value=66>Panamá</option><option value=67>Paquistão</option><option value=68>Paraguai</option><option value=69>Peru</option><option value=70>Polonia</option><option value=121>Porto Rico</option><option value=71>Portugal</option><option value=122>Quenia</option><option value=123>Reino Unido</option><option value=96>República da Venezuela</option><option value=16>República de Cabo Verde</option><option value=87>República de Chile</option><option value=86>República Dominicana</option><option value=17>República dos Camarões</option><option value=106>República Theca</option><option value=100>Romenia</option><option value=92>Rússia</option><option value=124>São Tomé e Príncipe</option><option value=103>Senegal</option><option value=52>Servia e Montenegro</option><option value=81>Síria</option><option value=125>Suazilandia</option><option value=105>Suécia</option><option value=75>Suíça</option><option value=88>Sul da Africa</option><option value=101>Tailandia</option><option value=126>Tanzania</option><option value=93>Tunísia</option><option value=99>Turquia</option><option value=83>Ucrania</option><option value=89>Uruguai</option><option value=109>Venezuela</option><option value=84>Vietnã</option><option value=127>Zambia</option><option value=82>Zimbabue</option>              </select>            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>Estado:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <select id="sub_cat" name="sub_cat" style='font-size: 9; font-family: Verdana; border-style: inset; border-width: 1; background-color: #C0C0C0'>
+              </select>            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>Cidade<font color=ff0000>*</font>:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=cidade size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=11 bordercolorlight='#FFFFFF'>Endereço<font color=ff0000>*</font>:</td>
+            <td height=11 bordercolorlight='#FFFFFF'>
+              <input name=rua  maxlength=100 size=20 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" >&nbsp;
+              <input name=numero  maxlength=15 size=6 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" >&nbsp;
+              <input name=bairro maxlength=100 size=20 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" ><font color=808080>(rua/número/bairro)            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>CEP<font color=ff0000>*</font>:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=cep size=20 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=15 >            </td>
+          </tr>
+          <tr>
+            <td align=right height=19 bordercolorlight='#FFFFFF'>Igreja:</td>
+            <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=igreja size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >            </td>
+          </tr>
+          <tr>
+           <td align=right height=19 bordercolorlight='#FFFFFF'>Cargo na Igreja:</td>
+             <td height=19 bordercolorlight='#FFFFFF'>
+              <input name=cargo size=60 style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0" maxlength=100 >            </td>
+          </tr>
+          <tr>
+           <td align=right height=19 bordercolorlight='#FFFFFF'>Mensagem:</td>
+             <td height=19 bordercolorlight='#FFFFFF'>
+              <textarea cols=40 rows=10 name=msg style="font-family: Verdana; font-size: 7pt; border-style: inset; border-width: 1; background-color: #C0C0C0"></textarea>            </td>
+          </tr>
+          <tr>
+            <td height=11 colspan="2" align=right bordercolorlight='#FFFFFF'>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height=11 colspan="2" align=center bordercolorlight='#FFFFFF'>Se voc&ecirc; trabalha com um dos cart&otilde;es abaixo, selecione-o(s). </td>
+          </tr>
+          <tr>
+            <td height=11 colspan="2" align=left bordercolorlight='#FFFFFF'>
+						<input type="checkbox" name="cartao[]" value="Visa"> Visa<br>
+						<input type="checkbox" name="cartao[]" value="MasterCard"> MasterCard<br>
+						<input type="checkbox" name="cartao[]" value="American Express"> American Express
+						</td>
+          </tr>
+          <tr>
+            <td height=11 colspan="2" align=center bordercolorlight='#FFFFFF'>Selecione suas &aacute;reas de interesse</td>
+          </tr>
+          <tr>
+            <td height=11 colspan="2" align=left bordercolorlight='#FFFFFF'>
+			<div align="left"><input type="checkbox" name="area_int[]" value="Convenção Geral das Igrejas Assembléia de Deus do Brasil"><label onMouseOver="script: exibe_float_carteirinha(this, '58', true);" onMouseOut="exibe_float_carteirinha(this, '58', false);">Convenção Geral das Igrejas Assembléia de Deus do Brasil</label><div id="58" style="position:absolute; padding-top:20px; right:30%; display:none;">
+               <img src="http://www.pastormarcos.com.br/titulos/58.jpg" width="187" height="163">
+			</div></div>
+			<div align="left"><input type="checkbox" name="area_int[]" value="Ordem Latino-Americano de Pastores e Capelão"><label onMouseOver="script: exibe_float_carteirinha(this, '135', true);" onMouseOut="exibe_float_carteirinha(this, '135', false);">Ordem Latino-Americano de Pastores e Capelão</label><div id="135" style="position:absolute; padding-top:20px; right:30%; display:none;">
+               <img src="http://www.pastormarcos.com.br/titulos/135.jpg" width="187" height="163">
+			</div></div>
+			<div align="left"><input type="checkbox" name="area_int[]" value="Conselho Internacional de Diáconos e Cooperadores"><label onMouseOver="script: exibe_float_carteirinha(this, '96', true);" onMouseOut="exibe_float_carteirinha(this, '96', false);">Conselho Internacional de Diáconos e Cooperadores</label><div id="96" style="position:absolute; padding-top:20px; right:30%; display:none;">
+               <img src="http://www.pastormarcos.com.br/titulos/96.jpg" width="187" height="163">
+			</div></div>
+			<div align="left"><input type="checkbox" name="area_int[]" value="Convenção Batista Internacional"><label onMouseOver="script: exibe_float_carteirinha(this, '98', true);" onMouseOut="exibe_float_carteirinha(this, '98', false);">Convenção Batista Internacional</label><div id="98" style="position:absolute; padding-top:20px; right:30%; display:none;">
+               <img src="http://www.pastormarcos.com.br/titulos/98.jpg" width="187" height="163">
+			</div></div>
+			<div align="left"><input type="checkbox" name="area_int[]" value="Federação Americana de Pastores"><label onMouseOver="script: exibe_float_carteirinha(this, '62', true);" onMouseOut="exibe_float_carteirinha(this, '62', false);">Federação Americana de Pastores</label><div id="62" style="position:absolute; padding-top:20px; right:30%; display:none;">
+               <img src="http://www.pastormarcos.com.br/titulos/62.jpg" width="187" height="163">
+			</div></div>
+									
+			</td>
+          </tr>
+          <tr>
+            <td align=right height=11 bordercolorlight='#FFFFFF'>&nbsp;</td>
+            <td height=11 bordercolorlight='#FFFFFF' align=center>
+              <input type=hidden name=id_curso value=>
+              <input type=hidden name=tipo value=1>
+              <input type=image border=0 src="http://www.pastormarcos.com.br/imgs/enviar.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            </td>
+          </tr>
+          <tr>
+            <td align=center height=19 bordercolorlight='#FFFFFF' colspan=2><font color=ff0000>*</font> campos obrigatorios</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </form> <tr><td><br><br><br><br><br></td></tr>
+</table>
+  </body>
+</html>

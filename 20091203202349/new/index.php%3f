@@ -1,0 +1,655 @@
+<html>
+  <head>
+    <title>Sociedade Internacional de Piscólogos e Pastoroes</title>
+	<style type='text/css'>
+      <!--
+        a.menu:link {text-decoration: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+        a.menu:visited {text-decoration: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+        a.menu:hover {text-decoration: underline; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7.5pt; color:#000000}
+
+        .v1b    {font-family: Verdana, Arial, Helvetica; font-size: 7.5pt; color: #000000;}
+        h1 {
+          font-family:Verdana, Arial, Helvetica, sans-serif;
+		  font-size:13px;
+		  font-weight:bold;
+		  color:#664b0b;
+		  background: #fff url(imgs/modelo.jpg) left center no-repeat;
+		  padding: 11px 0 8px 115px;
+		}
+      -->
+    </style>
+    <!--
+	  ***************************************************
+      *  Sistema Desenvolvido por Dásio Silva Lacerda   *
+      *        Todos os Direitos são Reservados         *
+      *      ADM - Sistema Administrativo de sites      *
+      *         WebMaster : Dásio Silva Lacerda         *
+      *          E-mail : dlacerda@gmail.com            *
+      ***************************************************
+
+	-->
+    <script language=javascript src=js/swf2.js type=text/javascript></script>
+	<script language=javascript src=js/swf.js type=text/javascript></script>
+  </head>
+<body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 background=planodefundo.jpg style='background-repeat:repeat-x; background-position:top'>
+  <table align=center width=100% cellpadding=0 cellspacing=0 border=0 class=v1b>
+    <tr>
+	    <td width=768>
+		  <table width=768 cellpadding=0 cellspacing=0 border=0 align=left class=v1b> 
+		    <tr>
+			  <td width=768><img src=images/index_02.jpg></td>
+			</tr>
+			<tr>
+			  <td width=774 height=189>
+			    <script type=text/javascript>SWF('topo.swf', 766, 370);</script>
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+			    <table cellpadding=0 cellspacing=0 border=0 align=left width=100% class=v1b>
+				  <tr>
+				    <td width=270 background=imgs/menu_fundo.jpg style='background-repeat:repeat-y' valign=top>
+					  <span id=span>
+					    <br><br>
+                        <table cellpadding=0 cellspacing=0 border=0 width=100% height=410 class=v1b background='http://psicologopastor.com.br/new/imgs/menu.jpg' style='background-repeat:no-repeat'>
+                          <tr>
+                            <td width=20></td>
+                            <td>
+							  <table border=0 cellpadding=0 cellspancing=0 class=v1b>
+  <tr>
+    <td><a href=index.php class=menu>Home</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=visao.php class=menu>Valores da SIPPA</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=compromisso.php class=menu>Nosso compromisso</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=ingressar.php class=menu>Quem pode ingressar</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=matriculas.php class=menu>Filie-se</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=galeria.php&cati=1 class=menu>Relação de pastores</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=entrevista.php class=menu>Entrevista de pastores</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=cursos.php class=menu>Cursos Reconhecidos</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=titulosh.php class=menu>Títulos Honoríficos</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=titulos.php class=menu>Títulos Internacionais</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=titulose.php class=menu>Títulos Eméritos</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=eventos.php class=menu>Galeria de Eventos</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href='http://www.001shop.com.br/lojas/cursodepastor/' class=menu target=_blank>Cds / Dvds</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>  <tr>
+    <td><a href=index.php?corpo=tv-radio.php class=menu>Rádio / TV online</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=livros.php class=menu>Livraria</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=sites.php class=menu>Links</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href='http://www.001shop.com.br/lojas/cursodepastor/' class=menu target=_blank>Loja Virtual</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=cadastro_pastor.php class=menu>Cadastro de Pastores</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=ministro.php class=menu>Cadastro de Ministros</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <script>
+    function result_enquete() {
+      window.open('enquete.php','nova','width=256,height=307,resizable=0,status=0,menubar=0,scrollbars=0');
+    }
+  </script>
+  <tr>
+    <td><a href='#' onClick='result_enquete()' class=menu>Enquete</a></td>
+  </tr>
+  <tr><td><img src=imgs/risco_menu.jpg border=0></td></tr>
+  <tr>
+    <td><a href=index.php?corpo=faleconosco.php class=menu>Fale Conosco</a></td>
+  </tr>
+</table>
+							</td>
+                          </tr>
+                        </table>
+					    <br>
+					    <table cellpadding=0 cellspacing=0 border=0 width=95% align=center class=v1b>
+					      <tr>
+                            <td width=15%></td>
+                            <td align=left><br>
+                              <a href=http://www.cgiadb.com.br target=_blank><img src='http://www.cursodepastor.com.br/novo/banners/15.jpg' width=113 border=0 align=absmiddle style="border-color:#000000"></a><br><br><a href=http://www.apameb.com.br target=_blank><img src='http://www.cursodepastor.com.br/novo/banners/13.jpg' width=113 border=0 align=absmiddle style="border-color:#000000"></a><br><br>                            </td>
+                          </tr>
+					    </table>
+					  </span>
+					</td>
+					<td width=504 align=center valign=top>
+					  <table align=center width=100% cellpadding=0 cellspacing=0 border=0 class=v1b>
+  <tr>
+    <td>
+	  <table align=center width=100% cellpadding=0 cellspacing=0>
+	    <tr>
+		  <td align=center><img src=imgs/pastor_links.jpg border=0></td>
+		</tr>
+	  </table>
+	  <table align=center width=100% cellpadding=0 cellspacing=0 class=v1b>
+	    <tr>
+		  <td align=center>
+            <script type=text/javascript>SWF('pastores.swf', 258, 193);</script>
+		  </td>
+		  <td align=center><img src=imgs/linha.jpg></td>
+		  <td align=center>
+            <table border=0 cellpadding=0 cellspacing=0 width=100% class=v1b>
+  <tr>
+    <td width=5%>&nbsp;</td>
+    <td width=95%>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/icon_links.jpg'>
+    </td>
+    <td>
+      <a href='http://www.cursodepastor.com.br' target=_blanck class=menu>
+        www.cursodepastor.com.br
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2 align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/risco_links.jpg' width=230 height=5>
+    </td>
+  </tr>
+    <tr>
+    <td align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/icon_links.jpg'>
+    </td>
+    <td>
+      <a href='http://www.conselhonacionaldepastor.com.br' target=_blanck class=menu>
+        www.conselhonacionaldepastor.com.br
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2 align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/risco_links.jpg' width=230 height=5>
+    </td>
+  </tr>
+    <tr>
+    <td align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/icon_links.jpg'>
+    </td>
+    <td>
+      <a href='http://www.conselhofederaldepastor.com.br' target=_blanck class=menu>
+        www.conselhofederaldepastor.com.br
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2 align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/risco_links.jpg' width=230 height=5>
+    </td>
+  </tr>
+    <tr>
+    <td align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/icon_links.jpg'>
+    </td>
+    <td>
+      <a href='http://www.cursodepastor.com.br' target=_blanck class=menu>
+        www.cursodepastor.com.br
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2 align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/risco_links.jpg' width=230 height=5>
+    </td>
+  </tr>
+    <tr>
+    <td align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/icon_links.jpg'>
+    </td>
+    <td>
+      <a href='http://www.cgiadb.com.br' target=_blanck class=menu>
+        www.CGIADB.com.br
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2 align=center>
+      <img border=0 src='http://www.psicologopastor.com.br/new/images/risco_links.jpg' width=230 height=5>
+    </td>
+  </tr>
+  <tr>
+    <td width=6%>&nbsp;</td>
+    <td width=94% align=right>
+      <a href=index.php?corpo=sites.php>
+        <img border=0 src='http://www.psicologopastor.com.br/new/images/veja_mais.jpg'>
+      </a>
+    </td>
+  </tr>
+</table>
+		  </td>
+		</tr>  
+	  </table>
+	  <table align=center width=100% cellpadding=0 cellspacing=0 bgcolor="D6D6D6" class=v1b>
+	    <tr>
+		  <td width=22% align="left"><img src='imgs/cad_rapido.jpg' align="left"></td>
+		  <td width=78% align=center valign=top>
+		    <table align=center width=100% cellpadding=0 cellspacing=0 class=v1b>
+			  <tr>
+			    <td bgcolor=333333 align=center valign=top>
+				  <font face=Verdana style='font-size: 7pt' color=ffffff>
+                    Preencha o formulário e receba informações completas e participe de sorteios.            
+                  </font>		  
+				</td>
+			  </tr>
+			  <tr><td></td></tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td colspan=2 align=center valign=top>
+		    <script language="javascript" src="../novo/js/swf.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+  function limpa() {
+    if (cad.nome.value=='Nome') {
+      cad.nome.value='';
+    }
+  }
+
+  function volta() {
+    if (cad.nome.value=='') {
+      cad.nome.value='Nome';
+    }
+  }
+  
+  function limpar() {
+    if (cad.fone.value=='(DDD)-Fone') {
+      cad.fone.value='';
+    }
+  }
+
+  function voltar() {
+    if (cad.fone.value=='') {
+      cad.fone.value='(DDD)-Fone';
+    }
+  }
+  
+  function limp() {
+    if (cad.rua.value=='Rua') {
+      cad.rua.value='';
+    }
+  }
+
+  function volt() {
+    if (cad.rua.value=='') {
+      cad.rua.value='Rua';
+    }
+  }
+
+  function lim() {
+    if (cad.numero.value=='Número') {
+      cad.numero.value='';
+    }
+  }
+
+  function vol() {
+    if (cad.numero.value=='') {
+      cad.numero.value='Número';
+    }
+  }
+
+  function limpa_endereco() {
+    if (cad.cidade.value=='Cidade') {
+      cad.cidade.value='';
+    }
+  }
+
+  function volta_endereco() {
+    if (cad.cidade.value=='') {
+      cad.cidade.value='Cidade';
+    }
+  }
+  
+  function limpa_cargo() {
+    if (cad.pais.value=='País') {
+      cad.pais.value='';
+    }
+  }
+
+  function volta_cargo() {
+    if (cad.pais.value=='') {
+      cad.pais.value='País';
+    }
+  }
+
+  function limpa_igreja() {
+    if (cad.estado.value=='Estado') {
+      cad.estado.value='';
+    }
+  }
+
+  function volta_igreja() {
+    if (cad.estado.value=='') {
+      cad.estado.value='Estado';
+    }
+  }
+
+  function limpa_cel() {
+    if (cad.bairro.value=='Bairro') {
+      cad.bairro.value='';
+    }
+  }
+
+  function volta_cel() {
+    if (cad.bairro.value=='') {
+      cad.bairro.value='Bairro';
+    }
+  }
+
+  function limpa_cidade() {
+    if (cad.cep.value=='CEP') {
+      cad.cep.value='';
+    }
+  }
+
+  function volta_cidade() {
+    if (cad.cep.value=='') {
+      cad.cep.value='CEP';
+    }
+  }
+
+  function limpa_1() {
+    if (cad.msn.value=='Msn') {
+      cad.msn.value='';
+    }
+  }
+
+  function volta_1() {
+    if (cad.msn.value=='') {
+      cad.msn.value='Msn';
+    }
+  }
+
+  function limpa_2() {
+    if (cad.igreja.value=='Igreja') {
+      cad.igreja.value='';
+    }
+  }
+
+  function volta_2() {
+    if (cad.igreja.value=='') {
+      cad.igreja.value='Igreja';
+    }
+  }
+
+  function limpa_3() {
+    if (cad.cargo.value=='Cargo na Igreja') {
+      cad.cargo.value='';
+    }
+  }
+
+  function volta_3() {
+    if (cad.cargo.value=='') {
+      cad.cargo.value='Cargo na Igreja';
+    }
+  }
+  
+  function valida_dados(cad){
+  	if(cad.nome.value=='Nome'){
+		alert('Preencha o campo Nome do formulário para prosseguir.');
+		cad.nome.focus();
+		return (false);
+	}
+  	if(cad.fone.value=='(DDD)-Fone'){
+		alert('Preencha o campo (DDD)-Fone do formulário para prosseguir.');
+		cad.fone.focus();
+		return (false);
+	}
+  	if(cad.rua.value=='Rua'){
+		alert('Preencha o campo Rua do formulário para prosseguir.');
+		cad.rua.focus();
+		return (false);
+	}
+  	if(cad.numero.value=='Número'){
+		alert('Preencha o campo Número do formulário para prosseguir.');
+		cad.numero.focus();
+		return (false);
+	}
+  	if(cad.bairro.value=='Bairro'){
+		alert('Preencha o campo Bairro do formulário para prosseguir.');
+		cad.bairro.focus();
+		return (false);
+	}
+  	if(cad.cidade.value=='Cidade'){
+		alert('Preencha o campo Cidade do formulário para prosseguir.');
+		cad.cidade.focus();
+		return (false);
+	}
+  	if(cad.cep.value=='CEP'){
+		alert('Preencha o campo CEP do formulário para prosseguir.');
+		cad.cep.focus();
+		return (false);
+	}
+  	if(cad.estado.value=='Estado'){
+		alert('Preencha o campo Estado do formulário para prosseguir.');
+		cad.estado.focus();
+		return (false);
+	}
+  	if(cad.pais.value=='País'){
+		alert('Preencha o campo País do formulário para prosseguir.');
+		cad.pais.focus();
+		return (false);
+	}
+  	if(cad.msn.value=='Msn'){
+		alert('Preencha o campo Msn do formulário para prosseguir.');
+		cad.msn.focus();
+		return (false);
+	}
+	return(true);
+  }
+</script>
+<table border=0 cellpadding=0 cellspacing=0 width=98% height=228 class=v1b>
+  <tr>
+    <td colspan=4 height=10 align=center>
+      Preencha o Formulário e receba informações completas e participe de sorteios.    </td>
+  </tr>
+  <form name=cad method=post action="?act_cad_rap=cadastrar" onsubmit="return valida_dados(this);">
+    <tr>
+      <td width=1% height="20"></td>
+      <td width=28% align=center>
+      <input name=nome value=Nome size=17 onFocus="limpa()" onblur="volta()" style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc">      </td>
+      <td width=32% align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=fone id="fone"  onfocus="limpar()" onblur="voltar()" value=(DDD)-Fone size=17 /></td>
+	  <td width=39% align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=rua id="rua" onfocus="limp()" onblur="volt()" value=Rua size=17 /></td>
+    </tr>
+    <tr>
+      <td height="20"></td>
+      <td align=center><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=numero id="numero" onfocus="lim()" onblur="vol()" value=N&uacute;mero size=17 /></td>
+      <td align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=bairro id="bairro"  onfocus="limpa_cel()" onblur="volta_cel()" value=Bairro size=17 /></td>
+	  <td align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=cidade id="cidade"  onfocus="limpa_endereco()" onblur="volta_endereco()" value=Cidade size=17 /></td>
+    </tr>
+    <tr>
+      <td height="20"></td>
+      <td align=center><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=cep id="cep"  onfocus="limpa_cidade()" onblur="volta_cidade()" value=CEP size=17 /></td>
+      <td align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=estado id="estado"  onfocus="limpa_igreja()" onblur="volta_igreja()" value=Estado size=17 /></td>
+	  <td align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=pais id="pais"  onfocus="limpa_cargo()" onblur="volta_cargo()" value='Pa&iacute;s' size=17 /></td>
+    </tr>
+    <tr>
+      <td height="20"></td>
+      <td align=center><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=msn id="msn" onfocus="limpa_1()" onblur="volta_1()" value=Msn size=17 /></td>
+      <td align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=igreja value=Igreja size=17 onfocus="limpa_2()" onblur="volta_2()" /></td>
+	  <td align="center"><input style="font-size: 9; font-family: verdana; border-style: inset; border-width: 1; background-color: #cccccc" name=cargo value='Cargo na Igreja' size=17 onfocus="limpa_3()" onblur="volta_3()" /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3" align=center><textarea cols=70 rows=3 name=mensagem style="font-size: 10px; font-family: verdana; border-style: inset; border-width: 1; width:88%; background-color: #cccccc"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="4" height="10"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3" align=left><b>Selecione suas areas de interesse</b></td>
+    </tr> 
+		<tr>
+      <td></td>
+      <td colspan="3" align=left><div align="left"><input type="checkbox" name="area_int[]" value="Convenção Internacional das Igrejas Assembléia de Deus"><label onMouseOver="script: exibe_float_carteirinha(this, '99', true);" onMouseOut="exibe_float_carteirinha(this, '99', false);">Convenção Internacional das Igrejas Assembléia de Deus</label><div id="99" style="position:absolute; padding-top:20px; right:30%; display:none;">
+   						<img src="http://cursodepastor.com.br/novo/titulos/99.jpg" width="155" height="109">
+     			</div></div></td>
+    </tr>
+		<tr>
+      <td></td>
+      <td colspan="3" align=left><div align="left"><input type="checkbox" name="area_int[]" value="Associação Internacional de Conferencistas Evangélicos"><label onMouseOver="script: exibe_float_carteirinha(this, '53', true);" onMouseOut="exibe_float_carteirinha(this, '53', false);">Associação Internacional de Conferencistas Evangélicos</label><div id="53" style="position:absolute; padding-top:20px; right:30%; display:none;">
+   						<img src="http://cursodepastor.com.br/novo/titulos/53.jpg" width="155" height="109">
+     			</div></div></td>
+    </tr>
+		<tr>
+      <td></td>
+      <td colspan="3" align=left><div align="left"><input type="checkbox" name="area_int[]" value="Convenção Batista Internacional"><label onMouseOver="script: exibe_float_carteirinha(this, '98', true);" onMouseOut="exibe_float_carteirinha(this, '98', false);">Convenção Batista Internacional</label><div id="98" style="position:absolute; padding-top:20px; right:30%; display:none;">
+   						<img src="http://cursodepastor.com.br/novo/titulos/98.jpg" width="155" height="109">
+     			</div></div></td>
+    </tr>
+		<tr>
+      <td></td>
+      <td colspan="3" align=left><div align="left"><input type="checkbox" name="area_int[]" value="Convenção Geral das Igrejas Assembléia de Deus do Brasil"><label onMouseOver="script: exibe_float_carteirinha(this, '58', true);" onMouseOut="exibe_float_carteirinha(this, '58', false);">Convenção Geral das Igrejas Assembléia de Deus do Brasil</label><div id="58" style="position:absolute; padding-top:20px; right:30%; display:none;">
+   						<img src="http://cursodepastor.com.br/novo/titulos/58.jpg" width="155" height="109">
+     			</div></div></td>
+    </tr>
+		<tr>
+      <td></td>
+      <td colspan="3" align=left><div align="left"><input type="checkbox" name="area_int[]" value="Conselho Internacional de Diáconos e Cooperadores"><label onMouseOver="script: exibe_float_carteirinha(this, '96', true);" onMouseOut="exibe_float_carteirinha(this, '96', false);">Conselho Internacional de Diáconos e Cooperadores</label><div id="96" style="position:absolute; padding-top:20px; right:30%; display:none;">
+   						<img src="http://cursodepastor.com.br/novo/titulos/96.jpg" width="155" height="109">
+     			</div></div></td>
+    </tr>
+	<tr>
+      <td></td>
+      <td align=left>&nbsp;</td>
+      <td align=center><input type=submit value=Enviar></td>
+	  <td></td>
+    </tr>
+  </form>
+</table>
+		  </td>
+		</tr>
+	  </table>
+	  <table align=center width=100% cellpadding=0 cellspacing=0 class=v1b>
+	    <tr>
+		  <td align=left><img src=imgs/pastores.jpg border=0></td>
+		</tr>
+	  </table>
+	  <table align=center width=100% cellpadding=0 cellspacing=0 class=v1b>
+	    <tr>
+		  <td align=center>
+            <table border=0 cellpading=0 cellspancing=0 width=100% class=v1b>
+  <tr><td width=50%><br><a href=index.php?corpo=gal.php&id_gal=1044&cati=1 class=menu><font color=664b0b><b>&raquo; Sérgio Tenório Tavares</b></font></a><br><br></td><td width=50%><br><a href=index.php?corpo=gal.php&id_gal=678&cati=1 class=menu><font color=664b0b><b>&raquo; Hilário Frainer</b></font></a><br><br></td></tr><tr><td width=50%><br><a href=index.php?corpo=gal.php&id_gal=690&cati=1 class=menu><font color=664b0b><b>&raquo; Eduardo Teixeira Palhares</b></font></a><br><br></td><td width=50%><br><a href=index.php?corpo=gal.php&id_gal=745&cati=1 class=menu><font color=664b0b><b>&raquo; Pedro Almeida</b></font></a><br><br></td></tr>  <tr>
+    <td></td>
+    <td align=right><a href=index.php?corpo=galeria.php&cati=1><img border=0 src='http://www.psicologopastor.com.br/new/images/veja_mais.jpg'></a></td>
+  </tr>
+</table>
+		  </td>
+		</tr>  
+	  </table>
+	  <table class=v1b>
+	    <tr>
+		  <td align=left><img src='imgs/galeria_fotos.jpg'></td>
+		  <td rowspan=2 width=180>
+            <table border=3 cellpadding=0 cellspacing=0 style='border-collapse: collapse' bordercolor=EBBA50 width=178 height=259>
+  <tr>
+    <td width=174 height=259>
+      <div align=center>
+        <script type=text/javascript>SWF('animation.swf',178, 259);</script>
+      </div>
+    </td>
+  </tr>
+</table>
+          </td>
+		</tr>
+		<tr>
+		  <td> <br>
+            <table>
+  <tr>
+    <td width=15></td>
+    <td>
+      <table border=0 cellpadding=0 cellspancing=0 class=v1b>
+                  <tr>
+            <td align=center valign=middle>
+              <a href="javascript: janelaSecundaria('galeria_eventos.php?evento=12', 602, 506);" class=menu><img style="border-color:#664b0b" src="http://www.cursodepastor.com.br/novo/eventos/mini_12.jpg" border=0></a>
+           </td>
+             <td align=left valign=middle>
+             &nbsp;&nbsp;&nbsp;<a href="javascript: janelaSecundaria('galeria_eventos.php?evento=12', 602, 506);" class=menu> <font color=664b0b><b>&raquo; Mobilização AntiDrogas</b></font></a>
+            </td>
+          </tr>
+         <tr><td>&nbsp;</td></tr>          <tr>
+            <td align=center valign=middle>
+              <a href="javascript: janelaSecundaria('galeria_eventos.php?evento=31', 602, 506);" class=menu><img style="border-color:#664b0b" src="http://www.cursodepastor.com.br/novo/eventos/mini_31.jpg" border=0></a>
+           </td>
+             <td align=left valign=middle>
+             &nbsp;&nbsp;&nbsp;<a href="javascript: janelaSecundaria('galeria_eventos.php?evento=31', 602, 506);" class=menu> <font color=664b0b><b>&raquo; Igreja de Goiania</b></font></a>
+            </td>
+          </tr>
+         <tr><td>&nbsp;</td></tr>          <tr>
+            <td align=center valign=middle>
+              <a href="javascript: janelaSecundaria('galeria_eventos.php?evento=6', 602, 506);" class=menu><img style="border-color:#664b0b" src="http://www.cursodepastor.com.br/novo/eventos/mini_6.jpg" border=0></a>
+           </td>
+             <td align=left valign=middle>
+             &nbsp;&nbsp;&nbsp;<a href="javascript: janelaSecundaria('galeria_eventos.php?evento=6', 602, 506);" class=menu> <font color=664b0b><b>&raquo; Despedida de solteira da</b></font></a>
+            </td>
+          </tr>
+               </table>
+    </td>
+  </tr>
+</table>
+      </td>
+		</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+					</td>
+				  </tr>
+				</table>
+			  </td>
+			</tr>
+			<tr><td align=center background=imgs/rodape.jpg>&copy; 2007 SIPPA - Sociedade Interncional de Psic&oacute;logos e Pastores.</td>
+			</tr>
+		  </table>
+	  </td>
+	  <td width="227"><!-- aki vem um item desnecessario--></td>
+    </tr>
+</table>
+</body>
+</html>
