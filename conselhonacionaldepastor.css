@@ -1,0 +1,10 @@
+/* CSS Document */
+#subtopo {width: 1003px;height: 37px;}
+#subtopo #busca_top{width:208px;height:37px;margin-left:24px;}
+#subtopo #busca_top_field{width:208px;height:12px;border:0px;margin-top:8px;padding-top:8px;color:#FFFFFF;background-color:#052c50;font-weight:bold;}
+#subtopo #busca_top_but{width:70px;height:20px;margin-top:8px;margin-left:3px;}
+#subtopo #atendimento_top{width:151px;height:37px;margin-left:244px;}
+#subtopo #newsletter_top{width:208px;height:37px;margin-top:8px;margin-left:10px;}
+#subtopo #newsletter_top_field{width:208px;height:12px;border:0px;padding-top:8px;color:#FFFFFF;background-color:#052c50;font-weight:bold;}
+#subtopo #texto_newsletter{width:91px;height:44px;padding-top:5px;margin-left:12px;color:#FFFFFF;text-align:center;font-size:10px;}
+

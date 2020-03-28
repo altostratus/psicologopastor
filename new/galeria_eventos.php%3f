@@ -1,0 +1,63 @@
+<br />
+<b>Warning</b>:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in <b>/home2/psicolov/public_html/new/galeria_eventos.php</b> on line <b>10</b><br />
+<html>
+  <head>
+    <title>.::Fotos::.</title>
+    <style type='text/css'>
+      <!--
+        .v1b    {font-family: Verdana, Arial, Helvetica; font-size: 7.5pt; color: #000000;}
+      -->
+    </style>
+    <script type="text/javascript">
+      var timer_id;
+      function scroll_iframe(frm,inc,dir) {
+        if (timer_id) clearTimeout(timer_id);
+        if (window.frames[frm]) {
+          if (dir == "v") window.frames[frm].scrollBy(0, inc);
+          else window.frames[frm].scrollBy(inc, 0);
+          timer_id = setTimeout("scroll_iframe('" + frm + "'," + inc + ",'" + dir + "')", 20);
+        }
+      }
+
+      function stopScroll() { if (timer_id) clearTimeout(timer_id); }
+    </script>
+  </head>
+  <body bgcolor='#FFFFFF' leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>
+    <table width=602 height=507 border=0 cellpadding=0 cellspacing=0 class=v1b>
+      <tr>
+        <td colspan=2 rowspan=4><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_01.jpg' width=86 height=437></td>
+        <td colspan=3 bgcolor='#FFFFFF' width=426 height=21 align=center></td>
+        <td colspan=2 rowspan=4><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_03.jpg' width=90 height=437></td>
+      </tr>
+      <tr>
+        <td colspan=3><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_04.jpg' width=426 height=56></td>
+      </tr>
+      <tr>
+        <td rowspan=2><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_05.jpg' width=20 height=360></td>
+        <td bgcolor='#000000' width=392 height=297 align=center>
+          <iframe name=foto_meio src=foto.php?evento= frameborder=0 height=100% width=100% scrolling=no align=middle></iframe>
+        </td>
+        <td rowspan=2><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_07.jpg' width=14 height=360></td>
+      </tr>
+      <tr>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_08.jpg' width=392 height=63></td>
+      </tr>
+      <tr>
+        <td onMouseOver="this.style.color='red';scroll_iframe('scr1', -4, 'h'); window.status='Left.'; return true" onMouseOut="this.style.color='';stopScroll(); window.status=''; return true"><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_09.jpg' width=14 height=69></td>
+        <td colspan=5 bgcolor='#58B1EA' width=570 height=69>
+          <iframe name=scr1 src="thumbs.php?evento=" scrolling=no frameborder=0 width=100% height=50></iframe>
+        </td>
+        <td onMouseOver="this.style.color='red';scroll_iframe('scr1', 4, 'h'); window.status='right.'; return true" onMouseOut="this.style.color='';stopScroll(); window.status=''; return true"><img src='http://www.cursodepastor.com.br/novo/images/galeria_popup_fotos_11.jpg' width=18 height=69></td>
+      </tr>
+      <tr>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/spacer.gif' width=14 height=1></td>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/spacer.gif' width=72 height=1></td>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/spacer.gif' width=20 height=1></td>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/spacer.gif' width=392 height=1></td>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/spacer.gif' width=14 height=1></td>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/spacer.gif' width=72 height=1></td>
+        <td><img src='http://www.cursodepastor.com.br/novo/images/spacer.gif' width=18 height=1></td>
+      </tr>
+    </table>
+  </body>
+</html>

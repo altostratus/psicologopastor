@@ -1,0 +1,1266 @@
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+        <meta name="title" content="Curso de Mestrado em Teologia - P - Faculdade Gospel" />
+        <meta name="Keywords" content="Curso de Mestrado em Teologia curso, bacharelado, bacharel, distância, ead faculdade, online, mec, reconhecido, cursos graduação, pastor, igreja, seminário, escola licenciatura, mestrado, doutorado" />
+        <meta name="Description" content="Curso de Mestrado em Teologia a distância online livro aconselhamento cristão aconselhamento pastoral aconselhamento espiritual" />
+        <meta name="distribution" content="Global" />
+        <meta http-equiv="Content-language" content="pt-br, pt" />
+        <meta name="REVISIT-AFTER" content="3 DAYS" />
+                <title>Curso de Mestrado em Teologia - P - Faculdade Gospel</title>
+
+        <link href="/stylesCNP/conselhonacionaldepastor.css" rel="stylesheet" media="screen" type="text/css" />
+                        <link href="http://www.buscapaz.com/abraloe/styles/skel.css" rel="stylesheet" media="screen" type="text/css" />
+                        <style type="text/css">
+                            <!--
+                                body {margin: 0px;background-color: #FFFFFF;background-image: url(http://www.buscapaz.com/gform/upload/topos/psicologopastor.jpg);background-position: top center;background-repeat:repeat-x;}
+                            -->
+                        </style>
+                            <link href="/estilos.css" rel="stylesheet" media="screen" type="text/css" />
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_js/scripts.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.form.js"></script>
+        <script language="JavaSCript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.corner.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.dimensions.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/faculdadegospel/_jquery/jquery.lightbox-0.5.min.js"></script>
+
+        <script type="text/javascript" src="http://www.buscapaz.com/api/_js/cadFormNewsletter.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+
+            function limpa_topo(campo) {
+                var f = document.getElementById(campo);
+
+                switch (campo) {
+                    case 'busca_top_field' :
+                        if (f.value.toUpperCase() == "BUSCAR NO SITE") {
+                            f.value = "";
+                        }
+                        break;
+                    case 'formNewsEmailTopo' :
+                        if (f.value.toUpperCase() == "E-MAIL") {
+                            f.value = "";
+                        }
+                        break;
+                }
+            }
+
+            function retVal_topo(campo) {
+                var f = document.getElementById(campo);
+                if ((f.value == "")) {
+                    if (campo == 'busca_top_field') {
+                        f.value = "BUSCAR NO SITE";
+                    } else {
+                        f.value = "E-MAIL";
+                    }
+                }
+            }
+
+            function CapEnterBusca(event) {
+                if (event.keyCode == 13) {
+                    valida_busca();
+                }
+            }
+            function valida_busca() {
+                f = document.getElementById('busca_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'BUSCAR NO SITE')) {
+                    alert('Informe o que voce deseja buscar no site!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=busca&q=' + f.value;
+                    return true;
+                }
+            }
+
+            function valida_email() {
+                f = document.getElementById('newsletter_top_field');
+                if ((f.value == '') || (f.value.toUpperCase() == 'E-MAIL')) {
+                    alert('Informe seu e-mail!');
+                    f.focus();
+                    return false;
+                } else {
+                    location.href = '/index.php?sec=grava_email&email=' + f.value;
+                    return true;
+                }
+            }
+        </script>
+        <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42983353-45', 'psicologopastor.com.br');
+  ga('send', 'pageview');
+
+</script>
+    </head>
+
+    <body style="font-size: 12px; font-family: Verdana, Arial, sans-serif;">
+        <div id="area_site">
+            
+                        <div id="top">
+                            <a href="/?sec=home" class="PHome f_left"></a>
+                            <a href="/?sec=noticias_visual" class="PNoticias f_left"></a>
+                            <a href="/?sec=cursos" class="PCursos f_left"></a>
+                            <a href="/?sec=cadastro_pastor" class="PCadPastores f_left"></a>
+                            <a href="http://www.faculdadegospel.com.br" target="_blank" class="PFaculdade f_left"></a>
+                            <a href="/?sec=faleconosco" class="PContato f_left"></a>
+                        </div>
+                        <div id="subtopo">
+                            <div id="busca_top" class="f_left"><input id="busca_top_field" name="busca_top_field" value="BUSCAR NO SITE" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterBusca(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top_conselhonacionaldepastor.jpg" border="0" onclick="valida_busca()" /></a></div>
+                            <div id="atendimento_top" class="f_left">
+                                <div id="atendimento_online" style="width: 151px; height: 37px;">
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/support_status.php?COMPANY_ID=11479&SITE_ID=13464&ssl=1"></script>
+                                    <!--INCIO RASTREADOR - TRACK -->	
+                                    <script language="JavaScript" >
+                                        var _webtrack_domain = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_company_id = 11479;
+                                        var _webtrack_site_id = 13452;
+                                        var _webtrack_domain_chatwindow = "https://www.chatcomercial.com.br/livehelp/";
+                                        var _webtrack_variables = new Array();
+                                        var _webtrack_ssl = 1;
+                                    </script>
+                                    <script language="JavaScript" src="https://www.chatcomercial.com.br/livehelp/lib/javascript/webtrack.js"></script>
+                                </div>			
+                            </div>
+                            <div id="newsletter_top" class="f_left"><input id="newsletter_top_field" name="newsletter_top_field" value="CADASTRE SEU E-MAIL" onfocus="limpa_topo(this.id)" onblur="retVal_topo(this.id)" onkeypress="CapEnterEmail(event)" /></div>
+                            <div id="busca_top_but" class="f_left"><a href="#"><img src="/imagesCNP/busca_top2_conselhonacionaldepastor.jpg" border="0" onclick="valida_email()" /></a></div>
+                            <div class="limpa"></div>
+                        </div>
+                                
+            <div class="limpa"></div>
+            <div id="areaMenu" style="padding-top:5px;">
+                <a href="/index.php?sec=matriculas"><img src="http://www.buscapaz.com/newgospel/images/bann_congresso.jpg" width="153" height="197" border="0" /></a>
+                <div id="linksMenu">
+                    <div class="titSec" style="color:#1d682b">\Destaque</div>
+                    <a href="/index.php?sec=historia">Hist&oacute;ria</a> <a href="/index.php?sec=compromisso">Compromisso</a>
+                    <a href="/index.php?sec=ingressar">Ingressar</a>
+                    <a href="/index.php?sec=filiese">Filie-se</a>
+                    <a href="/index.php?sec=galeria">Lista de Pastores </a>
+                    <a href="/index.php?sec=galeria_fotos">Galeria de Fotos </a>
+                    <a href="/autores">Autores</a>
+                    <div class="titSec" style="color:#0e1f5e">\Principal</div>
+                    <a href="/index.php?sec=noticias_visual">Not&iacute;cias</a>
+                    <a href="/index.php?sec=atendimento_online">Atendimento</a>
+                    <a href="/index.php?sec=pagamento">Pagamentos</a>
+                    <a href="/index.php?sec=vantagens">Vantagens</a>
+                    <a href="/index.php?sec=promocao">Promo&ccedil;&otilde;es</a>
+                    <a href="/index.php?sec=doacao">Doa&ccedil;&otilde;es</a>
+                    <div class="titSec" style="color:#817d06">\Produtos</div>
+                    <a href="/index.php?sec=prod">Pre&ccedil;o Pedido</a>
+                    <a href="/index.php?sec=cursos">Curso Reconhecido</a>
+                    <a href="/index.php?sec=titulos&tipo=h">T&iacute;tulo Honor&iacute;fico</a>
+                    <a href="/index.php?sec=titulos">T&iacute;tulo Internacional</a>
+                    <a href="/index.php?sec=titulos&tipo=e">T&iacute;tulo Em&eacute;rito</a>
+                    <a href="/produtos" target="_blank">Loja Virtual</a>
+                    <a href="/produtos/pastor-dvd">Dvd's</a>
+                    <a href="/produtos/livro">Livraria</a>
+                    <div class="titSec" style="color:#e32e10">\Faculdade Gospel</div>
+                    <a href="/index.php?sec=quem_somos">Quem Somos</a>
+                    <a href="/index.php?sec=missao">Nossa Miss&atilde;o</a>
+                    <a href="/index.php?sec=galeria">Pastor Igreja</a>
+                    <a href="/index.php?sec=intercambio">Interc&acirc;mbio</a>
+                    <div class="titSec" style="color:#c78800">\Canais</div>
+                    <a href="http://www.abecad.com.br" target="_blank">ABECAD</a>
+                    <a href="http://www.igrejaemcasa.com.br" target="_blank">Igreja em Casa</a>
+                    <a href="http://www.redeinternacional.com.br" target="_blank">Rede Internacional</a>
+                    <a href="/index.php?sec=parceiros">Parceiro</a>
+                    <div class="titSec" style="color:#730477">\Diversos</div>
+                    <a href="/index.php?sec=podcast">PodCast</a>
+                    <a href="/index.php?sec=noticias_visual">Cantores</a>
+                    <a href="/index.php?sec=redes_sociais">Redes Sociais</a>
+                    <a href="http://www.youtube.com/faculdadegospel" target="_blank">Youtube</a>
+                    <a href="/index.php?sec=mais_buscadas">Mais Buscadas</a>
+                    <div class="titSec" style="color:#000000">\Servi&ccedil;os</div>
+                    <a href="/index.php?sec=ganhebrinde">Ganhe Brindes</a>
+                    <a href="/index.php?sec=tv-radio">Tv e R&aacute;dio</a>
+                    <a href="/index.php?sec=cadastro_pastor">Cadastro de Pastor</a>
+                    <a href="/index.php?sec=cadastro_igreja">Cadastro de Igreja</a>
+                    <a href="/igrejas">Igrejas do Brasil</a>
+                    <a href="/index.php?sec=links">Link's &Uacute;teis</a>
+                    <a href="/index.php?sec=faleconosco">Fale Conosco</a>
+                    <div class="titSec" style="color:#000000">\Produtos Gospel</div>
+                    <a href="/produtos/biblia">Bíblia</a><a href="/produtos/cd">CD</a><a href="/produtos/livro">Livro</a><a href="/produtos/pastor-dvd">Pastor DVD</a>                </div>
+                <br /><br />
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_conselho_federal_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.igrejaemcasa.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_igreja_em_casa.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.faculdadegospel.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_faculdade_gospel.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.cgiadb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_cgiadb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.apameb.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_apameb.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.conselhofederaldepastor.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/bann_formacao_pastor.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><a href="http://www.kellencristine.com.br/" target="_blank"><img src="http://www.buscapaz.com/newgospel/images/banner_kellen.jpg" width="153" height="81" border="0" /></a></div>
+                <div class="bannerP"><img src="http://www.buscapaz.com/newgospel/images/bann_tv.jpg" width="153" height="81" border="0" /></div>
+                <div class="bannerP"><a href="/index.php?sec=doacao"><img src="http://www.buscapaz.com/newgospel/images/bann_doacao.jpg" width="153" height="81" border="0" /></a></div>
+                <br /><br /><a href="#"><img src="http://www.buscapaz.com/newgospel/images/bann_dvds.jpg" width="153" height="335" border="0" /></a>
+<a href="http://www.gospelinternacional.com.br" target="_blank" style="color: #000000;"><b>ACIMAD</b><br />Academia Internacional de Músicos e Adoradores de Deus.</a><br /><br /><a href="http://www.conselhonacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>ABRALOE</b><br />Academia Brasileira de Letras e Oradores Evangélicos.</a><br /><br /><a href="http://www.assembleiainternacional.com.br" target="_blank" style="color: #000000;"><b>CINIAD</b><br />Convenção Internacional das Igrejas Evangélicas Assembléias de Deus</a><br /><br /><a href="http://www.apameb.com.br" target="_blank" style="color: #000000;"><b>APAMEB</b><br />Associação dos Pastores e Ministros Evangélicos do Brasil</a><br /><br /><a href="http://www.modelodecristo.com.br" target="_blank" style="color: #000000;"><b>CODICE</b><br />Convenção das Igrejas e Comunidades em Células</a><br /><br /><a href="http://www.conselhodepastor.com.br" target="_blank" style="color: #000000;"><b>CIPAM</b><br />Conselho Internacional de Pastor e Ministros</a><br /><br /><a href="http://www.pastornaeuropa.com.br" target="_blank" style="color: #000000;"><b>CEP</b><br />Convenção Européia de Pastores. Faça Missões na Europa!!</a><br /><br /><a href="http://www.cgiadb.com.br" target="_blank" style="color: #000000;"><b>CGIADB</b><br />Convenção Geral Assembléia de Deus Internacional</a><br /><br /><a href="http://www.psicologopastor.com.br" target="_blank" style="color: #000000;"><b>SIPPA</b><br />Sociedade Internacional de Psicólogos e Pastores</a><br /><br /><a href="http://www.pregadorevangelico.com.br" target="_blank" style="color: #000000;"><b>CIPE</b><br />Conselho Internacional de Pregadores Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OIPAR</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.conselhofederaldepastor.com.br" target="_blank" style="color: #000000;"><b>CFP</b><br />Seja representante em sua federação</a><br /><br /><a href="http://www.sejabatista.com.br" target="_blank" style="color: #000000;"><b>CBI</b><br />Convenção Batista Internacional (Convention International Baptist)</a><br /><br /><a href="http://www.igrejaindependente.com.br" target="_blank" style="color: #000000;"><b>CICAI</b><br />Convenção das Igrejas e Comunidades Autônomas e Independentes</a><br /><br /><a href="http://www.presbiterianainternacional.com.br" target="_blank" style="color: #000000;"><b>CPI</b><br />Convenção Presbiteriana Internacional</a><br /><br /><a href="http://www.conferencistaevangelico.com.br" target="_blank" style="color: #000000;"><b>AICE</b><br />Associação Internacional de Conferencistas Evangélicos.</a><br /><br /><a href="http://ordeminternacionaldepastor.com.br" target="_blank" style="color: #000000;"><b>OMPAME</b><br />Ordem Internacional de Pastor</a><br /><br /><a href="http://www.redelondres.com.br" target="_blank" style="color: #000000;"><b>REDE LONDRES</b><br />Milhares de cursos Livres a Distância. Bolsa de 90%. Estude em casa.</a><br /><br />                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>
+                <center>
+                    <script type="text/javascript"><!--
+                            google_ad_client = "pub-2609349355636700";
+                        /* JOVEM VIP */
+                        google_ad_slot = "9832713230";
+                        google_ad_width = 120;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </center>			
+            </div><!-- /areaMenu -->
+            <div id="areaCorpo" class="f_left">
+<div id="CONTENT">
+    <div style="width: 810px; border-bottom: solid 2px #9ea23d; font-family: Arial;">
+        <span style="font-size: 11pt; color: #693107;"><b>CURSOS</b></span> <span style="font-size: 11pt; color:#abb03f; "><b>RECONHECIDOS</b></span>								
+    </div>
+    <h2 align="right" style="margin-right: 15px; margin-top: 0px;"><font color="#70751c">Curso de Mestrado em Teologia</font></h2>	
+    <div style="padding-top: 10px; margin-top: 5px; width: 821px; height: 64px; background: url(http://www.buscapaz.com/faculdadegospel/images/menu_supCurso.jpg) no-repeat top left; font-size: 11pt; color: #000; font-weight: bold;">
+        <div align="center" class="abas">
+            <a href="/curso/curso-de-mestrado-em-teologia/inicio" style="color:#000000">In&iacute;cio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia" style="color:#000000">Curso</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia/matricula" style="color:#000000">Matr&iacute;cula</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia/videos" style="color:#000000">Videos</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia/vantagem" style="color:#000000">Vantagem</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia/informacoes" style="color:#000000">Informa&ccedil;&otilde;es Gerais</a>
+        </div>
+        <div align="center" class="abass" style="margin-top: 10px;">	
+            <a href="/curso/curso-de-mestrado-em-teologia/cursos-relacionados" style="color:#000000">Cursos Relacionados</a>&nbsp;|&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia/titulos-internacionais" style="color:#000000">T&iacute;tulos Internacionais</a>&nbsp;|&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia/titulos-honorificos" style="color:#000000">T&iacute;tulos Honor&iacute;ficos</a>&nbsp;|
+            <a href="/curso/curso-de-mestrado-em-teologia/titulos-emeritos" style="color:#000000">T&iacute;tulos Em&eacute;ritos</a>&nbsp;|&nbsp;
+            <a href="/curso/curso-de-mestrado-em-teologia/fale-conosco" style="color:#000000">Fale Conosco</a>
+        </div>
+    </div>
+    <div id="conteudo" style="padding-top: 10px; ">
+                <div id="load_curso"></div>
+        <div id="cont_cur">
+            <div id="curso_unic">
+                <div id="imgs_curso">
+                    <div style="width: 135px; height: 120px; float:left; margin-left: 50px;">
+                        <img src="http://www.buscapaz.com/gform/upload/cursosGospel/credencial-do-curso-de-mestrado-em-teologia.jpg" alt="" title="" style="border: 1px solid #9ea23d" />
+                        <center><b>Credencial (B&ocirc;nus)</b></center>
+                    </div>
+                    <div style="width: 135px; height: 120px; float:right; margin-right: 50px;">
+                        <img src="http://www.buscapaz.com/faculdadegospel/images/CCarteirinha1.jpg" alt="" title="" style="border: 1px solid #9ea23d" />
+                        <center><b>Carteirinha de<br />estudante (B&ocirc;nus)</b></center>
+                    </div>
+                    <div style="width: 235px; height: 165px; z-index: 1; margin-top: 130px; margin-left: 100px;">
+                        <img src="http://www.buscapaz.com/gform/upload/cursosGospel/diploma-do-curso-de-mestrado-em-teologia.jpg" alt="" title="" style="border: 1px solid #9ea23d" />
+                        <center><b>Certificado</b></center>
+                    </div>								
+                </div>
+                <div id="video_curso" style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/fundo_video.jpg) no-repeat top left;">
+                    <object width="323" height="277" style="margin-left: 60px;">
+                        <param name="movie" value="http://www.youtube.com/v/v2OZie1-N5Y">
+                        <param name="allowFullScreen" value="true">
+                        <param name="allowscriptaccess" value="always">
+                        <embed src="https://www.youtube.com/v/v2OZie1-N5Y" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="323" height="277"></embed>
+                    </object>
+                </div>
+                <div style="clear: both;"></div>
+                <div style="color: #4b4b4b; font-size: 12px;">
+                    <img src="http://www.buscapaz.com//faculdadegospel/images/banners/banner_viagem_israel.jpg" width="821" height="500" border="0" /><br />
+                </div>
+                                <div style="color: #4b4b4b; font-size: 12px;"><p>A <strong>Faculdade</strong> Internacional de Teologia <strong>Gospel</strong> &eacute; uma institui&ccedil;&atilde;o credenciada que h&aacute; 22 anos oferece uma experi&ecirc;ncia de   aprendizado transformadora e envolvente para vocacionados.</p>
+<p>Inspirando para ajud&aacute;-lo a alcan&ccedil;ar o crescimento Espiritual e Ministerial, os materiais da <strong>Faculdade</strong> <strong>Gospel</strong> s&atilde;o rigorosamente preparados e ministrados por um corpo docente   altamente qualificado de um seleto grupo de professores e pastores para o   desenvolvimento do seminarista.</p>
+<p>O modelo flex&iacute;vel de aprendizado desenvolvido pela <strong>Faculdade</strong> <strong>Gospel</strong> permite a voc&ecirc; conciliar os estudos com sua fam&iacute;lia e outros   compromissos pessoais. Voc&ecirc; ver&aacute; tamb&eacute;m que nosso modelo de ensino a   dist&acirc;ncia melhora seu aprendizado ao permitir que voc&ecirc; troque   experi&ecirc;ncias com colegas de todo o mundo usando de imediato toda a   teoria-pr&aacute;tica no dia a dia da sua colabora&ccedil;&atilde;o na Igreja.</p>
+<p>Temos a honra de ser a primeira institui&ccedil;&atilde;o teol&oacute;gica reconhecida oficialmente pelo Conselho Federal de <strong>Pastor</strong> e, pela CGIADB.</p>
+<p>A <strong>Faculdade</strong> <strong>Gospel</strong> &eacute; uma institui&ccedil;&atilde;o crist&atilde; evang&eacute;lica de car&aacute;ter interdenominacional e   transdenominacional, ou seja, aceitamos alunos de todas as denomina&ccedil;&otilde;es   evang&eacute;licas e at&eacute; mesmo de outras religi&otilde;es, sem preconceito ou   imposi&ccedil;&otilde;es doutrin&aacute;rias denominacionais. Os nossos cursos se baseiam na   Teologia Evang&eacute;lica Crist&atilde; podendo ser aceito por qualquer denomina&ccedil;&atilde;o.</p>
+<p>A <strong>Faculdade</strong> <strong>Gospel</strong> capacita pastores e l&iacute;deres para atuarem de maneira expressiva e   din&acirc;mica nas &aacute;reas de administra&ccedil;&atilde;o eclesi&aacute;stica, evangelismo,   discipulado, lideran&ccedil;a, supervis&atilde;o, dire&ccedil;&atilde;o e aconselhamento pastoral   atrav&eacute;s de: r&aacute;dio, TV, internet, livros, CDs, DVDs, revistas,   semin&aacute;rios, congressos e eventos em geral.</p>
+<p>A <strong>Faculdade</strong> <strong>Gospel</strong> prepara Voc&ecirc; para ministrar em conven&ccedil;&otilde;es e conselhos de pastores,   semin&aacute;rios teol&oacute;gicos, institutos teol&oacute;gicos, fazer miss&otilde;es, lecionar,   escrever livros, apostilas, revistas da escola dominical, ministrar   estudos b&iacute;blicos, semin&aacute;rios; se habilitar no conhecimento: Teol&oacute;gico,   Ling&uuml;&iacute;stico, Filos&oacute;fico, B&iacute;blico, Ministerial e Exeg&eacute;tico.</p>
+<p>Nossos Cursos s&atilde;o altamente recomendados para: L&iacute;deres, Pastores,   Bispos, Mission&aacute;rios, Evangelistas, Di&aacute;conos, Conferencista,   Palestrante, Te&oacute;logo, Professores de Escola Dominical, Membros,   Estudantes e Profissionais de Psican&aacute;lise, Psicologia, Antropologia,   Direito, Hist&oacute;ria, Filosofia, L&iacute;deres de ONGs com trabalhos nos meios   populares, seja nas pastorais, seja nos movimentos sociais e a todos que   est&atilde;o comprometidos com os valores &eacute;ticos, morais e espirituais   Crist&atilde;os.</p>
+<p>Oferecendo ao Aluno uma forma&ccedil;&atilde;o Teol&oacute;gica completa e pr&aacute;tica   proposta no nosso material did&aacute;tico totalmente din&acirc;mico o mais avan&ccedil;ado   do pa&iacute;s.</p>
+<p><strong>Corpo docente do mais alto n&iacute;vel</strong></p>
+<p>Voc&ecirc; ter&aacute; livros de professores din&acirc;micos e atualizados, com s&oacute;lida   forma&ccedil;&atilde;o acad&ecirc;mica em universidades de ponta no Brasil e no exterior e   experi&ecirc;ncia pastoral significativa em suas &aacute;reas de especialidade. Esses   professores trazem sua realidade profissional para as apostilas,   fornecendo aos alunos uma vis&atilde;o moderna e pr&aacute;tica dos assuntos   estudados. Muitos deles exercem cargos de lideran&ccedil;a na Igreja. Al&eacute;m   disso, muitos possuem experi&ecirc;ncia internacional como palestrantes do   universo religioso.</p>
+<p>A <strong>Faculdade</strong> <strong>Gospel</strong> oferece Credencial e Certificado Registrado, para que voc&ecirc; possa   crescer na sua igreja, trabalhar livremente na obra de Deus, tanto no   Brasil quanto no Exterior, ou, at&eacute; mesmo, para quem tiver o chamado,   fundar uma igreja ou minist&eacute;rio, trabalhar como <strong>Pastor</strong> auxiliar ou Presidente, onde e como desejar.</p>
+<p>Para aceitar tal desafio, Aluno (a) / <strong>Pastor</strong> (a) deve gostar de exercer lideran&ccedil;a, de questionar a realidade que   est&aacute; &agrave; sua volta, de interpretar e analisar cen&aacute;rios de curtos e longos   prazos e de lidar com incertezas e mudan&ccedil;as, pois esse &eacute; o perfil para   quem exerce o comando e toma decis&otilde;es.</p>
+<p><strong>&Aacute;rea de atua&ccedil;&atilde;o</strong></p>
+<p>Fazendo o <strong>Curso</strong> pela <strong>Faculdade</strong> <strong>Gospel</strong> voc&ecirc; estar&aacute; apto para atuar em in&uacute;meras &aacute;reas Religiosas:</p>
+<ul>
+<li>Lideran&ccedil;a Crist&atilde; - desenvolver atividades administrativas,   doc&ecirc;ncia b&iacute;blica na sua comunidade e no mundo, fundar e presidir   minist&eacute;rio.</li>
+<li> Aconselhamento Pastoral - desenvolver atividades de   aconselhamento pastoral &agrave;s fam&iacute;lias, adolesc&ecirc;ncia, etc., confortando,   exortando, ensinando no temor de Deus.<br /> </li>
+<li>Obra Mission&aacute;ria - implantar igrejas nas &aacute;reas urbanas e rurais, n&atilde;o alcan&ccedil;adas pelo evangelho.<br /> </li>
+<li>Evangelismo - levar a mensagem de esperan&ccedil;a e salva&ccedil;&atilde;o das   escrituras ao pr&oacute;ximo, atrav&eacute;s da pr&eacute;dica da palavra de Deus, e outros   meios.<br /> </li>
+<li>Doc&ecirc;ncia - exercer uma atua&ccedil;&atilde;o educativa nos estabelecimentos de   educa&ccedil;&atilde;o que necessitem de forma&ccedil;&atilde;o teol&oacute;gica, Igrejas, Semin&aacute;rios, etc.<br /> </li>
+<li>Minist&eacute;rio Pastoral - desenvolver atividades restritas aos   Pastores, como batismos, celebra&ccedil;&atilde;o da Ceia do Senhor, casamentos,   liturgia do culto, etc.</li>
+</ul>
+<p><strong> Qualidade de ensino reconhecido internacionalmente</strong></p>
+<p>&nbsp;<br /> Forma&ccedil;&atilde;o sem fronteiras: Como a &uacute;nico Semin&aacute;rio <strong>Gospel</strong> global do Brasil, a <strong>Faculdade</strong> Internacional de Teologia <strong>Gospel</strong> oferece a voc&ecirc; forma&ccedil;&atilde;o do mais alto n&iacute;vel e possibilidades de   interc&acirc;mbio em renomadas Igrejas estrangeiras pertencentes &agrave; Rede   Internacional.</p>
+<p>Ensino diferenciado: A nossa metodologia de ensino foi desenhada   para que voc&ecirc; adquira uma Forma&ccedil;&atilde;o Pastoral Teol&oacute;gica Eclesi&aacute;stica   completa. Por&eacute;m, a <strong>Faculdade</strong> <strong>Gospel</strong> acredita ser necess&aacute;rio ir al&eacute;m. Voc&ecirc; &eacute; orientado, desde o primeiro   livro, a ampliar os seus conhecimentos sobre as mais recentes   transforma&ccedil;&otilde;es.</p>
+<p>Para que voc&ecirc; possa se destacar na Igreja, al&eacute;m das &aacute;reas de   concentra&ccedil;&atilde;o como Administra&ccedil;&atilde;o Eclesi&aacute;stica, realizar&aacute; extensos estudos   completos dentro da Teologia para esse maravilhoso cargo, al&eacute;m de   pr&aacute;tica introdu&ccedil;&atilde;o ao Direito Civil e das Leis que regem as Igrejas e   que asseguram uma forte base em direito internacional, a <strong>Faculdade</strong> <strong>Gospel</strong> lhe oferece uma grade curricular &uacute;nica no Pa&iacute;s, que contempla o aprendizado de conte&uacute;dos ou mat&eacute;rias pouco exploradas.</p>
+<p><strong>Voc&ecirc; Sabia?</strong></p>
+<p>Em 2010, a <strong>Faculdade</strong> Internacional de Teologia <strong>Gospel</strong> manteve contato com 169 Igrejas de in&uacute;meros pa&iacute;ses como Alemanha,   Inglaterra, Jap&atilde;o, Argentina, Canad&aacute;, Chile, Col&ocirc;mbia, Costa Rica, Cuba,   El Salvador, Equador, Espanha, Estados Unidos, Fran&ccedil;a, Guatemala,   It&aacute;lia, M&eacute;xico, Nicar&aacute;gua, Panam&aacute;, Paraguai, Peru, Portugal, Rep&uacute;blica   Dominicana, Uruguai, Venezuela, al&eacute;m de diversas institui&ccedil;&otilde;es   brasileiras.</p>
+<p><strong>Autoriza&ccedil;&atilde;o e validade dos Cursos Livres</strong></p>
+<p>O Decreto-Lei N.&ordm; 1051/69 autoriza a valida&ccedil;&atilde;o dos estudos "aos   portadores de diploma de cursos realizados em Semin&aacute;rios Maiores,   Faculdades Teol&oacute;gicas ou institui&ccedil;&otilde;es equivalentes de qualquer confiss&atilde;o   religiosa&rdquo; (Art. 1&ordm;). "Como o ensino militar o ensino religioso foge as   limita&ccedil;&otilde;es dos sistemas vigentes" (Par. 286/81). Tais cursos s&atilde;o ditos   "livres", n&atilde;o necessitando de pr&eacute;via autoriza&ccedil;&atilde;o para funcionamento nem   de posterior reconhecimento do Conselho de Educa&ccedil;&atilde;o Competente. A   jurisprud&ecirc;ncia do Conselho Federal de Educa&ccedil;&atilde;o tem sido no sentido de   declarar-lhes a equival&ecirc;ncia, de acordo com regras amplas e flex&iacute;veis, &eacute;   o que se depreende da leitura da Lei de 1821/53, do Decreto 34.330/53,   dos pareceres do CFE, n&ordm; 279-64 (doc. 31,p.69 ) e n.&ordm; 884/65 ( doc.92,   p. 60 ) e n.&ordm; 3174/77 ( Doc. 204, p.17) entre outros.</p>
+<p><strong>Leis Internacionais e Portarias relacionadas ao pastoreado e suas fun&ccedil;&otilde;es determinantes de atua&ccedil;&atilde;o Religiosa no mundo:</strong></p>
+<p>1. Princ&iacute;pio da Paz e Seguran&ccedil;a aferida na Carta da ONU art. 1, par&aacute;grafo 1, Cap&iacute;tulo 1 de 26 de Junho de 1945;<br /> 2.   Da Coopera&ccedil;&atilde;o Internacional do mesmo ano de 1945 na Carta da ONU art.   1, Cap&iacute;tulo 1, par&aacute;grafo 3 de 26 de Junho e Art. 5&deg; da Constitui&ccedil;&atilde;o   Federal, XIII e art.7&deg; a 9&deg; e Artigo 5&deg; - VI, VII e XVI; 205 e 215 da   Constitui&ccedil;&atilde;o Federal do Brasil e Artigo 24 da Lei Federal n&deg; 7,210, de   11 de Junho de 1984. <br /> Mais do que um diploma e uma educa&ccedil;&atilde;o de qualidade, os Cursos da <strong>Faculdade</strong> <strong>Gospel</strong> oferece ao aluno uma experi&ecirc;ncia de vida. <br /> Em nosso <strong>Curso</strong> o aluno participa ativamente da sua vida acad&ecirc;mica: critica, opina,   contribui, auxilia e constr&oacute;i. Aqui o aluno se sente parte de uma   estrutura que s&oacute; funciona com a participa&ccedil;&atilde;o dele.</p>
+<p>A &uacute;nica <strong><strong>Faculdade</strong> Internacional de Teologia <strong>Gospel</strong></strong> que tem o <strong>curso</strong> para <strong>Forma&ccedil;&atilde;o  de <strong>Pastor</strong></strong>com credencial, diploma e ordena&ccedil;&atilde;o, sendo reconhecido em v&aacute;rias conven&ccedil;&otilde;es, denomina&ccedil;&otilde;es e pa&iacute;ses.</p></div>
+                <div style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/fale_curso.jpg) no-repeat top left; height: 155px; font-size: 13px; font-weight: bold; color: #693107; padding-top: 100px;" align="center">
+
+			Central de Atendimento -  Telefone (34) 3261-6764 / 0800 942 3153<br /><br />
+			Faculdade Internacional de Teologia Gospel<br /><br />
+			Caixa Postal 091<br /><br />
+			CEP 38.300-104<br /><br />
+			Cidade de Ituiutaba - Estado de Minas Gerais - Pais Brasil<br /><br />
+		                </div>
+                <div style="display: table; margin-top: 0px; font-size: 13px; font-weight: bold;">
+                    <div class="com_cur" style="background: url(http://www.buscapaz.com/faculdadegospel/images/cursos_msn.jpg) no-repeat top left;">seminariogospel@hotmail.com</div>
+                    <div class="com_cur" style="background: url(http://www.buscapaz.com/faculdadegospel/images/cursos_aim.jpg) no-repeat top left;">bestuniversity@aol.com</div>
+                    <div class="com_cur" style="background: url(http://www.buscapaz.com/faculdadegospel/images/cursos_talk.jpg) no-repeat top left;">faculdadegospel@gmail.com</div>
+                    <div class="com_cur" style="background: url(http://www.buscapaz.com/faculdadegospel/images/cursos_yahoo.jpg) no-repeat top left;">bestuniversity@ymail.com</div>
+                    <div class="com_cur" style="background: url(http://www.buscapaz.com/faculdadegospel/images/cursos_skype.jpg) no-repeat top left;">bestuniversity</div>
+                    <div class="com_cur" style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/cursos_atenOnline.jpg) no-repeat top left;">[<a href="javascript:void(window.open('http://loja.gospelinternacional.com.brlivezilla.php','','width=600,height=600,left=0,top=0,resizable=yes,menubar=no,location=yes,status=yes,scrollbars=yes'))" style="text-decoration: none; color: #000;">clique aqui</a>]</div>
+                </div>
+                <div style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/cursos_pagamento.jpg) no-repeat top left; padding-top: 80px;">
+                    <div>
+                        <div style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/01.jpg) no-repeat top left; height: 35px;"></div>
+                        <div style="width: 650px; height: 17px; background: url(http://www.buscapaz.com/faculdadegospel/images/SETA_curso.jpg) no-repeat right; color: #693107; font-size: 17px;">
+                            <b>Dep&oacute;sito banc&aacute;rio antecipado no banco de sua prefer&ecirc;ncia</b>
+                        </div>
+                        <div style="background: url(http://www.buscapaz.com/faculdadegospel/images/bancos_curso.jpg) no-repeat top left; height: 121px; margin-top: 10px; font-size: 15px;">
+                            <div style="margin-top: 5px; margin-left: 140px;">
+                                <span style="color: #693107;"><b>Semin&aacute;rio de Teologia</b></span><br />
+                                <span style="color: #a75c23">Banco do Brasil - Ag&ecirc;ncia 0204-6 Conta Corrente 2076-1</span>
+                            </div>
+                            <div style="margin-top: 25px; margin-left: 140px;">
+                                <span style="color: #693107;"><b>Associa&ccedil;&atilde;o dos Mission&aacute;rios</b></span><br />
+                                <span style="color: #a75c23">Banco HSBC - Ag&ecirc;ncia 0862 Conta Corrente 14221-64</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/02.jpg) no-repeat top left;  height: 35px;"></div>
+                        <div style="border: 1px solid #693107; background: #dde099; font-size: 13px; color: #693107; height: 25px; margin-top: 10px; padding-top: 10px;" align="center">
+                            <b>PARCELAMENTO COM PROMO&Ccedil;&Atilde;O NO CART&Atilde;O QUE MELHOR ENCAIXA AO SEU PERFIL PARCELADO EM AT&Eacute; 12 X</b>
+                        </div>
+                        <div style="height: 31px; margin-top: 0px; background: url(http://www.buscapaz.com/faculdadegospel/images/cursos_cards.jpg) no-repeat top center;"></div>
+                    </div>
+                    <div>
+                        <div style="background: url(http://www.buscapaz.com/faculdadegospel/imgs//03.jpg) no-repeat top left;  height: 42px;"></div>
+                        <div style="background: #dde099; display: table; margin-top: 5px; width: 820px;">
+                            <div style="width: 255px; height: 243px; margin-left: -10px; margin-top: -17px; float: left; background: url(http://www.buscapaz.com/faculdadegospel/imgs/cursos_formapg.jpg) no-repeat top center;"></div>
+                            <div style="float: left; color: #a75c23; font-size: 11px;">
+                                <div style="margin-top: 15px;">
+
+			<span style="color: #693107;"><strong>Cheque</strong></span>
+			<br /> Envie-nos cheques nominativos e cruzados &agrave; &ldquo;Faculdade Internacional de Teologia Gospel&rdquo;.<br /><br /> 
+			<span style="color: #693107;"><strong>Sedex &agrave; cobrar</strong></span>
+			<br /> (Entrega em 48 Horas e pagamento na retirada do produto na ag&ecirc;ncia dos correios)<br /> 
+			Obs: Voc&ecirc; s&oacute; paga quando retirar seu pedido nos correios, em sua cidade.<br /> 
+			Para esta op&ccedil;&atilde;o, o Semin&aacute;rio exige dep&oacute;sito parcial antecipado de  <br /> 
+			R$80,00 (oitenta reais) como sinal de compromisso.<br /><br /> 
+			<span style="color: #693107;"><strong>Western Union</strong></span><br /> 
+			Pagamento advintos do exterior devem ser feito por Western Union<br /> 
+			Julia Ana da Trindade. CPF:262.833.446-15 - Banco do Ita&uacute; - Ag&ecirc;ncia 8608<br /> 
+			Conta Corrente 00002-5 - Toda remessa para o exterior t&eacute;ra o acr&eacute;scimo de R$ 200,00
+		                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 10px;">
+                    <img src="http://www.buscapaz.com/faculdadegospel/imgs/cursos_desc.jpg" alt="" title="" />
+                </div>
+                <div style="clear: both;"></div>
+                <div style="width: 814px; margin-top: 0px;">
+                        <script type="text/javascript" language="javascript">
+	function retVal(){
+		var f = document.cad;
+		if(f.nome.value == ""){
+			f.nome.value = "Nome:";
+		} 
+		
+		if(f.celular_ddd.value == ""){
+			f.celular_ddd.value = "DDD";
+		}
+		
+		if(f.celular.value == ""){
+			f.celular.value = "Celular:";
+		}
+		
+		if(f.fone_ddd.value == ""){
+			f.fone_ddd.value = "DDD";
+		}
+		
+		if(f.fone.value == ""){
+			f.fone.value = "Telefone Residencial:";
+		}
+		
+			if(f.cpf.value == ""){
+				f.cpf.value = "CPF / CNPJ:";
+			}
+		
+		if(f.email.value == ""){
+			f.email.value = "Email:";
+		}
+		
+		if(f.rua.value == ""){
+			f.rua.value = "Rua:";
+		}
+		
+		if(f.numero.value == ""){
+			f.numero.value = "Número:";
+		}
+		
+		if(f.bairro.value == ""){
+			f.bairro.value = "Bairro:";
+		}
+		
+		if(f.cidade.value == ""){
+			f.cidade.value = "Cidade:";
+		}
+		
+		if(f.cep.value == ""){
+			f.cep.value = "CEP:";
+		}
+		
+		if(f.msg.value == ""){
+			f.msg.value = "Em caso de dúvida ou sugestão deixe sua mensagem:";
+		}
+		
+		if(f.mais_curso.value == ""){
+			f.mais_curso.value = "Digite aqui o seu curso desejado:";
+		}
+	}
+	
+	function limpa(campo) {
+		var f = document.cad;
+		
+		switch (campo) {
+			case 'nome' :
+				if(f.nome.value == "Nome:"){
+					f.nome.value = "";
+				} 
+				break;	
+				
+			case 'celular_ddd' :
+				if(f.celular_ddd.value == "DDD"){
+					f.celular_ddd.value = "";
+				}
+				break;	
+				
+			case 'celular' :
+				if(f.celular.value == "Celular:"){
+					f.celular.value = "";
+				}
+				break;	
+				
+			case 'fone_ddd' :
+				if(f.fone_ddd.value == "DDD"){
+					f.fone_ddd.value = "";
+				}
+				break;	
+				
+			case 'fone' :
+				if(f.fone.value == "Telefone Residencial:"){
+					f.fone.value = "";
+				}
+				break;	
+				
+			case 'email' :
+				if(f.email.value == "Email:"){
+					f.email.value = "";
+				}		
+				break;
+		
+			case 'cpf' :
+				if(f.cpf.value == "CPF / CNPJ:"){
+					f.cpf.value = "";
+				}	
+				break;	
+			
+			case 'rua' :
+				if(f.rua.value == "Rua:"){
+					f.rua.value = "";
+				}	
+				break;		
+
+			case 'numero' :
+				if(f.numero.value == "Número:"){
+					f.numero.value = "";
+				}	
+				break;	
+				
+			case 'bairro' :
+				if(f.bairro.value == "Bairro:"){
+					f.bairro.value = "";
+				}		
+				break;		
+
+			case 'cidade' :
+				if(f.cidade.value == "Cidade:"){
+					f.cidade.value = "";
+				}	
+				break;	
+				
+			case 'cep' :
+				if(f.cep.value == "CEP:"){
+					f.cep.value = "";
+				}		
+				break;		
+
+			case 'msg' :
+				if(f.msg.value == "Em caso de dúvida ou sugestão deixe sua mensagem:"){
+					f.msg.value = "";
+				}		
+				break;	
+
+			case 'mais_curso' :
+				if(f.mais_curso.value == "Digite aqui o seu curso desejado:"){
+					f.mais_curso.value = "";
+				}		
+				break;		
+		}
+	}
+</script>
+<script language="JavaScript" type="text/javascript" src="http://www.buscapaz.com/api/_js/cad_fast.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.buscapaz.com/api/_js/load_states.js"></script>
+			<div id="aviso"></div>
+				<form name="cad" id="fcontato" method="post" action="index.php">
+				<div id="cad_rapido" style="background: url(http://www.buscapaz.com/faculdadegospel/imgs/cad_rapido_top.jpg) #f5f6e7 no-repeat top left;">
+					<div style="margin-left: 20px;">
+						<center>
+							<table cellpadding="0" cellspacing="3" style="width: 98%;">
+								<tr>
+									<td><input type="text" class="cad_rpd" name="nome" id="nome" value="Nome:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="cpf" id="cpf" value="CPF / CNPJ:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input name="celular_ddd" type="text" class="cad_rpd" id="celular_ddd" style="width:32px; margin-right:0px;" onfocus="limpa(this.id)" onblur="retVal()" value="DDD" maxlength="3" /><input type="text" class="cad_rpd" name="celular" id="celular" value="Celular:" onfocus="limpa(this.id)" onblur="retVal()" style="width:170px;" /></td>
+								</tr>
+								<tr>
+									<td><input name="fone_ddd" type="text" class="cad_rpd" id="fone_ddd" style="width:32px; margin-right:0px;" onfocus="limpa(this.id)" onblur="retVal()" value="DDD" maxlength="3" /><input type="text" class="cad_rpd" name="fone" id="fone" value="Telefone Residencial:" onfocus="limpa(this.id)" onblur="retVal()" style="width:170px;" /></td>
+									<td><input type="text" class="cad_rpd" name="email" id="email" value="Email:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="rua" id="rua" value="Rua:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+								</tr>
+								<tr>
+									<td><input type="text" class="cad_rpd" name="numero" id="numero" value="Número:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="bairro" id="bairro" value="Bairro:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td><input type="text" class="cad_rpd" name="cidade" id="cidade" value="Cidade:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+								</tr>
+								<tr>
+									<td><input type="text" class="cad_rpd" name="cep" id="cep" value="CEP:" onfocus="limpa(this.id)" onblur="retVal()" /></td>
+									<td>
+										<select id="pais" name="pais" onChange="pegaSubCat(this)" class="cad_rpd">
+											<option value=130>Afeganistão</option>
+<option value=5>África do Sul</option>
+<option value=224>Alasca</option>
+<option value=114>Albânia</option>
+<option value=6>Alemanha</option>
+<option value=129>Andorra</option>
+<option value=7>Angola</option>
+<option value=131>Anguilla</option>
+<option value=132>Antígua e Barbuda</option>
+<option value=133>Antilhas Holandesas</option>
+<option value=8>Arábia Saudita</option>
+<option value=9>Argélia</option>
+<option value=10>Argentina</option>
+<option value=134>Armênia</option>
+<option value=135>Aruba</option>
+<option value=11>Austrália</option>
+<option value=76>Áustria</option>
+<option value=205>Azerbaijão</option>
+<option value=136>Bahamas</option>
+<option value=137>Bahrein</option>
+<option value=12>Bangladesh</option>
+<option value=138>Barbados</option>
+<option value=139>Belarus</option>
+<option value=13>Bélgica</option>
+<option value=140>Belize</option>
+<option value=141>Benin</option>
+<option value=142>Bermudas</option>
+<option value=143>Birmânia</option>
+<option value=14>Bolívia</option>
+<option value=144>Bósnia-Herzegovina</option>
+<option value=145>Botsuana</option>
+<option value=1 selected='selected'>Brasil</option>
+<option value=146>Brunei Darussalam</option>
+<option value=15>Bulgária</option>
+<option value=147>Burkina Faso</option>
+<option value=148>Burundi</option>
+<option value=149>Butão</option>
+<option value=108>Cabo Verde</option>
+<option value=110>Camarões</option>
+<option value=150>Camboja</option>
+<option value=18>Canadá</option>
+<option value=151>Casaquistão</option>
+<option value=152>Catar</option>
+<option value=153>Chade</option>
+<option value=19>Chile</option>
+<option value=20>China</option>
+<option value=154>Chipre</option>
+<option value=157>Cidade do Vaticano</option>
+<option value=79>Cingapura</option>
+<option value=21>Colômbia</option>
+<option value=155>Comores</option>
+<option value=156>Congo</option>
+<option value=22>Coréia do Sul</option>
+<option value=24>Costa do Marfim</option>
+<option value=23>Costa Rica</option>
+<option value=25>Croácia</option>
+<option value=26>Cuba</option>
+<option value=27>Dinamarca</option>
+<option value=158>Djibuti</option>
+<option value=159>Dominica</option>
+<option value=28>Egito</option>
+<option value=29>El Salvador</option>
+<option value=160>Emirados Árabes</option>
+<option value=30>Equador</option>
+<option value=161>Eritréia</option>
+<option value=31>Eslováquia</option>
+<option value=162>Eslovênia</option>
+<option value=32>Espanha</option>
+<option value=33>Estados Unidos da América</option>
+<option value=163>Estónia</option>
+<option value=115>Etiópia</option>
+<option value=165>Fiji</option>
+<option value=34>Filipinas</option>
+<option value=35>Finlandia</option>
+<option value=36>França</option>
+<option value=38>Gabão</option>
+<option value=166>Gâmbia </option>
+<option value=39>Gana</option>
+<option value=167>Geórgia</option>
+<option value=168>Gibraltar</option>
+<option value=169>Granada</option>
+<option value=40>Grécia</option>
+<option value=170>Groenlândia</option>
+<option value=171>Guadalupe</option>
+<option value=172>Guam</option>
+<option value=41>Guatemala</option>
+<option value=173>Guernsey</option>
+<option value=42>Guiana</option>
+<option value=174>Guiana Francesa</option>
+<option value=175>Guiné</option>
+<option value=176>Guiné Equatorial</option>
+<option value=111>Guiné-Bissau</option>
+<option value=43>Haiti</option>
+<option value=44>Holanda</option>
+<option value=94>Honduras</option>
+<option value=177>Hong Kong</option>
+<option value=45>Hungria</option>
+<option value=178>Iêmen</option>
+<option value=179>Ilhas Caimão</option>
+<option value=180>Ilhas Cook</option>
+<option value=181>Ilhas Malvinas</option>
+<option value=182>Ilhas Marshall</option>
+<option value=183>Ilhas Salomão</option>
+<option value=184>Ilhas Turks e Caicos</option>
+<option value=185>Ilhas Virgens Britânicas</option>
+<option value=46>Índia</option>
+<option value=47>Indonésia</option>
+<option value=2>Inglaterra</option>
+<option value=48>Irã</option>
+<option value=49>Iraque</option>
+<option value=80>Irlanda</option>
+<option value=186>Islândia</option>
+<option value=50>Israel</option>
+<option value=51>Itália</option>
+<option value=77>Jamaica</option>
+<option value=4>Japão</option>
+<option value=53>Jordania</option>
+<option value=102>Kenya</option>
+<option value=188>Kiribati</option>
+<option value=54>Kuwait</option>
+<option value=189>Laos</option>
+<option value=116>Lesoto</option>
+<option value=190>Letónia</option>
+<option value=55>Líbano</option>
+<option value=56>Líbia</option>
+<option value=191>Lituânia</option>
+<option value=117>Luxemburgo</option>
+<option value=118>Madagascar</option>
+<option value=104>Malásia</option>
+<option value=119>Malawi</option>
+<option value=192>Maldivas</option>
+<option value=112>Mali</option>
+<option value=193>Malta</option>
+<option value=58>Marrocos</option>
+<option value=194>Mauritânia</option>
+<option value=59>México</option>
+<option value=60>Moçambique</option>
+<option value=195>Moldávia</option>
+<option value=196>Mongólia</option>
+<option value=197>Montenegro</option>
+<option value=198>Montserrat</option>
+<option value=107>Namíbia</option>
+<option value=199>Nauru</option>
+<option value=200>Nepal</option>
+<option value=61>Nicarágua</option>
+<option value=113>Niger</option>
+<option value=62>Nigéria</option>
+<option value=201>Niue</option>
+<option value=63>Noruega</option>
+<option value=120>Nova Zelandia</option>
+<option value=64>Ordem de Malta</option>
+<option value=123>País de Gales</option>
+<option value=65>Palestina</option>
+<option value=66>Panamá</option>
+<option value=202>Papua Nova Guiné</option>
+<option value=67>Paquistão</option>
+<option value=68>Paraguai</option>
+<option value=69>Peru</option>
+<option value=70>Polônia</option>
+<option value=121>Porto Rico</option>
+<option value=71>Portugal</option>
+<option value=204>Quirguistão</option>
+<option value=86>República Dominicana</option>
+<option value=106>República Theca</option>
+<option value=100>Romenia</option>
+<option value=206>Ruanda</option>
+<option value=92>Rússia</option>
+<option value=124>São Tomé e Príncipe</option>
+<option value=103>Senegal</option>
+<option value=207>Serra Leoa</option>
+<option value=208>Sérvia</option>
+<option value=52>Servia e Montenegro</option>
+<option value=209>Seychelles</option>
+<option value=81>Síria</option>
+<option value=210>Somália</option>
+<option value=211>Sri Lanka</option>
+<option value=125>Suazilandia</option>
+<option value=105>Suécia</option>
+<option value=75>Suíça</option>
+<option value=213>Suriname</option>
+<option value=214>Tadjiquistão</option>
+<option value=101>Tailandia</option>
+<option value=126>Tanzania</option>
+<option value=215>Togo</option>
+<option value=216>Tonga</option>
+<option value=217>Trinidad e Tobago</option>
+<option value=93>Tunísia</option>
+<option value=218>Turcomenistão</option>
+<option value=99>Turquia</option>
+<option value=219>Tuvalu</option>
+<option value=83>Ucrania</option>
+<option value=220>Uganda</option>
+<option value=89>Uruguai</option>
+<option value=221>Uzbequistão</option>
+<option value=222>Vanuatu</option>
+<option value=96>Venezuela</option>
+<option value=84>Vietnã</option>
+<option value=223>Zaire</option>
+<option value=127>Zambia</option>
+<option value=82>Zimbabue</option>
+										</select>									</td>
+									<td>
+										<select id="estado" name="estado" class="cad_rpd">
+											<option value=''>Selecione o Estado:</option>
+<option value=44>Acre</option>
+<option value=6>Alagoas</option>
+<option value=3>Amapá</option>
+<option value=1>Amazonas</option>
+<option value=8>Bahia</option>
+<option value=45>Ceara</option>
+<option value=9>Distrito Federal</option>
+<option value=10>Espirito Santo</option>
+<option value=11>Goias</option>
+<option value=46>Maranhão</option>
+<option value=47>Mato Grosso</option>
+<option value=48>Mato Grosso do Sul</option>
+<option value=7>Minas Gerais</option>
+<option value=12>Pará</option>
+<option value=13>Paráiba</option>
+<option value=14>Paraná</option>
+<option value=15>Pernambuco</option>
+<option value=16>Piauí</option>
+<option value=17>Rio de Janeiro</option>
+<option value=18>Rio Grande do Norte</option>
+<option value=21>Rio Grande do Sul</option>
+<option value=19>Rondonia</option>
+<option value=20>Roraima</option>
+<option value=22>Santa Catarina</option>
+<option value=23>São Paulo</option>
+<option value=24>Sergipe</option>
+<option value=25>Tocantins</option>
+										</select>									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<table cellpadding="0" cellspacing="0" border="0" width="98%	">
+											<tr>
+												<td>
+													<textarea cols="50" rows="3" class="cad_rpd_tex" name="msg" id="msg" onfocus="limpa(this.id)" onblur="retVal()">Em caso de dúvida ou sugestão deixe sua mensagem:</textarea>												</td>
+												<td style="width: 10px;"></td>
+												<td>
+													<textarea cols="50" rows="3" class="cad_rpd_tex" name="mais_curso" id="mais_curso" onfocus="limpa(this.id)" onblur="retVal()">Digite aqui o seu curso desejado:</textarea>												</td>
+											</tr>
+										</table>									</td>
+								</tr>
+								<tr><td height="10"></td></tr>
+								<tr>
+									<td colspan="3">
+										<input type="hidden" name="idioma" id="idioma" value="1" />
+										<input type='hidden' name='curso' id='curso' value='Teologia' />										<table cellpadding="0" cellspacing="0" style="width: 98%" class="cur_cad"><tr><td colspan="2">Ao preencher este formul&aacute;rio declaro que li e concordo com a <a href="/?sec=politica_privacidade" target="_blank">Pol&iacute;tica de privacidade</a> deste Web Site.</td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id103' value='Curso dos Livros de Ageu, Zacarias e Malaquias' /><label for='id103' class='rap'>Curso dos Livros de Ageu, Zacarias e Malaquias</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id30' value='Curso de Bacharel em Economia Eclesiástica' /><label for='id30' class='rap'>Curso de Bacharel em Economia Eclesiástica</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id203' value='Curso de PhD em Relações Internacionais Cristã ' /><label for='id203' class='rap'>Curso de PhD em Relações Internacionais Cristã </label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id184' value='Curso de PhD em Direitos Humanos' /><label for='id184' class='rap'>Curso de PhD em Direitos Humanos</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id229' value='Curso de Pregadores' /><label for='id229' class='rap'>Curso de Pregadores</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id171' value='Curso de Mestrado em Psicanálise Cristã' /><label for='id171' class='rap'>Curso de Mestrado em Psicanálise Cristã</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id249' value='Curso de Bacharel em Psicanálise Clínica' /><label for='id249' class='rap'>Curso de Bacharel em Psicanálise Clínica</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id73' value='Curso de Doutorado em Economia Eclesiástica ' /><label for='id73' class='rap'>Curso de Doutorado em Economia Eclesiástica </label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id46' value='Curso de Bacharel em Neopentecoste Cristã' /><label for='id46' class='rap'>Curso de Bacharel em Neopentecoste Cristã</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id90' value='Curso de Doutorado em Publicidade e Propaganda Cristã' /><label for='id90' class='rap'>Curso de Doutorado em Publicidade e Propaganda Cristã</label><br /></td></tr><tr><td align='left'><input type='checkbox' name='area_int[]' id='id6' value='Curso de Etica Cristã' /><label for='id6' class='rap'>Curso de Etica Cristã</label><br /></td><td align='left'><input type='checkbox' name='area_int[]' id='id35' value='Curso de Bacharel em Filosofia Cristã' /><label for='id35' class='rap'>Curso de Bacharel em Filosofia Cristã</label><br /></td><td></td></tr></table>									</td>
+								</tr>
+							</table>
+						</center>
+					</div>
+					<div style="margin:15px 50px;"><img src="/captcha/_captcha_imagem.php?t=1405194988" width="110" height="25" /><br />Digite os números que você vê acima: <input name="captcha_response" style="width:45px;" maxlength="4" /><input type="hidden" name="captcha_challenge" value="I8dw1xQj2n8XNa4BZoiX3A==" /><input type="hidden" name="captcha_challenge2" value="YjBhMTJiYjEyNGUyZGNlMw==" /></div>
+				</div>
+				<div style="width: 813px; height: 83px; margin-left: 4px; background: url(http://www.buscapaz.com/faculdadegospel/imgs/cad_rapido_base.jpg) no-repeat top left;">
+					<div style="float: left; width: 150px;  margin-top: 25px;">
+						<p align="center" style="font-size: 10pt;"><b>Escolha o cart&atilde;o<br /> de sua op&ccedil;&atilde;o:</b></p>
+					</div>
+					<div style="float: left; width: 20px; height: 20px; margin-top: 45px; margin-left: 120px;">
+						<input type="checkbox" name="card[]" value="American Express"/>
+					</div>
+					<div style="float: left; width: 20px; height: 20px; margin-top: 45px; margin-left: 130px;">
+						<input type="checkbox" name="card[]" value="Master Card"/>
+					</div>
+					<div style="float: left; width: 20px; height: 20px; margin-top: 45px; margin-left: 135px;">
+						<input type="checkbox" name="card[]" value="Visa"/>
+					</div>
+					<div id="enviar" style="float: right; width: 75px; height: 65px; margin-top: 5px; padding-top: 10px; padding-right: 10px;">
+						<input type="hidden" name="origem" value="Matricula rapida - curso-de-mestrado-em-teologia" />
+						<input type="hidden" name="segmento" value="1" />
+						<input type="image" src="http://www.buscapaz.com/faculdadegospel/images/enviar_cad_rapido.png" />
+					</div>
+				</div>
+			</form>						
+                </div>
+                <div style="clear: both;"></div>
+                <div style="width: 796px; height: 24px; background: url(http://www.buscapaz.com/faculdadegospel/images/fundo_desc.jpg) no-repeat top left; font-size: 13px; color: #693107; margin-top: 5px; padding-left: 15px; margin-left: 10px;">
+                    <b>PRE&Ccedil;O COM 70% DE DESCONTO</b>
+                </div>
+                <div style="width: 784px; height: 40px; background: url(http://www.buscapaz.com/faculdadegospel/images/fundo_valor.jpg) no-repeat top left; font-size: 16px; color: #fff; margin-top: 5px;  margin-left: 15px; padding-top: 15px;" align="center" >
+                    <b> DE R$<span style="color: #df6e19; text-decoration: line-through;">7000,00</span>  POR R$<span style="color: #df6e19;">2100,00</span> &Agrave; VISTA - APROVEITE!!!!</b>
+                </div>
+                <div style="width: 739px; height: 108px; background: url(http://www.buscapaz.com/faculdadegospel/imgs/desc_70.jpg) no-repeat top right; padding-left: 45px; border: 1px solid #000; margin-left: 15px;">
+                    <table cellpadding="0" cellspacing="0" border="0" style="width: 575px; height: 100%; font-size: 13px; font-weight: bold;">
+                        <tr>
+                            <td style="color: #7b3806; width: 3%" align="right"><b>1X</b></td>
+                            <td style="width: 40%"> - R$2100,00</td>
+                            <td style="color: #7b3806; width: 3%" align="right">7X</td>
+                            <td style="width: 40%"> - R$405,00</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #7b3806" align="right">2X</td>
+                            <td> - R$1155,00</td>
+                            <td style="color: #7b3806" align="right">8X</td>
+                            <td> - R$368,00</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #7b3806" align="right">3X</td>
+                            <td> - R$805,00</td>
+                            <td style="color: #7b3806" align="right">9X</td>
+                            <td> - R$339,00</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #7b3806" align="right">4X</td>
+                            <td> - R$630,00</td>
+                            <td style="color: #7b3806" align="right">10X</td>
+                            <td> - R$315,00</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #7b3806" align="right">5X</td>
+                            <td> - R$525,00</td>
+                            <td style="color: #7b3806" align="right">11X</td>
+                            <td> - R$296,00</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #7b3806" align="right">6X</td>
+                            <td> - R$455,00</td>
+                            <td style="color: #7b3806" align="right">12X</td>
+                            <td> - R$280,00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+Observa&ccedil;&otilde;es:                    <ol>
+                        <li>Optando pelo pagamento &agrave; vista, voc&ecirc; ter&aacute; 70% de desconto;</li>
+                        <li>Caso opte pelo pagamento parcelado, obter&aacute; descontos proporcionais a quantidade de parcelas escolhidas;</li>
+                        <li>Ser&aacute; cobrado a taxa de CORREIOS referente ao envio do material no valor de R$ 80,00 (oitenta reais) para Brasil e de R$ 200,00 (duzentos reais) para o Exterior.</li>
+                        <li>Em caso de cancelamento de matr&iacute;cula, ser&aacute; cobrado uma taxa de 80% do valor do curso!</li>
+                    </ol>
+                </div>
+                <div style="padding-top: 10px; font-size: 14px; padding-bottom: 15px;">
+                    <span style="font-size: 10px;">
+			O aluno(a) dever&aacute; filiar-se a Institui&ccedil;&atilde;o que melhor qualificar seus desejos como intelectual! &Eacute; simples: basta nos enviar um e-mail para que seu cadastro seja analisado. Voc&ecirc; ser&aacute; reconhecido como uma pessoa de credibilidade, um respeit&aacute;vel formador de opini&atilde;o; receber&aacute; tratamento VIP em confer&ecirc;ncias, simp&oacute;sios, feiras e exposi&ccedil;&otilde;es a n&iacute;vel nacional e internacional.
+		</span>
+                    <p><b>Filie-se e receba sua Credencial e Certificado de membro:</b></p>
+                    <h2 id="curs_t"><b>T&iacute;tulos Internacionais</b></h2>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/associacao-dos-pastores-e-ministros-evangelicos-do-brasil'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Associao.jpg' alt='Associação dos Pastores e Ministros Evangélicos do Brasil' title='Associação dos Pastores e Ministros Evangélicos do Brasil' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/associacao-dos-pastores-e-ministros-evangelicos-do-brasil' class='tit_link'>
+                    <b>Associação dos Pastores e Ministros Evangélicos do Brasil</b><br /><font size='-2'>Pastores e Ministros do Brasil que buscam reconhecimento pelo controle da h...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/conselho-federal-de-pastor'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Conselho.jpg' alt='Conselho Federal de Pastor' title='Conselho Federal de Pastor' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/conselho-federal-de-pastor' class='tit_link'>
+                    <b>Conselho Federal de Pastor</b><br /><font size='-2'>Pastores que desejam ter seus valores e prestígios reconhecidos em todo o m...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/convencao-batista-internacional'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Conveno.jpg' alt='Convenção Batista Internacional' title='Convenção Batista Internacional' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/convencao-batista-internacional' class='tit_link'>
+                    <b>Convenção Batista Internacional</b><br /><font size='-2'>Cristãos Batistas que proclamam a palavra de Deus através de Missões por to...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/convencao-das-igrejas-e-comunidades-autonomas-e-independentes'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Conveno.jpg' alt='Convenção das Igrejas e Comunidades Autonomas e Independentes' title='Convenção das Igrejas e Comunidades Autonomas e Independentes' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/convencao-das-igrejas-e-comunidades-autonomas-e-independentes' class='tit_link'>
+                    <b>Convenção das Igrejas e Comunidades Autonomas e Independentes</b><br /><font size='-2'>Todas as Igrejas e Comunidades Aut?nomas e Independentes que queiram ter re...</font>
+                    </a>
+                    </span>
+                    </div>
+                                        <div style="clear: both;"></div>
+                    <h2 id="curs_t"><b>T&iacute;tulos Em&eacute;ritos</b></h2>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/missionarios'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg' alt='Missionários' title='Missionários' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/missionarios' class='tit_link'>
+                    <b>Missionários</b><br /><font size='-2'>Valorizando os princípios verdadeiros, lutador incansável na pregação do ev...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/capelao'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg' alt='Capelão' title='Capelão' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/capelao' class='tit_link'>
+                    <b>Capelão</b><br /><font size='-2'>A você que é Semeador do Evangelho, que enfrenta a todos para a propagação ...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/conferencista'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg' alt='Conferencista' title='Conferencista' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/conferencista' class='tit_link'>
+                    <b>Conferencista</b><br /><font size='-2'>Como destaque de seu trabalho em sua igreja e nos ministérios que exerce os...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/diacono'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Emrito_0.jpg' alt='Diácono' title='Diácono' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/diacono' class='tit_link'>
+                    <b>Diácono</b><br /><font size='-2'>A você que é Semeador do Evangelho, que enfrenta a todos para a propagação ...</font>
+                    </a>
+                    </span>
+                    </div>
+                                        <div style="clear: both;"></div>
+                    <h2 id="curs_t"><b>T&iacute;tulos Honor&iacute;ficos</b></h2>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/doutor-em-filosofia-da-religiao'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg' alt='Doutor em Filosofia da Religião' title='Doutor em Filosofia da Religião' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/doutor-em-filosofia-da-religiao' class='tit_link'>
+                    <b>Doutor em Filosofia da Religião</b><br /><font size='-2'>Se torne um grande nome na atuação direta da manutenção de todos os princíp...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/mestre-em-ensino-religioso'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg' alt='Mestre em Ensino Religioso' title='Mestre em Ensino Religioso' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/mestre-em-ensino-religioso' class='tit_link'>
+                    <b>Mestre em Ensino Religioso</b><br /><font size='-2'>Aos defensores da liberdade Religiosa nas redes de Escolas oficiais de Ensi...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/mestre-em-educacao-religiosa'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg' alt='Mestre em Educação Religiosa' title='Mestre em Educação Religiosa' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/mestre-em-educacao-religiosa' class='tit_link'>
+                    <b>Mestre em Educação Religiosa</b><br /><font size='-2'>Aos defensores da liberdade Religiosa nas redes de Escolas oficiais de Ensi...</font>
+                    </a>
+                    </span>
+                    </div>
+                    
+                    <div class='tit_curso'>
+                    <a href='/titulo/doutor-em-teologia-dogmatica'>
+                    <img src='http://www.buscapaz.com/gform/upload/titulosGospel/diploma_mini_Ttulo_Honorfico.jpg' alt='Doutor em Teologia Dogmática' title='Doutor em Teologia Dogmática' />
+                    </a> 
+                    <span>
+                    <br />
+                    <a href='/titulo/doutor-em-teologia-dogmatica' class='tit_link'>
+                    <b>Doutor em Teologia Dogmática</b><br /><font size='-2'>Fazer uma distinção das diferentes posições a respeito do conceito de dogma...</font>
+                    </a>
+                    </span>
+                    </div>
+                                        <div style="clear: both;"></div>
+                    <h2 id="curs_t"><b>Cursos Relacionados</b></h2>
+                    
+                    
+                                <div class='tit_curso'>
+                                    <a href='/curso/curso-de-pos-graduacao-em-administracao-de-igrejas'>
+                                        <img style='width: 86px; height: 61px;' src='http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg' alt='Diploma do Curso de Pós Graduação em Administração de Igrejas' title='Diploma de Membro Curso de Pós Graduação em Administração de Igrejas' />
+                                    </a> 
+                                    <span>
+                                        <br /><a href='/curso/curso-de-pos-graduacao-em-administracao-de-igrejas' class='tit_link'>
+                                            <b>Curso de Pós Graduação em Administração de Igrejas</b>
+                                        </a>
+                                    </span>
+                                </div>
+                            
+                                <div class='tit_curso'>
+                                    <a href='/curso/curso-de-pos-graduacao-em-pastor'>
+                                        <img style='width: 86px; height: 61px;' src='http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg' alt='Diploma do Curso de Pós Graduação em Pastor' title='Diploma de Membro Curso de Pós Graduação em Pastor' />
+                                    </a> 
+                                    <span>
+                                        <br /><a href='/curso/curso-de-pos-graduacao-em-pastor' class='tit_link'>
+                                            <b>Curso de Pós Graduação em Pastor</b>
+                                        </a>
+                                    </span>
+                                </div>
+                            
+                                <div class='tit_curso'>
+                                    <a href='/curso/curso-de-capacitacao-em-oratoria-discurso-e-pregacao'>
+                                        <img style='width: 86px; height: 61px;' src='http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg' alt='Diploma do Curso de Capacitação em Oratória, Discurso e Pregação.' title='Diploma de Membro Curso de Capacitação em Oratória, Discurso e Pregação.' />
+                                    </a> 
+                                    <span>
+                                        <br /><a href='/curso/curso-de-capacitacao-em-oratoria-discurso-e-pregacao' class='tit_link'>
+                                            <b>Curso de Capacitação em Oratória, Discurso e Pregação.</b>
+                                        </a>
+                                    </span>
+                                </div>
+                            
+                                <div class='tit_curso'>
+                                    <a href='/curso/curso-de-especializacao-em-direito-eclesiastico'>
+                                        <img style='width: 86px; height: 61px;' src='http://www.buscapaz.com/faculdadegospel/images/CDiploma.jpg' alt='Diploma do Curso de Especialização em Direito Eclesiástico' title='Diploma de Membro Curso de Especialização em Direito Eclesiástico' />
+                                    </a> 
+                                    <span>
+                                        <br /><a href='/curso/curso-de-especializacao-em-direito-eclesiastico' class='tit_link'>
+                                            <b>Curso de Especialização em Direito Eclesiástico</b>
+                                        </a>
+                                    </span>
+                                </div>
+                                                <div style="clear: both;"></div>
+                </div>
+                <div style="clear: both;"></div>
+                <div></div>
+            </div>
+        </div>
+            </div>
+</div>            </div><!-- /areaCorpo -->
+        </div><!-- /area_site -->
+        <div class="limpa"></div>
+        <div id="rodape">
+            <div id="area_rodape" style="margin-left: 350px;">
+                <div id="bloco_link" class="f_left" style="margin-left:70px">
+                    <div class="corBranco" style="font-weight:bold">INSTITUCIONAL</div>
+                    <a href="/index.php?sec=quem_somos" class="Lrodape">Quem Somos</a><br />
+                    <a href="/index.php?sec=compromisso" class="Lrodape">Nossos Compromissos</a><br />
+                    <a href="/index.php?sec=ingressar" class="Lrodape">Quem pode ingressar</a><br />
+                    <a href="/index.php?sec=filiese" class="Lrodape">Filie-se agora</a><br />
+                    <a href="http://loja.escoladepastor.com.br/" target="_blank" class="Lrodape">Loja virtual</a><br />
+                    <a href="/index.php?sec=promocao" class="Lrodape">Promo&ccedil;&otilde;es</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">AJUDA</div>
+                    <a href="/index.php?sec=cursos" class="Lrodape">Quais s&atilde;o os cursos</a><br />
+                    <a href="/index.php?sec=missao" class="Lrodape">Como funciona?</a><br />
+                    <a href="/index.php?sec=vantagens" class="Lrodape">Perguntas frequentes</a><br />
+                    <a href="/index.php?sec=pagamento" class="Lrodape">Formas de pagamento</a><br />
+                    <a href="/index.php?sec=politica_privacidade" class="Lrodape">Politica de Privacidade</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Central de atendimento</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">REDES SOCIAIS </div>
+                    <a href="#" class="Lrodape">MySpace</a><br />
+                    <a href="http://twitter.com/igrejaemcasa" target="_blank" class="Lrodape">Twitter</a><br />
+                    <a href="http://www.orkut.com.br/Main#Profile?uid=13960611504068135313" target="_blank" class="Lrodape">Orkut</a><br />
+                    <a href="#" class="Lrodape">Ning</a><br />
+                    <a href="http://youtube.com/igrejaemcas" target="_blank" class="Lrodape">YouTube</a><br />
+                    <a href="msnim:add?contact=igrejaemcasa@hotmail.com" target="_blank" class="Lrodape">Messenger</a>
+                </div>
+                <div id="bloco_link" class="f_left">
+                    <div class="corBranco" style="font-weight:bold">FALE CONOSCO </div>
+                    <a href="#" class="Lrodape">Ligue: 0800 9423153</a><br />
+                    <a href="#" class="Lrodape">Formul&aacute;rio Contato</a><br />
+                    <a href="#" class="Lrodape">Atendimento Online</a><br />
+                    <a href="#" class="Lrodape">Atendimento por e-mail</a><br />
+                    <a href="/index.php?sec=matriculas" class="Lrodape">Matricula</a><br />
+                    <a href="/index.php?sec=faleconosco" class="Lrodape">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <style  type="text/css">
+    /* CSS do banner sobre a criaÃ¯Â¿Â½Ã¯Â¿Â½o de igrejas */
+    #Layer1 {position:fixed; width:510px; height:289px; z-index: 8999; left: 30%;	top: 100px; display:block;}
+    #fechar{display:block; width:25px; height:30px; margin-top:0px; margin-right:15px; float: right}
+</style>
+
+<script type="text/javascript">
+    function fechaCad(){
+        document.getElementById('Layer1').style.display = 'none';
+    }
+</script>
+
+<div id="Layer1" style="background: url( http://www.buscapaz.com/faculdadegospel/images/BannerPromocao.jpg) no-repeat top center; width:510px; height:289px;">
+    <a id="fechar" href="javascript:fechaCad();" title="Fechar"></a>
+    <form name="CadastroNewsletter" id="CadastroNewsletter" method="post" action="/index.php" style="padding-top: 230px; padding-left: 12px;">
+        <input type="text" name="formNewsNome" id="formNewsNome" placeholder="Digite seu nome" style="width: 157px; margin-top: 10px; float: left;" />
+        <input type="text" name="formNewsFone" id="formNewsFone" placeholder="DDD Cel" class="fone" style="width: 112px; margin-left: 8px; margin-top: 10px; float: left;" onKeyPress="return txtBoxFormat(this, '(99) 999999999', event);" maxlength="14" />
+        <input type="text" name="formNewsEmail" id="formNewsEmail" placeholder="Digite seu email" style="width: 150px; margin-left: 7px; margin-top: 10px;float: left;" />
+        <input type="hidden" name="formNewsSegmento" id="formNewsSegmento" value="1">
+        <input type="hidden" name="formNewsOrigem" id="formNewsOrigem" value="ebook-do-curso-internacional-de-teologia">
+        <input type="hidden" name="formNewsLink" id="formNewsLink" value="psicologopastor.com.br/curso/curso-de-mestrado-em-teologia" />
+        <input type="image" src="/images/enviaBann.png" style="margin-left: 3px;margin-top: 10px;float: left;">
+    </form>
+</div>
+
+        <!-- Cï¿½digo de renderizaï¿½ï¿½o do botï¿½o mais um | <g:plusone size="medium"></g:plusone> -->
+        <script type="text/javascript">
+                        window.___gcfg = {lang: 'pt-BR'};
+
+                        (function() {
+                            var po = document.createElement('script');
+                            po.type = 'text/javascript';
+                            po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(po, s);
+                        })();
+        </script>
+
+        <script>
+
+            $(function() {
+                $('#menProdu li a').click(function(e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                });
+            });
+
+
+            function chamaPagina(url) {
+                location.href = url.value;
+                exit();
+            }
+
+            function txtBoxFormat(objeto, sMask, evtKeyPress) {
+                var i, nCount, sValue, fldLen, mskLen, bolMask, sCod, nTecla;
+
+                if (document.all) { // Internet Explorer
+                    nTecla = evtKeyPress.keyCode;
+                } else if (document.layers) { // Nestcape
+                    nTecla = evtKeyPress.which;
+                } else {
+                    nTecla = evtKeyPress.which;
+                    if (nTecla == 8) {
+                        return true;
+                    }
+                }
+
+                sValue = objeto.value;
+
+                // Limpa todos os caracteres de formatao que
+                // j estiverem no campo.
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace("-", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace(".", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace("/", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace(":", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace("(", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(")", "");
+                sValue = sValue.toString().replace(" ", "");
+                sValue = sValue.toString().replace(" ", "");
+                fldLen = sValue.length;
+                mskLen = sMask.length;
+
+                i = 0;
+                nCount = 0;
+                sCod = "";
+                mskLen = fldLen;
+
+                while (i <= mskLen) {
+                    bolMask = ((sMask.charAt(i) == "-") || (sMask.charAt(i) == ".") || (sMask.charAt(i) == "/") || (sMask.charAt(i) == ":"))
+                    bolMask = bolMask || ((sMask.charAt(i) == "(") || (sMask.charAt(i) == ")") || (sMask.charAt(i) == " "))
+
+                    if (bolMask) {
+                        sCod += sMask.charAt(i);
+                        mskLen++;
+                    }
+                    else {
+                        sCod += sValue.charAt(nCount);
+                        nCount++;
+                    }
+
+                    i++;
+                }
+
+                objeto.value = sCod;
+
+                if ((nTecla != 8) || (nTecla != 11)) { // backspace
+                    if (sMask.charAt(i - 1) == "9") { // apenas nmeros...
+                        return ((nTecla > 47) && (nTecla < 58));
+                    }
+                    else { // qualquer caracter...
+                        return true;
+                    }
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+
+
+    </body>
+</html>
